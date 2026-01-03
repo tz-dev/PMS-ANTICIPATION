@@ -90,9 +90,7 @@ PMS–ANTICIPATION argues that:
 
 ## Relation to PMS
 
-PMS–ANTICIPATION is built directly on the **canonical PMS operator grammar (Δ–Ψ)** as defined in  
-`PMS.yaml` (schema_version: `PMS_1.1`):  
-https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml
+PMS–ANTICIPATION is built directly on the **canonical PMS operator grammar (Δ–Ψ)** as defined in [`PMS.yaml`](https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml) (schema_version: `PMS_1.1`).  
 
 * No new operators are introduced
 * No operator is redefined
