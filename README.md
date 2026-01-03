@@ -222,8 +222,6 @@ When referencing PMS–ANTICIPATION, please cite both the paper and PMS:
 > T. Zöller (2025): *Towards a Praxeological Meta-Structure Theory.*  
 > *PMS.yaml — Axiomatic Operator Schema (PMS_1.1).*
 
-(If a Zenodo DOI is added for this repository release, include it here and add the DOI badge at the top.)
-
 ---
 
 ## License
