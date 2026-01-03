@@ -709,11 +709,11 @@ In PMS terms, maturity is demonstrated where **Χ (Distance: reflective withdraw
 
 ---
 
-## B. Minimal Application Protocol (MAP)
+### B. Minimal Application Protocol (MAP)
 
 Any PMS–ANTICIPATION analysis must explicitly answer **all five** questions:
 
-### 1. Frame Validity Check
+#### 1. Frame Validity Check
 
 **□ (Frame: contextual structure that constrains and shapes impulses):**
 
@@ -725,7 +725,7 @@ Any PMS–ANTICIPATION analysis must explicitly answer **all five** questions:
 
 ---
 
-### 2. Non-Event Integrity Check
+#### 2. Non-Event Integrity Check
 
 **Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame):**
 
@@ -737,7 +737,7 @@ Any PMS–ANTICIPATION analysis must explicitly answer **all five** questions:
 
 ---
 
-### 3. Asymmetry Audit
+#### 3. Asymmetry Audit
 
 **Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation):**
 
@@ -749,7 +749,7 @@ Any PMS–ANTICIPATION analysis must explicitly answer **all five** questions:
 
 ---
 
-### 4. Distance Enforcement
+#### 4. Distance Enforcement
 
 **Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns):**
 
@@ -761,7 +761,7 @@ Any PMS–ANTICIPATION analysis must explicitly answer **all five** questions:
 
 ---
 
-### 5. Self-Binding Test
+#### 5. Self-Binding Test
 
 **Ψ (Self-Binding: formation of identity through commitment to integrated structures over time):**
 
@@ -773,7 +773,7 @@ Any PMS–ANTICIPATION analysis must explicitly answer **all five** questions:
 
 ---
 
-## C. Red-Flag Patterns (Immediate PMS Invalidity)
+### C. Red-Flag Patterns (Immediate PMS Invalidity)
 
 | Pattern                               | Structural Diagnosis |
 | ------------------------------------- | -------------------- |
@@ -785,7 +785,7 @@ Any PMS–ANTICIPATION analysis must explicitly answer **all five** questions:
 
 ---
 
-## D. PMS-Compatible Outputs (What You *May* Produce)
+### D. PMS-Compatible Outputs (What You *May* Produce)
 
 ✔ Structural mappings  
 ✔ Risk articulation without prescriptions  
@@ -801,7 +801,7 @@ Any PMS–ANTICIPATION analysis must explicitly answer **all five** questions:
 
 ---
 
-## E. Meta-Rule (Self-Application Clause)
+### E. Meta-Rule (Self-Application Clause)
 
 > **Any use of PMS–ANTICIPATION is itself subject to PMS.**
 
@@ -815,11 +815,12 @@ If, during application:
 
 ---
 
-## Closing Note (Appendix)
+### Closing Note (Appendix)
 
 PMS–ANTICIPATION is hardest **where it matters most**:  
 under pressure, confirmation, asymmetry, and urgency.
 
 Its value lies not in better foresight,  
 but in **making betrayal of restraint structurally visible**.
+
 
