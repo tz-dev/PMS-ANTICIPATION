@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>PMS–ANTICIPATION — Structural Conditions, Risks, and Viability of Anticipatory Praxis</title>
+		<script>
+			window.MathJax = {
+			  tex: {
+			    inlineMath: [['\\(', '\\)']],
+			    displayMath: [['\\[', '\\]']],
+			    processEscapes: true
+			  },
+			  svg: { fontCache: 'global' }
+			};
+		</script>
+		<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1><strong>PMS–ANTICIPATION</strong></h1>
+			<h2><em>Structural Conditions, Risks, and Viability of Anticipatory Praxis</em></h2>
+		</header>
+		<section id="content">
+			<h2>0. Frontmatter</h2>
+			<h3>0.1 Abstract</h3>
+			<p>Anticipatory thinking is reconstructed not as predictive accuracy, cognitive skill, or strategic advantage, but as a <strong>structural form of praxis</strong> whose viability depends on specific operator constellations within the <strong>Praxeological Meta-Structure (PMS)</strong>.</p>
+			<p>PMS is a <strong>generative operator framework</strong> for modeling praxis, asymmetry, development, and self-binding. It defines <strong>eleven irreducible meta-axioms</strong>—<strong>Δ (Difference: minimal structural distinction enabling any form of differentiation)</strong> through <strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong>—and derives complex structural axes—<strong>A (Awareness: sustained framed differentiation over time)</strong>, <strong>C (Coherence: temporally stabilized structuring of impulse and expectation within a frame)</strong>, <strong>R (Responsibility: self-binding orientation toward asymmetry extended across time and recontextualization)</strong>, <strong>E (Action: integrated realization of directedness across time)</strong>, and <strong>D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations)</strong>—from operator compositions (schema_version: <strong>PMS_1.1</strong>).</p>
+			<p>Within this framework, anticipation is treated as a <strong>present structural stance</strong> toward possible future events and non-events under <strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong> and <strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong>, regulated by <strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong> and stabilized by <strong>Σ (Integration: synthesis of disparate or conflicting elements into a coherent whole)</strong> and <strong>Ψ (Self-Binding)</strong>. The paper argues that anticipation is <strong>not a truth claim about the future</strong>, but a way of <strong>carrying Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> responsibly under irreversibility—such that viability is assessed by <strong>structural stability, restraint, and attributable consequence-handling</strong>, not by prediction success.</p>
+			<hr>
+			<h3>0.2 PMS Reference and Source Artefacts</h3>
+			<p>
+				This paper is written as a <strong>PMS application</strong> (not a critique). No modifications, reinterpretations, or extensions of the PMS operator grammar are introduced. PMS is treated as an external, canonical model definition, referenced via:
+			</p>
+			<ul>
+				<li>
+					<p>
+						<strong>Repository:</strong>
+						<em>Praxeological Meta-Structure (PMS)</em> — canonical theory + model specification + YAML schema<br />
+						<a href="https://github.com/tz-dev/Praxeological-Meta-Structure-Theory" target="_blank" rel="noopener noreferrer">
+						https://github.com/tz-dev/Praxeological-Meta-Structure-Theory
+						</a>
+					</p>
+				</li>
+				<li>
+					<p>
+						<strong>Canonical model artefact:</strong>
+						<code>model/PMS.yaml</code> (schema_version <strong>PMS_1.1</strong>)<br />
+						JSON convenience mirror: <code>model/PMS.json</code><br />
+						Direct raw access:
+						<a
+							href="https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml"
+							target="_blank"
+							rel="noopener noreferrer"
+							>PMS.yaml (raw)</a>
+					</p>
+				</li>
+				<li>
+					<p>
+						<strong>Human-readable specifications:</strong><br />
+						<code>model/Model Specification.pdf</code> / <code>model/Model Specification.html</code><br />
+						and <em>Praxeological Meta-Structure Theory</em> (<code>.pdf</code> / <code>.md</code> / <code>.html</code>)
+					</p>
+				</li>
+				<li>
+					<p>
+						<strong>DOI (Zenodo):</strong>
+						<a href="https://doi.org/10.5281/zenodo.17904891" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+						<img
+							src="https://zenodo.org/badge/DOI/10.5281/zenodo.17904891.svg"
+							alt="DOI: 10.5281/zenodo.17904891 (Zenodo)"
+							style="vertical-align: middle; height: 20px;"
+							/>
+						</a>
+					</p>
+				</li>
+			</ul>
+			<p>
+				The present paper uses PMS strictly as a <strong>structural grammar</strong>: operator compositions, dependency discipline,
+				and derived-axis projections—without importing psychological, diagnostic, or person-evaluative claims.
+			</p>
+			<hr>
+			<h3>0.3 Entry Condition for PMS Application (Validity Clause)</h3>
+			<p>Any application of PMS presupposes the PMS entry condition:</p>
+			<blockquote>
+				<p><strong>Acceptance of Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns), reversibility (avoidance of premature irreversible commitments under Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame) and Θ (Temporality: temporal structuring that enables trajectories, commitments and development)), and D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations).</strong>
+					This condition applies to <em>application</em>, not to critique or rejection.
+					Applications that suspend these conditions are formally invalid as PMS.
+				</p>
+			</blockquote>
+			<p>Accordingly, PMS–ANTICIPATION treats anticipatory praxis as valid only insofar as it maintains:</p>
+			<ul>
+				<li><strong>Χ (Distance):</strong> continued restraint against closure and escalation</li>
+				<li><strong>Reversibility (avoidance of premature irreversible commitments under Λ (Non-Event) and Θ (Temporality))</strong></li>
+				<li><strong>D (Dignity-in-Practice):</strong> non-coercive handling of <strong>Ω (Asymmetry)</strong>, especially under uncertainty</li>
+			</ul>
+			<hr>
+			<h3>0.4 Scope &amp; Guardrails</h3>
+			<ul>
+				<li><strong>Non-prognostic:</strong> no claim of future truth, no “hit/miss” evaluation as primary criterion</li>
+				<li><strong>Non-psychological:</strong> no mental-trait inference, no cognition-performance framing</li>
+				<li><strong>Non-optimizing:</strong> no strategy handbook, no success promises, no “best practice” prescriptions</li>
+				<li><strong>Non-clinical, non-diagnostic:</strong> aligned with <code>schema_meta.not_intended_for</code> in <code>PMS.yaml</code> (schema_version <strong>PMS_1.1</strong>)</li>
+				<li><strong>No person-level judgments:</strong> analysis targets <strong>praxeological configurations</strong> (frames, roles, asymmetries, trajectories), not persons</li>
+			</ul>
+			<p><strong>Addressed to:</strong> analysts of praxis and structure (systems, governance, institutional design, AI architecture/safety, responsibility under uncertainty) — <strong>not</strong> to agents seeking guidance or action directives.</p>
+			<hr>
+			<h3>0.5 Citation (for this paper’s PMS dependency)</h3>
+			<p>When citing the PMS basis for this work, reference:</p>
+			<ul>
+				<li>T. Zöller: <em>Towards a Praxeological Meta-Structure Theory</em></li>
+				<li><em>PMS.yaml — Axiomatic Operator Schema (PMS_1.1)</em></li>
+				<li>Zenodo DOI: <code>10.5281/zenodo.17904891</code></li>
+			</ul>
+			<div class="pagebreak"></div>
+			<h3>0.6 Operator Table (Canonical Meanings and Anticipation-Specific Roles)</h3>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Symbol</th>
+						<th>Operator label</th>
+						<th>Operator (canonical meaning)</th>
+						<th>Anticipation-specific role in this paper</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><strong>Δ</strong></td>
+						<td><strong>Difference</strong></td>
+						<td>Boundary formation without valuation</td>
+						<td>Marks what can become relevant to anticipation without claiming importance or truth</td>
+					</tr>
+					<tr>
+						<td><strong>∇</strong></td>
+						<td><strong>Impulse</strong></td>
+						<td>Activation and directedness</td>
+						<td>Generates the closure drive that anticipation must regulate rather than obey</td>
+					</tr>
+					<tr>
+						<td><strong>□</strong></td>
+						<td><strong>Frame</strong></td>
+						<td>Context, role space, relevance structuring</td>
+						<td>Defines the scope in which anticipation is meaningful and prevents globalized projection</td>
+					</tr>
+					<tr>
+						<td><strong>Λ</strong></td>
+						<td><strong>Non-Event</strong></td>
+						<td>Expectation and tension through absence</td>
+						<td>Core object of anticipatory discipline: “what may not happen” still matters structurally</td>
+					</tr>
+					<tr>
+						<td><strong>Α</strong></td>
+						<td><strong>Attractor</strong></td>
+						<td>Stability, path dependence, role scripts</td>
+						<td>Explains how anticipatory habits stabilize (or harden) across repeated <strong>Λ (Non-Event)</strong> encounters</td>
+					</tr>
+					<tr>
+						<td><strong>Ω</strong></td>
+						<td><strong>Asymmetry</strong></td>
+						<td>Responsibility gradients and vulnerability structures</td>
+						<td>Turns anticipation into a responsibility-relevant stance: uneven exposure makes restraint consequential</td>
+					</tr>
+					<tr>
+						<td><strong>Θ</strong></td>
+						<td><strong>Temporality</strong></td>
+						<td>Persistence, sequencing, irreversibility</td>
+						<td>Prevents “reset thinking” and makes anticipatory errors and omissions durable in effect</td>
+					</tr>
+					<tr>
+						<td><strong>Φ</strong></td>
+						<td><strong>Recontextualization</strong></td>
+						<td>Adaptation and reinterpretation</td>
+						<td>Enables updating anticipations without retroactive innocence or narrative collapse</td>
+					</tr>
+					<tr>
+						<td><strong>Χ</strong></td>
+						<td><strong>Distance</strong></td>
+						<td>Regulation, inhibition, meta-position</td>
+						<td>Primary safety operator for anticipation: prevents closure, coercion, and premature enactment</td>
+					</tr>
+					<tr>
+						<td><strong>Σ</strong></td>
+						<td><strong>Integration</strong></td>
+						<td>Coherence and multi-level coordination</td>
+						<td>Integrates multiple signals and uncertainties without totalizing closure</td>
+					</tr>
+					<tr>
+						<td><strong>Ψ</strong></td>
+						<td><strong>Self-Binding</strong></td>
+						<td>Self-model, commitment stability</td>
+						<td>Prevents externalization (“others must act now”): anticipation binds the anticipator, not others</td>
+					</tr>
+				</tbody>
+			</table>
+			<p><strong>Derived structural axes referenced in this paper:</strong></p>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Axis</th>
+						<th>Meaning (canonical definition)</th>
+						<th>Anticipation-specific relevance</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><strong>A (Awareness: sustained framed differentiation over time)</strong></td>
+						<td><strong>Δ (Difference)</strong> + <strong>□ (Frame)</strong> + <strong>Θ (Temporality)</strong></td>
+						<td>Sustains anticipatory differentiation without escalating into certainty</td>
+					</tr>
+					<tr>
+						<td><strong>C (Coherence: temporally stabilized structuring of impulse and expectation within a frame)</strong></td>
+						<td><strong>∇ (Impulse)</strong> + <strong>□ (Frame)</strong> + <strong>Λ (Non-Event)</strong> + <strong>Θ (Temporality)</strong></td>
+						<td>Keeps anticipatory narratives stable under non-occurrence and delay</td>
+					</tr>
+					<tr>
+						<td><strong>R (Responsibility: self-binding orientation toward asymmetry extended across time and recontextualization)</strong></td>
+						<td><strong>Ω (Asymmetry)</strong> + <strong>Θ (Temporality)</strong> + <strong>Φ (Recontextualization)</strong> + <strong>Ψ (Self-Binding)</strong></td>
+						<td>Grounds attribution without obligation: responsibility attaches where capacity exists</td>
+					</tr>
+					<tr>
+						<td><strong>E (Action: integrated realization of directedness across time)</strong></td>
+						<td><strong>∇ (Impulse)</strong> + <strong>Θ (Temporality)</strong> + <strong>Σ (Integration)</strong></td>
+						<td>May follow anticipation, but is not authorized by it without <strong>Χ (Distance)</strong> and <strong>D (Dignity-in-Practice)</strong></td>
+					</tr>
+					<tr>
+						<td><strong>D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations)</strong></td>
+						<td><strong>Ω (Asymmetry)</strong> + <strong>Χ (Distance)</strong> + <strong>Ψ (Self-Binding)</strong></td>
+						<td>Validity constraint: anticipatory praxis must remain non-coercive under <strong>Ω (Asymmetry)</strong></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="pagebreak"></div>
+			<h2>1. Problem Statement: Why Anticipation Is Structurally Misunderstood</h2>
+			<h3>1.1 Dominant Misframings</h3>
+			<ul>
+				<li>Anticipation = prediction</li>
+				<li>Anticipation = control</li>
+				<li>Anticipation = intelligence</li>
+				<li>Anticipation = action advantage</li>
+			</ul>
+			<p>→ <strong>All four are PMS-incompatible reductions.</strong></p>
+			<p>Each misframing fails for a precise structural reason:</p>
+			<ol>
+				<li>
+					<p><strong>Anticipation = prediction</strong> collapses anticipation into an epistemic claim about future truth. PMS–ANTICIPATION treats the future as structurally open under <strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> and <strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong>. A prediction model privileges “hit/miss,” while PMS privileges <em>viability under non-occurrence</em> and <em>stability under irreversibility</em>. Prediction may be used as descriptive input (e.g., pattern extrapolation via <strong>Α (Attractor: recurrent pattern or behavioral stabilization built from repeated framed interactions and non-events)</strong> under <strong>Θ (Temporality)</strong>), but it cannot function as anticipatory justification.</p>
+				</li>
+				<li>
+					<p><strong>Anticipation = control</strong> treats anticipation as a power instrument aimed at producing a desired outcome. This confuses structural stance with enforced enactment and risks collapsing <strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong> under <strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong>. In PMS terms, “control” is a move toward coercive stabilization of the environment, typically by forcing <strong>Λ (Non-Event)</strong> into closure. PMS–ANTICIPATION explicitly rejects the authorization of coercion from anticipatory structures.</p>
+				</li>
+				<li>
+					<p><strong>Anticipation = intelligence</strong> psychologizes what is here treated structurally. PMS is non-psychological: it models operator configurations, not traits, capacities, or cognitive rankings. Anticipation is not “who is smarter,” but whether a configuration maintains <strong>□ (Frame: contextual structure that constrains and shapes impulses)</strong>, carries <strong>Λ (Non-Event)</strong> under <strong>Θ (Temporality)</strong>, and preserves <strong>Χ (Distance)</strong> in the presence of <strong>∇ (Impulse: directional tension or drive arising from difference)</strong>.</p>
+				</li>
+				<li>
+					<p><strong>Anticipation = action advantage</strong> makes anticipation a competitive acceleration device: “being earlier” becomes “being right,” and “being right” becomes “being allowed.” Structurally, this is the most common pathway from anticipation into escalation: <strong>∇ (Impulse)</strong> is converted into premature <strong>E (Action: integrated realization of directedness across time)</strong> while <strong>Χ (Distance)</strong> is suspended and <strong>Ω (Asymmetry)</strong> becomes instrumentalized. PMS–ANTICIPATION treats this as a typical failure mode: anticipation is misused to legitimate intervention rather than to bind the anticipator.</p>
+				</li>
+			</ol>
+			<hr>
+			<h3>1.2 PMS Reframing</h3>
+			<p>Anticipation is a <strong>present structural configuration</strong> in which:</p>
+			<ul>
+				<li><strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> already shapes responsibility,</li>
+				<li><strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong> forbids reset,</li>
+				<li><strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong> makes restraint consequential,</li>
+			</ul>
+			<p><strong>before</strong> any event occurs.</p>
+			<p>This reframing matters because anticipatory praxis is primarily about <strong>how the present is structured</strong> when the future is not yet actualized.</p>
+			<p>Structurally, anticipation emerges when:</p>
+			<ul>
+				<li>a distinction is drawn via <strong>Δ (Difference: minimal structural distinction enabling any form of differentiation)</strong> (something becomes <em>potentially relevant</em> rather than irrelevant),</li>
+				<li>the distinction is situated within a domain via <strong>□ (Frame: contextual structure that constrains and shapes impulses)</strong> (a role space defines what counts as impact, responsibility, and exposure),</li>
+				<li>the future is recognized as structurally open through <strong>Λ (Non-Event)</strong> (the expected may not occur; the decisive may be delayed; the outcome may remain absent),</li>
+				<li>irreversibility is foregrounded through <strong>Θ (Temporality)</strong> (choices and omissions form trajectories; costs accumulate; windows close),</li>
+				<li>and the ethical-sounding dimension appears not through norms, but through <strong>Ω (Asymmetry)</strong> (effects are unevenly distributed; restraint and escalation land differently across positions).</li>
+			</ul>
+			<p>In PMS terms, anticipation is thus neither “knowing the future” nor “controlling the future,” but <strong>structuring the present under openness</strong> so that consequence-handling remains attributable without closure.</p>
+			<div class="pagebreak"></div>
+			<h2>2. Minimal Definition: Anticipatory Thinking (PMS-Compatible)</h2>
+			<blockquote>
+				<p><strong>Anticipation is the structurally disciplined handling of possible future events and non-events under irreversibility (Θ (Temporality: temporal structuring that enables trajectories, commitments and development)) and asymmetry (Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)), without closure claims.</strong></p>
+			</blockquote>
+			<p>This definition contains three non-negotiable constraints:</p>
+			<ol>
+				<li>
+					<p><strong>“Structurally disciplined”</strong> means anticipation is regulated by operator constraints, not driven by psychological certainty or rhetorical force. Discipline is primarily carried by <strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong> and stabilized by <strong>Σ (Integration: synthesis of disparate or conflicting elements into a coherent whole)</strong> where multiple signals, uncertainties, and frames must be coordinated without totalization.</p>
+				</li>
+				<li>
+					<p><strong>“Possible future events and non-events”</strong> means anticipation includes both what might happen <em>and</em> what might not happen. The decisive object is often <strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong>: absence, delay, omission, or non-occurrence that still reorganizes roles and consequences within <strong>□ (Frame: contextual structure that constrains and shapes impulses)</strong>.</p>
+				</li>
+				<li>
+					<p><strong>“Without closure claims”</strong> means anticipation does not convert possibility into authority. It does not claim future truth, it does not claim entitlement to coercion, and it does not claim final justification. Where the configuration moves from “possible” to “certain,” it attempts to close <strong>Λ (Non-Event)</strong>—and thereby becomes PMS-invalid as anticipatory praxis.</p>
+				</li>
+			</ol>
+			<p><strong>Clarifications:</strong></p>
+			<ul>
+				<li>no future truth claim</li>
+				<li>no epistemic privilege</li>
+				<li>no guarantee of correctness</li>
+			</ul>
+			<p>These clarifications are not rhetorical modesty; they are structural necessities. PMS–ANTICIPATION evaluates anticipation by whether it remains viable when the anticipated event does not occur (<strong>Λ (Non-Event)</strong>), not by whether a forecast hits.</p>
+			<hr>
+			<h3>Capacity Boundary (Attribution Constraint)</h3>
+			<p>Anticipation generates responsibility <strong>only where effective, frame-bound capacity exists</strong>.</p>
+			<p>This boundary is essential to prevent a common corruption: turning anticipation into universalized guilt, omnipotent responsibility, or retrospective moralization. PMS prevents that corruption structurally.</p>
+			<p><strong>Key claim:</strong> attribution requires <strong>effective capacity inside a relevant frame</strong>.</p>
+			<p>That means:</p>
+			<ul>
+				<li>A relevant <strong>□ (Frame: contextual structure that constrains and shapes impulses)</strong> must be in place: a role space in which influence and consequences are structurally connected (e.g., organizational mandate, institutional competence, direct access, legitimate authority, or operational means).</li>
+				<li><strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong> must actually place capacity on the side of the anticipator: the anticipator must occupy a position where actions or omissions can plausibly shift exposure, risk distribution, or outcome pathways.</li>
+				<li><strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong> must still allow intervention or restraint to matter: if decisive windows have structurally closed, “capacity” becomes merely counterfactual and cannot ground attribution.</li>
+			</ul>
+			<p>Accordingly:</p>
+			<p>Where relevant access, authority, means, or temporal availability are structurally absent under <strong>□ (Frame)</strong> and <strong>Ω (Asymmetry)</strong>, anticipation does <strong>not</strong> produce attribution.</p>
+			<p>This has three consequences that keep PMS–ANTICIPATION coherent:</p>
+			<ol>
+				<li>
+					<p><strong>No retroactive guilt:</strong> a later-recognized possibility does not retroactively create responsibility if effective capacity was not present within the operative frame at the time.</p>
+				</li>
+				<li>
+					<p><strong>No universalized responsibility:</strong> “someone could have done something” does not imply “everyone is responsible.” Responsibility tracks structural placement, not abstract possibility.</p>
+				</li>
+				<li>
+					<p><strong>No foresight fetish:</strong> having imagined a scenario does not itself generate responsibility. Responsibility arises when imagination attaches to effective capacity under <strong>Ω (Asymmetry)</strong> across <strong>Θ (Temporality)</strong>, and is stabilized through <strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong> rather than externalized onto others.</p>
+				</li>
+			</ol>
+			<p>In short: PMS–ANTICIPATION rejects retroactive guilt or universalized responsibility because attribution is a structural relation, not a moral verdict. Anticipation is responsibility-relevant only where the anticipator’s position actually carries capacity within the frame—and where time still allows that capacity to matter.</p>
+			<div class="pagebreak"></div>
+			<h2>3. Operator Configuration of Anticipation</h2>
+			<p>This section specifies the operator constellations that make anticipation a distinct and PMS-valid form of praxis. The goal is not to prescribe action, but to show which minimal structural dependencies must be present for anticipation to be <em>viable under non-occurrence</em> and <em>non-coercive under asymmetry</em>.</p>
+			<h3>3.1 Minimal Anticipatory Chain</h3>
+			<p><img alt="Diagram 01: Minimal anticipatory operator chain (Δ → □ → Λ → Θ → Χ). The configuration ends in Distance (Χ), preserving openness of the Non-Event (Λ) under Temporality (Θ) and explicitly not terminating in Action (E)." src="img/diagram01.png"></p>
+			<p><em>Figure 01. Minimal anticipatory stance. Anticipation is structurally present once a bounded difference is carried as open under irreversibility with sustained distance. No action authorization is implied.</em></p>
+			<h4>Structural function (operator-by-operator)</h4>
+			<ul>
+				<li>
+					<p><strong>Δ (Difference: minimal structural distinction enabling any form of differentiation)</strong>
+						Anticipation begins by marking a distinguishable boundary: “this future possibility is relevant.” Without <strong>Δ</strong>, there is no anticipatory object at all—only undifferentiated noise.
+					</p>
+				</li>
+				<li>
+					<p><strong>□ (Frame: contextual structure that constrains and shapes impulses)</strong>
+						The distinction becomes <em>praxis-relevant</em> only inside a frame that specifies what counts as impact, exposure, and scope. <strong>□</strong> prevents anticipation from inflating into global claims by binding it to a role space, mandate, or scene.
+					</p>
+				</li>
+				<li>
+					<p><strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong>
+						The core move: anticipation is disciplined <em>precisely by</em> the possibility of non-occurrence. <strong>Λ</strong> encodes that “the decisive thing might not happen,” and that this absence itself can reorganize consequences.
+					</p>
+				</li>
+				<li>
+					<p><strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong>
+						Anticipation becomes structurally weight-bearing only under irreversibility. <strong>Θ</strong> turns possibilities into trajectories with accumulating costs, closing windows, and non-reset conditions.
+					</p>
+				</li>
+				<li>
+					<p><strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong>
+						The minimal chain ends in restraint: <strong>Χ</strong> prevents the “anticipatory stance” from collapsing into premature enactment or coercive closure. It preserves the open structure of <strong>Λ</strong> under <strong>Θ</strong>.
+					</p>
+				</li>
+			</ul>
+			<h4>Minimal definition of “anticipatory stance” in chain form</h4>
+			<blockquote>
+				<p>Anticipation is present when a bounded possibility (<strong>Δ</strong> inside <strong>□</strong>) is carried as structurally open (<strong>Λ</strong>) under irreversibility (<strong>Θ</strong>) with sustained restraint (<strong>Χ</strong>).</p>
+			</blockquote>
+			<p>This minimal chain is sufficient to differentiate anticipation from prediction: prediction tries to <em>resolve</em> future uncertainty; anticipation structurally <em>carries</em> uncertainty without closure.</p>
+			<hr>
+			<h3>3.2 Full Anticipatory Chain (Viable Form)</h3>
+			<p><img alt="Diagram 02: Full PMS-compatible anticipatory configuration (Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ). The chain stabilizes in Self-Binding (Ψ), not in Action (E), indicating responsibility-bearing restraint rather than enactment." src="img/diagram02.png"></p>
+			<p><em>Figure 02. Viable anticipatory configuration. Anticipation matures through integration and self-binding, stabilizing responsibility across time, asymmetry, and recontextualization without collapsing into authority.</em></p>
+			<p>This chain represents anticipation in its viable, mature form: not merely “holding possibilities,” but stabilizing a responsibility-bearing stance across time, shifting frames, and power gradients without turning uncertainty into authority.</p>
+			<h4>Operator roles in the viable form</h4>
+			<ul>
+				<li>
+					<p><strong>Δ (Difference: minimal structural distinction enabling any form of differentiation)</strong>
+						Establishes what is being anticipated as a distinguishable object.
+					</p>
+				</li>
+				<li>
+					<p><strong>∇ (Impulse: directional tension or drive arising from difference)</strong>
+						Recognizes that anticipation is never neutral: the marked difference induces directional pull (concern, fear, urgency, opportunity). Viable anticipation does not deny <strong>∇</strong>; it disciplines it downstream.
+					</p>
+				</li>
+				<li>
+					<p><strong>□ (Frame: contextual structure that constrains and shapes impulses)</strong>
+						Binds impulse to context and scope.
+					</p>
+				</li>
+				<li>
+					<p><strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong>
+						Keeps openness structurally present (the event may not occur; the intervention may fail; the signal may remain absent).
+					</p>
+				</li>
+				<li>
+					<p><strong>Α (Attractor: recurrent pattern or behavioral stabilization built from repeated framed interactions and non-events)</strong>
+						Encodes repetition and path-dependence: anticipatory structures tend to stabilize into routines, scripts, and habitual expectation patterns. This is where “forecasts” become <em>sticky</em>—not because they are true, but because <strong>Α</strong> produces repetition.
+					</p>
+				</li>
+				<li>
+					<p><strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong>
+						Introduces the central risk and central relevance: under <strong>Ω</strong>, anticipatory claims can become coercive, and restraint becomes consequential. This is where PMS distinguishes “anticipation as stance” from “anticipation as instrument.”
+					</p>
+				</li>
+				<li>
+					<p><strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong>
+						Extends asymmetry into irreversible trajectories: consequences accumulate, windows close, commitments persist.
+					</p>
+				</li>
+				<li>
+					<p><strong>Φ (Recontextualization: transformation via embedding an existing structure into a new frame)</strong>
+						Enables adaptation without erasure: anticipation must survive new information, shifting contexts, and reframing without collapsing into either denial or dogmatic closure.
+					</p>
+				</li>
+				<li>
+					<p><strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong>
+						Preserves restraint under pressure: <strong>Χ</strong> prevents anticipatory stance from turning into certainty-driven intervention.
+					</p>
+				</li>
+				<li>
+					<p><strong>Σ (Integration: synthesis of disparate or conflicting elements into a coherent whole)</strong>
+						Coordinates multiple signals and competing pressures without totalization. <strong>Σ</strong> is where anticipation becomes coherent rather than scattered: it integrates openness (<strong>Λ</strong>), time (<strong>Θ</strong>), power (<strong>Ω</strong>), and reframing (<strong>Φ</strong>) into a stable stance.
+					</p>
+				</li>
+				<li>
+					<p><strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong>
+						This is the stabilizing fixpoint: the anticipator binds <em>themselves</em> to consequences and restraint across time and context.
+					</p>
+				</li>
+			</ul>
+			<h4>Core condition</h4>
+			<blockquote>
+				<p><strong>Anticipation without Ψ (Self-Binding: formation of identity through commitment to integrated structures over time) is structurally unstable.</strong></p>
+			</blockquote>
+			<p>Why: without <strong>Ψ</strong>, the anticipatory stance tends to externalize: it becomes a claim that others must act, or that the world must comply with the anticipation. That is precisely the slide into coercion, moralization, or preventive overreach.</p>
+			<h4>Relation to action</h4>
+			<p><strong>E (Action: integrated realization of directedness across time)</strong> may follow this chain, but is <strong>neither required nor authorized</strong> by anticipation itself. Any transition toward enactment remains constrained by:</p>
+			<ul>
+				<li><strong>Χ (Distance)</strong> (no collapse into action compulsion),</li>
+				<li><strong>D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations)</strong> (no coercive handling of asymmetry),</li>
+				<li>and reversibility (no premature irreversible commitment while <strong>Λ</strong> persists under <strong>Θ</strong>).</li>
+			</ul>
+			<div class="pagebreak"></div>
+			<h2>4. Criteria for Structurally Valid Anticipation</h2>
+			<p>This section specifies viability criteria that do <strong>not</strong> depend on predictive success. The criteria test whether anticipation remains structurally coherent under non-occurrence and non-coercive under asymmetry.</p>
+			<h3>4.1 Positive Criteria (Viability)</h3>
+			<ul>
+				<li>
+					<p><strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame) is carried</strong>, not resolved<br>Viable anticipation keeps “may not occur” structurally active. It does not force closure through certainty narratives.</p>
+				</li>
+				<li>
+					<p><strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development) is respected</strong>, not compressed<br>Viable anticipation does not treat time as a mere obstacle to immediate action. It accounts for irreversible costs, delayed feedback, and trajectory lock-in.</p>
+				</li>
+				<li>
+					<p><strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns) remains active</strong>, even under high probability<br>Even if likelihood appears high, the configuration preserves restraint and avoids the slide from “likely” to “authorized.”</p>
+				</li>
+				<li>
+					<p><strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time) binds the anticipator</strong>, not others<br>The anticipator commits themselves to consequence-handling, revision capacity, and restraint. Viability requires that binding is not externalized as obligation for others.</p>
+				</li>
+				<li>
+					<p><strong>Σ (Integration: synthesis of disparate or conflicting elements into a coherent whole) integrates openness</strong>, rather than closing it<br>Integration is not totalization. It coordinates uncertainty, conflict, and reframing without producing false certainty.</p>
+				</li>
+			</ul>
+			<h4>Viability (PMS definition)</h4>
+			<p>An anticipatory configuration is viable if it remains:</p>
+			<ul>
+				<li><strong>C (Coherence: temporally stabilized structuring of impulse and expectation within a frame)</strong> under <strong>Λ (Non-Event)</strong>,</li>
+				<li>and <strong>R (Responsibility: self-binding orientation toward asymmetry extended across time and recontextualization)</strong> under <strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong>,</li>
+				<li>without collapsing <strong>Χ (Distance)</strong> across <strong>Θ (Temporality)</strong>.</li>
+			</ul>
+			<p>This definition makes the criterion independent of “being right about the future”: the test is whether the anticipatory stance remains coherent and responsibility-attributable even if the event does not occur.</p>
+			<hr>
+			<h3>4.2 Negative Criteria (Formal Invalidity)</h3>
+			<p>Anticipation becomes structurally invalid when:</p>
+			<ul>
+				<li>
+					<p><strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> is replaced by certainty<br>The configuration shifts from openness to closure and begins to act as if the future were already settled.</p>
+				</li>
+				<li>
+					<p><strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong> is neutralized by actionism<br>Irreversibility is denied through “we must act now” compulsion that refuses the structural weight of delayed feedback and path dependence.</p>
+				</li>
+				<li>
+					<p><strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong> is suspended (“I know better”)<br>Distance collapses into authority. Anticipation becomes a warrant for intervention rather than a discipline of restraint.</p>
+				</li>
+				<li>
+					<p><strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong> is instrumentalized<br>Power gradients are used to enforce compliance, turning anticipation into dominance and coercion.</p>
+				</li>
+				<li>
+					<p><strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong> is externalized (“others must now act”)<br>The anticipator refuses to carry the binding themselves and turns anticipation into imposed obligation—this is the direct pathway into preventive authoritarianism and moralization.</p>
+				</li>
+			</ul>
+			<div class="pagebreak"></div>
+			<h2>5. Anticipation ≠ Prognosis</h2>
+			<p>This section draws a strict structural boundary between <strong>prognosis</strong> and <strong>anticipation</strong>. The distinction is not semantic; it is operatorial. Prognosis is a <em>truth-claim posture</em> about the future; anticipation is a <em>present structural stance</em> for handling irreversibility and asymmetry without closure.</p>
+			<h3>5.1 Prognosis (Non-PMS)</h3>
+			<p>Prognosis is structurally characterized by a <strong>future-truth claim posture</strong>: it asserts that a specific future state is more than a possibility—it is <em>to be treated as true enough</em> to justify downstream coordination.</p>
+			<p>Core features:</p>
+			<ul>
+				<li>
+					<p><strong>Claim about future truth</strong><br>Prognosis implicitly attempts to convert <strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> into closure (“the event will occur” / “the non-event will not occur”), within a <strong>□ (Frame: contextual structure that constrains and shapes impulses)</strong>.</p>
+				</li>
+				<li>
+					<p><strong>Hit/miss evaluation</strong><br>Prognosis is assessed primarily by <em>correspondence</em> (did the predicted event occur), rather than by the stability of the stance under non-occurrence.</p>
+				</li>
+				<li>
+					<p><strong>Success-oriented</strong><br>Prognosis tends to pull toward <strong>E (Action: integrated realization of directedness across time)</strong> as the proof of relevance (decision, intervention, allocation), often compressing <strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong> into near-term optimization.</p>
+				</li>
+			</ul>
+			<p><strong>PMS diagnosis (structural, not moral):</strong><br>Prognosis is not “forbidden” as information. It becomes PMS-incompatible the moment it functions as a <strong>closure generator</strong> (<strong>Λ (Non-Event)</strong> → certainty) or as a <strong>coercion warrant</strong> (<strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong> → <strong>E (Action)</strong> without <strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong> and <strong>D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations)</strong>).</p>
+			<hr>
+			<h3>5.2 Anticipation (PMS)</h3>
+			<p>Anticipation is not a forecast. It is a <strong>present structural stance</strong> that holds future possibilities and non-possibilities without converting them into authority. In PMS terms, anticipation is the disciplined carrying of <strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> under <strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong> and <strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong>, regulated by <strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong> and stabilized by <strong>Σ (Integration: synthesis of disparate or conflicting elements into a coherent whole)</strong> and <strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong>.</p>
+			<p>Core features:</p>
+			<ul>
+				<li>
+					<p><strong>Present structural stance</strong><br>Anticipation operates in the present: it shapes how uncertainty is carried, not what the future “is.”</p>
+				</li>
+				<li>
+					<p><strong>Viable under non-occurrence</strong><br>Anticipation remains coherent even if the event does not occur, because it explicitly retains <strong>Λ (Non-Event)</strong> as open.</p>
+				</li>
+				<li>
+					<p><strong>Responsibility without event-dependence</strong><br>Anticipation binds the anticipator through <strong>Ψ (Self-Binding)</strong> to consequence-handling under <strong>Ω (Asymmetry)</strong> and <strong>Θ (Temporality)</strong>—not to being “right.”</p>
+				</li>
+			</ul>
+			<h4>Preparedness distinction</h4>
+			<p>Preparedness or planning may emerge <em>downstream</em> of anticipation when <strong>Σ (Integration)</strong> is translated into <strong>E (Action)</strong>. However, anticipation itself does <strong>not</strong> mandate readiness, execution, or intervention.</p>
+			<p><strong>Structural constraint:</strong><br>Any planning derived from anticipation remains bounded by:</p>
+			<ul>
+				<li><strong>Χ (Distance)</strong> (no compulsion from probability),</li>
+				<li><strong>D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations)</strong> (no coercive handling of asymmetry),</li>
+				<li>and reversibility (no premature irreversible commitments while <strong>Λ (Non-Event)</strong> persists under <strong>Θ (Temporality)</strong>).</li>
+			</ul>
+			<div class="pagebreak"></div>
+			<h2>6. Types of Prognosis (For Structural Contrast)</h2>
+			<p>The table below classifies prognosis-types as praxeological patterns and specifies their PMS status. “Status” here is not a value judgment; it indicates whether the prognosis-type can be used <strong>as descriptive material</strong> without violating PMS entry conditions (<strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong>, reversibility, <strong>D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations)</strong>) and without forcing <strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong>-closure.</p>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Prognosis Type</th>
+						<th>Structural Basis</th>
+						<th>PMS Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Statistical</td>
+						<td><strong>Α (Attractor: recurrent pattern or behavioral stabilization built from repeated framed interactions and non-events)</strong> + <strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong></td>
+						<td>Permitted as descriptive input (non-authorizing)</td>
+					</tr>
+					<tr>
+						<td>Scenario-based</td>
+						<td><strong>□ (Frame: contextual structure that constrains and shapes impulses)</strong> + <strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong></td>
+						<td>Conditionally compatible (if <strong>Λ (Non-Event)</strong> remains open and <strong>Χ (Distance)</strong> remains active)</td>
+					</tr>
+					<tr>
+						<td>Strategic</td>
+						<td><strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong> → <strong>E (Action: integrated realization of directedness across time)</strong></td>
+						<td>High risk of <strong>Ω (Asymmetry)</strong> inflation; requires strong <strong>Χ (Distance)</strong> and <strong>D (Dignity-in-Practice)</strong> to remain PMS-valid</td>
+					</tr>
+					<tr>
+						<td>Preventive</td>
+						<td>Future harm used as intervention warrant (<strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> treated as settled)</td>
+						<td>PMS-incompatible if <strong>Λ (Non-Event)</strong> is closed into certainty or if reversibility is suspended</td>
+					</tr>
+					<tr>
+						<td>Moralized</td>
+						<td>Normative escalation (“must/should”) presented as obligation</td>
+						<td>Explicitly excluded (reintroduces normativity and coercive authority)</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3>Handling rule</h3>
+			<p>Prognoses may inform anticipation <strong>only as descriptive material</strong>: as inputs that enrich <strong>□ (Frame)</strong> and <strong>Α (Attractor)</strong> under <strong>Θ (Temporality)</strong>.</p>
+			<p>They become PMS-invalid once they:</p>
+			<ul>
+				<li>claim closure by converting <strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> into certainty (<strong>Λ (Non-Event)</strong> → “settled future truth”), or</li>
+				<li>authorize coercion by translating <strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong> directly into <strong>E (Action: integrated realization of directedness across time)</strong> <strong>without</strong> <strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong> and <strong>D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations)</strong>.</li>
+			</ul>
+			<p>In PMS terms: prognosis may supply <em>content</em>, but it must not supply <em>authority</em>.</p>
+			<div class="pagebreak"></div>
+			<h2>7. Structural Comparison of Anticipatory Configurations</h2>
+			<p>This section compares <strong>praxeological configurations</strong>—operator constellations that structure anticipation—rather than persons, intentions, or competencies. The comparison is strictly structural and PMS-conform.</p>
+			<h3>7.1 Comparison Frame (PMS-Conform)</h3>
+			<p>We compare <strong>praxeological configurations</strong>, not persons:</p>
+			<ul>
+				<li>
+					<p><strong>Configuration A (Action-Proximate):</strong><br>anticipatory · probabilistic · outcome-bound · action-proximate</p>
+				</li>
+				<li>
+					<p><strong>Configuration B (Restraint-Oriented):</strong><br>suspensive · criterial · outcome-agnostic · stability-oriented</p>
+				</li>
+			</ul>
+			<p>Central question:</p>
+			<blockquote>
+				<p><strong>Where does structural effectiveness (E (Action: integrated realization of directedness across time)) arise — and where structural durability (Σ (Integration: synthesis of disparate or conflicting elements into a coherent whole)) and (Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)) arise across time?</strong></p>
+			</blockquote>
+			<p><strong>Frame conditions:</strong><br>Both configurations operate under <strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong> and <strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong>. They differ in how <strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> is handled, how <strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong> is positioned, and how <strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong> is coupled to <strong>E (Action: integrated realization of directedness across time)</strong>.</p>
+			<hr>
+			<h3>7.2 Comparative Operator Profiles</h3>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Dimension</th>
+						<th>Action-Proximate Configuration</th>
+						<th>Restraint-Oriented Configuration</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Dominant operators</td>
+						<td><strong>Θ (Temporality)</strong> → <strong>Λ (Non-Event)</strong> → <strong>Α (Attractor: recurrent pattern or behavioral stabilization built from repeated framed interactions and non-events)</strong> → <strong>Σ (Integration: synthesis of disparate or conflicting elements into a coherent whole)</strong> → <strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong> → <strong>E (Action: integrated realization of directedness across time)</strong></td>
+						<td><strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong> → <strong>Σ (Integration: synthesis of disparate or conflicting elements into a coherent whole)</strong> → <strong>Θ (Temporality)</strong> → <strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong></td>
+					</tr>
+					<tr>
+						<td>Structural strength</td>
+						<td>Early <strong>E (Action)</strong> effectiveness</td>
+						<td>Long-run structural stability via <strong>Σ (Integration)</strong> and <strong>Ψ (Self-Binding)</strong></td>
+					</tr>
+					<tr>
+						<td>Primary risk</td>
+						<td>Misbinding of <strong>Ψ (Self-Binding)</strong> to outcomes (event-dependence)</td>
+						<td>Loss of momentum due to prolonged <strong>Χ (Distance)</strong></td>
+					</tr>
+					<tr>
+						<td>Ω-handling</td>
+						<td>Escalation-prone <strong>Ω (Asymmetry)</strong> due to proximity to <strong>E (Action)</strong></td>
+						<td>Power-disciplining <strong>Ω (Asymmetry)</strong> via sustained <strong>Χ (Distance)</strong></td>
+					</tr>
+					<tr>
+						<td>Λ-handling</td>
+						<td><strong>Λ (Non-Event)</strong> often closed into probability or certainty</td>
+						<td><strong>Λ (Non-Event)</strong> explicitly carried and preserved</td>
+					</tr>
+					<tr>
+						<td>Typical failure mode</td>
+						<td>Preventive overreach (<strong>Ω (Asymmetry)</strong> → <strong>E (Action)</strong> without sufficient <strong>Χ (Distance)</strong> and <strong>D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations)</strong>)</td>
+						<td>Delayed intervention despite rising <strong>Ω (Asymmetry)</strong></td>
+					</tr>
+				</tbody>
+			</table>
+			<p><strong>Interpretive note:</strong><br>The Action-Proximate configuration stabilizes anticipation by rapidly converting patterned expectations (<strong>Α</strong>) into integrated commitments (<strong>Σ</strong>) and enacted trajectories (<strong>E</strong>). The Restraint-Oriented configuration stabilizes anticipation by foregrounding <strong>Χ</strong> and deferring enactment until integration and self-binding can be maintained without collapsing <strong>Λ (Non-Event)</strong>.</p>
+			<hr>
+			<h3>7.3 Structural Trade-Off (PMS Core Insight)</h3>
+			<blockquote>
+				<p><strong>Effectiveness increases as Ψ (Self-Binding: formation of identity through commitment to integrated structures over time) approaches E (Action: integrated realization of directedness across time).</strong><br><strong>Stability increases as Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns) precedes E (Action: integrated realization of directedness across time).</strong></p>
+			</blockquote>
+			<p>These are <strong>incompatible optimizations</strong>, not errors.</p>
+			<p><strong>Formal implication:</strong><br>No single configuration maximizes both early effectiveness and long-term stability. Attempting to do so collapses either <strong>Χ (Distance)</strong> (leading to coercive actionism) or <strong>Λ (Non-Event)</strong> (leading to false certainty). PMS therefore treats the trade-off as structural, not corrigible by better information or higher intelligence.</p>
+			<p><img alt="Diagram 03: Structural trade-off between effectiveness and stability. As Self-Binding (Ψ) approaches Action (E), effectiveness increases; as Distance (Χ) precedes Action (E), structural stability increases. Both optimizations are mutually incompatible." src="img/diagram03.png">
+				<em>Figure 03. Structural trade-off. PMS treats effectiveness and stability as incompatible optimizations, not as errors correctable by better information or intelligence.</em>
+			</p>
+			<div class="pagebreak"></div>
+			<h2>8. Structural Risks of Anticipatory Thinking</h2>
+			<p>Anticipation, even when PMS-conform in intent, carries characteristic structural risks. These risks arise from operator misplacement, compression, or misbinding—not from “wrong beliefs.”</p>
+			<h3>8.1 Failure Modes</h3>
+			<ul>
+				<li>
+					<p><strong>Preemptive authoritarianism (Ω-inflation):</strong><br><strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong> is amplified and directly translated into <strong>E (Action: integrated realization of directedness across time)</strong> without sufficient <strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong> and <strong>D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations)</strong>.</p>
+				</li>
+				<li>
+					<p><strong>Probability-induced action compulsion:</strong><br>Probabilistic stabilization (<strong>Α (Attractor: recurrent pattern or behavioral stabilization built from repeated framed interactions and non-events)</strong>) is mistaken for closure, collapsing <strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> and pressuring premature <strong>E (Action: integrated realization of directedness across time)</strong> under <strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong>.</p>
+				</li>
+				<li>
+					<p><strong>Moralization of uncertainty:</strong><br><strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> is reframed as normative urgency, importing external obligation and bypassing <strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong>.</p>
+				</li>
+				<li>
+					<p><strong>Preventive escalation:</strong><br>Anticipation is used to justify irreversible commitments, suspending reversibility under <strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong> and intensifying <strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong>.</p>
+				</li>
+				<li>
+					<p><strong>IA_A ≫ E (over-reflection, under-enactment):</strong><br><strong>IA_A ≫ E (Excessive distance between A (Awareness: sustained framed differentiation over time) and E (Action: integrated realization of directedness across time): structural pattern where A (Awareness: sustained framed differentiation over time) inflates while E (Action: integrated realization of directedness across time) remains suppressed or chronically delayed)</strong> describes excessive expansion of evaluative or reflective space (structural distance between <strong>A (Awareness)</strong> and <strong>E (Action)</strong>) that suppresses <strong>Σ (Integration: synthesis of disparate or conflicting elements into a coherent whole)</strong> and delays <strong>E (Action)</strong> chronically.</p>
+				</li>
+			</ul>
+			<hr>
+			<h3>8.2 The Most Dangerous Error</h3>
+			<blockquote>
+				<p><strong>Using anticipation to legitimize intervention instead of binding oneself to restraint.</strong></p>
+			</blockquote>
+			<p><strong>Structural diagnosis:</strong><br>This error externalizes <strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong> (“others must act now”) while collapsing <strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong> and closing <strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong>. The result is a coercive trajectory where <strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong> is operationalized without <strong>D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations)</strong>, violating the PMS entry condition.</p>
+			<p><strong>PMS conclusion:</strong><br>Anticipation is structurally valid only when it increases the anticipator’s own binding to restraint and consequence-handling—<em>not</em> when it supplies authority to act upon others.</p>
+			<div class="pagebreak"></div>
+			<h2>9. Post-Confirmation Discipline: When Anticipation Is Validated</h2>
+			<p>This section addresses a structurally critical but often neglected phase: <strong>what happens when an anticipated event actually occurs</strong>. PMS treats confirmation not as success, but as a <strong>transition risk</strong>.</p>
+			<h3>9.1 The Structural Shift After Confirmation</h3>
+			<p>When an anticipated event <strong>does occur</strong>, the anticipatory configuration undergoes a non-trivial structural transition:</p>
+			<ul>
+				<li><strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> partially collapses into an event.</li>
+				<li>Temporal compression and pressure for immediacy increase under <strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong>, intensifying pressure toward enactment.</li>
+				<li><strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong> tends to inflate, as confirmation is socially and institutionally interpreted as epistemic authority.</li>
+			</ul>
+			<p>This transition is <strong>not neutral</strong>. It creates a new configuration in which anticipation is at risk of mutating into <strong>epistemic dominance</strong>—a shift from <em>structural discipline</em> to <em>claimed authority</em>.</p>
+			<p>PMS therefore treats confirmation as a <strong>second-order test</strong>: not of foresight accuracy, but of continued adherence to <strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong>, <strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong>, and <strong>D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations)</strong>.</p>
+			<p><img alt="Diagram 04: Post-confirmation transition risk. Event occurrence partially collapses Λ (Non-Event), increases temporal pressure under Θ (Temporality), and inflates Ω (Asymmetry), requiring reactivation of Χ (Distance) and renewed self-binding (Ψ)." src="img/diagram04.png">
+				<em>Figure 04. Confirmation as transition risk. In PMS, validation increases the obligation to restore distance and restraint rather than to accelerate action.</em>
+			</p>
+			<h3>9.2 Typical Post-Confirmation Failure Modes</h3>
+			<p>After confirmation, anticipatory praxis commonly collapses into one or more of the following structural failures:</p>
+			<ul>
+				<li>
+					<p><strong>Ψ-overbinding (Self-Binding misplacement):</strong><br><strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong> shifts from criteria and restraint to outcomes (“I was right → I am right again”), binding identity to correctness rather than to structure.</p>
+				</li>
+				<li>
+					<p><strong>Ω-inflation at the epistemic level:</strong><br>Correct anticipation is reinterpreted as superior authority, amplifying <strong>Ω (Asymmetry)</strong> beyond its original structural basis.</p>
+				</li>
+				<li>
+					<p><strong>Χ-erosion (Loss of Distance):</strong><br><strong>Χ (Distance)</strong> is dropped once validation is achieved, eliminating reflective restraint precisely when pressure to act increases.</p>
+				</li>
+				<li>
+					<p><strong>Λ-denial retroactively:</strong><br><strong>Λ (Non-Event)</strong> is rewritten as inevitability, erasing prior uncertainty and misrepresenting the original anticipatory stance.</p>
+				</li>
+			</ul>
+			<p>These failures do <strong>not</strong> invalidate the original anticipation. They constitute a <strong>betrayal of PMS at the moment of confirmation</strong>, when structural discipline is most needed.</p>
+			<h3>9.3 Structural Requirement: Re-Opening Distance</h3>
+			<blockquote>
+				<p><strong>Confirmation increases the obligation to restore Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns), not to abandon it.</strong></p>
+			</blockquote>
+			<p>PMS–ANTICIPATION therefore requires, after confirmation:</p>
+			<ul>
+				<li>explicit re-suspension of closure claims (<strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> is never fully eliminated)</li>
+				<li>renewed acknowledgment of contingency under <strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong></li>
+				<li>refusal to generalize from single confirmations into enduring authority (<strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong> containment)</li>
+			</ul>
+			<p>Anticipation remains PMS-valid <strong>only if confirmation does not become authorization</strong>. Structural maturity is demonstrated not by acting faster after being right, but by <strong>binding oneself more tightly to restraint</strong>.</p>
+			<div class="pagebreak"></div>
+			<h2>10. Possible Advantages (Without Success Claims)</h2>
+			<p>The following advantages are <strong>structural potentials</strong>, not performance guarantees. They arise only when PMS conditions remain intact.</p>
+			<ul>
+				<li>
+					<p><strong>Reduced surprise amplitude:</strong><br>Carrying <strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> under <strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong> softens discontinuities when events occur.</p>
+				</li>
+				<li>
+					<p><strong>Higher crisis resilience:</strong><br>Sustained <strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong> and <strong>Σ (Integration: synthesis of disparate or conflicting elements into a coherent whole)</strong> prevent collapse into reactive actionism.</p>
+				</li>
+				<li>
+					<p><strong>Early self-binding:</strong><br><strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong> can be established <em>before</em> outcomes, stabilizing responsibility independently of success.</p>
+				</li>
+				<li>
+					<p><strong>Escalation dampening:</strong><br>Disciplined handling of <strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong> prevents confirmation-driven power inflation.</p>
+				</li>
+				<li>
+					<p><strong>Protection of vulnerable positions:</strong><br><strong>D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations)</strong> is preserved by maintaining restraint even when epistemic confidence increases.</p>
+				</li>
+			</ul>
+			<p>These advantages persist <strong>even if the anticipated event never occurs</strong>, which is the core test of PMS validity.</p>
+			<div class="pagebreak"></div>
+			<h2>11. Possible Disadvantages</h2>
+			<p>Anticipatory praxis also introduces real structural costs and risks, which PMS makes explicit rather than denying.</p>
+			<ul>
+				<li>
+					<p><strong>Increased cognitive and structural load:</strong><br>Carrying <strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> and sustaining <strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong> over time under <strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong> is structurally demanding.</p>
+				</li>
+				<li>
+					<p><strong>Risk of self-overestimation:</strong><br>Repeated confirmation may harden <strong>Α (Attractor: recurrent pattern or behavioral stabilization built from repeated framed interactions and non-events)</strong> around “being right,” destabilizing <strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong>.</p>
+				</li>
+				<li>
+					<p><strong>Delayed action:</strong><br>Strong prioritization of <strong>Χ (Distance)</strong> and <strong>Σ (Integration: synthesis of disparate or conflicting elements into a coherent whole)</strong> may postpone <strong>E (Action: integrated realization of directedness across time)</strong> beyond optimal windows.</p>
+				</li>
+				<li>
+					<p><strong>Misuse as power instrument:</strong><br>Anticipation can be weaponized by translating epistemic stance into <strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong> without <strong>D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations)</strong>.</p>
+				</li>
+				<li>
+					<p><strong>Misinterpretation as “knowing better”:</strong><br>External observers may read structural restraint as hidden authority, projecting dominance where PMS enforces humility.</p>
+				</li>
+			</ul>
+			<hr>
+			<p><strong>PMS conclusion:</strong><br>Anticipation does not fail because it is wrong. It fails when <strong>confirmation collapses distance</strong>, <strong>authority replaces restraint</strong>, and <strong>self-binding migrates from structure to outcome</strong>. The true measure of anticipatory maturity lies <em>after</em> being right.</p>
+			<div class="pagebreak"></div>
+			<h2>12. Anticipation and Responsibility</h2>
+			<blockquote>
+				<p><strong>Anticipation does not authorize action —
+					it deepens responsibility for restraint.</strong>
+				</p>
+			</blockquote>
+			<p>Within PMS, responsibility is not an after-the-fact moral assessment but a <strong>structural condition that precedes outcomes</strong>. Responsibility emerges where <strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong> intersects with <strong>Ω (Asymmetry: structural imbalance of power, exposure, capacity, or obligation)</strong> across <strong>Θ (Temporality: temporal structuring enabling trajectories and commitments)</strong>.</p>
+			<p>Anticipation intensifies responsibility <strong>before</strong> events occur because it renders potential consequences structurally visible without claiming closure. This visibility does not license intervention; it <strong>binds the anticipator to criteria of restraint</strong>.</p>
+			<p>Key structural constraints:</p>
+			<ul>
+				<li>
+					<p><strong>Capacity-bounded attribution:</strong><br>Responsibility attaches <strong>only</strong> where effective, frame-bound capacity exists (<strong>□ (Frame: contextual structure that constrains and shapes impulses)</strong>). Where access, authority, means, or temporal availability are absent, anticipation does not generate responsibility.</p>
+				</li>
+				<li>
+					<p><strong>Non-outcome dependency:</strong><br>Responsibility does not increase because an anticipation was confirmed. It exists <strong>independently of validation</strong>, grounded in <strong>Ψ (Self-Binding)</strong> rather than correctness.</p>
+				</li>
+				<li>
+					<p><strong>Asymmetry discipline:</strong><br>Anticipatory insight must not be translated into coercive leverage. <strong>Ω (Asymmetry)</strong> increases responsibility for protection, not entitlement to act.</p>
+				</li>
+			</ul>
+			<p>In PMS terms, responsibility is sustained only if <strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong> remains active, preventing the slide from foresight into dominance.</p>
+			<div class="pagebreak"></div>
+			<h2>13. Anticipation and Dignity-in-Practice (D)</h2>
+			<p>Anticipation is PMS-valid <strong>only if</strong> it preserves <strong>D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations)</strong>.</p>
+			<p>This yields three non-negotiable conditions:</p>
+			<ul>
+				<li>
+					<p><strong>No fear production:</strong><br>Anticipation must not amplify threat narratives or urgency that collapse <strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong>. Fear-driven anticipation converts <strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong> into inevitability, violating PMS.</p>
+				</li>
+				<li>
+					<p><strong>No coercion generation:</strong><br>Anticipation must not be used to justify pressure, compulsion, or preemption. Translating anticipation directly into <strong>E (Action: integrated realization of directedness across time)</strong> without renewed justification inflates <strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong> and erodes dignity.</p>
+				</li>
+				<li>
+					<p><strong>No replacement of justification:</strong><br>Anticipation cannot substitute for reasons. Even when outcomes align, justification must be re-articulated under present conditions (<strong>Φ (Recontextualization: transformation via embedding an existing structure into a new frame)</strong>), not imported from prior expectations.</p>
+				</li>
+			</ul>
+			<p>Dignity-in-Practice is therefore a <strong>precondition</strong>, not an achievement. It constrains anticipatory praxis from the outset and remains binding <strong>after confirmation</strong>, when the temptation to dominate is strongest.</p>
+			<div class="pagebreak"></div>
+			<h2>14. Delimitations (Optional / Peer Review)</h2>
+			<p>PMS–ANTICIPATION is explicitly delimited from adjacent frameworks:</p>
+			<ul>
+				<li>
+					<p><strong>Not virtue ethics:</strong><br>No character traits or moral excellences are inferred; analysis remains structural.</p>
+				</li>
+				<li>
+					<p><strong>Not utilitarian calculus:</strong><br>No aggregation of outcomes or maximization logic; non-events (<strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame)</strong>) remain structurally significant.</p>
+				</li>
+				<li>
+					<p><strong>Not pragmatism:</strong><br>No truth-by-success criterion; viability is assessed by stability under non-occurrence.</p>
+				</li>
+				<li>
+					<p><strong>Not risk theory:</strong><br>No probabilistic optimization or risk minimization; probabilities may inform frames (<strong>□ (Frame: contextual structure that constrains and shapes impulses)</strong>) but cannot close <strong>Λ (Non-Event)</strong>.</p>
+				</li>
+				<li>
+					<p><strong>Not decision theory:</strong><br>No choice-optimization model; anticipation does not culminate in decision mandates.</p>
+				</li>
+			</ul>
+			<p>These delimitations are not exclusions of relevance but <strong>boundary conditions</strong> preserving PMS validity.</p>
+			<div class="pagebreak"></div>
+			<h2>15. Conclusion &amp; Closing Formula</h2>
+			<p>PMS–ANTICIPATION reframes anticipation as a <strong>discipline of restraint under uncertainty</strong>, not a technology of foresight. Its central achievement is not being right earlier, but <strong>remaining bound to distance, dignity, and self-binding when rightness tempts authority</strong>.</p>
+			<blockquote>
+				<p><strong>Anticipation is not about being early —
+					it is about being bound before acting.</strong>
+				</p>
+			</blockquote>
+			<p>In PMS terms, maturity is demonstrated where <strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns)</strong> persists through confirmation, <strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time)</strong> remains criterion-bound rather than outcome-bound, and <strong>D (Dignity-in-Practice: self-bound reflective restraint and protection in asymmetrical relations)</strong> constrains the handling of <strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation)</strong> across <strong>Θ (Temporality: temporal structuring that enables trajectories, commitments and development)</strong>—whether or not the anticipated event ever occurs.</p>
+			<div class="pagebreak"></div>
+			<h2>Methodological Appendix: How to Apply PMS–ANTICIPATION Without Betraying PMS</h2>
+			<h3>A. What This Appendix Is (and Is Not)</h3>
+			<p><strong>Is:</strong></p>
+			<ul>
+				<li>a <strong>discipline of application</strong></li>
+				<li>a <strong>misuse-prevention layer</strong></li>
+				<li>a <strong>reviewer-facing safeguard</strong></li>
+			</ul>
+			<p><strong>Is not:</strong></p>
+			<ul>
+				<li>a how-to guide for action</li>
+				<li>a decision framework</li>
+				<li>an ethical doctrine</li>
+			</ul>
+			<h2>B. Minimal Application Protocol (MAP)</h2>
+			<p>Any PMS–ANTICIPATION analysis must explicitly answer <strong>all five</strong> questions:</p>
+			<h3>1. Frame Validity Check</h3>
+			<p><strong>□ (Frame: contextual structure that constrains and shapes impulses):</strong></p>
+			<ul>
+				<li>What is the concrete role space?</li>
+				<li>Where does influence actually exist?</li>
+				<li>What is <em>out of scope</em>?</li>
+			</ul>
+			<blockquote>
+				<p>❌ Global anticipation without a frame = PMS-invalid.</p>
+			</blockquote>
+			<hr>
+			<h3>2. Non-Event Integrity Check</h3>
+			<p><strong>Λ (Non-Event: structured absence; meaningful failure or delay of an expected occurrence within a frame):</strong></p>
+			<ul>
+				<li>What <em>might not</em> happen?</li>
+				<li>What absences are structurally decisive?</li>
+				<li>Where is closure pressure appearing?</li>
+			</ul>
+			<blockquote>
+				<p>❌ Treating absence as “unlikely but irrelevant” = prognosis drift.</p>
+			</blockquote>
+			<hr>
+			<h3>3. Asymmetry Audit</h3>
+			<p><strong>Ω (Asymmetry: structural imbalance that establishes directionality of power, exposure, capacity or obligation):</strong></p>
+			<ul>
+				<li>Who carries exposure?</li>
+				<li>Who carries capacity?</li>
+				<li>Who bears irreversible cost?</li>
+			</ul>
+			<blockquote>
+				<p>❌ Anticipation under Ω without restraint = latent coercion.</p>
+			</blockquote>
+			<hr>
+			<h3>4. Distance Enforcement</h3>
+			<p><strong>Χ (Distance: reflective withdrawal that attenuates immediate impulses and patterns):</strong></p>
+			<ul>
+				<li>Where is action pressure rising?</li>
+				<li>Where is probability used rhetorically?</li>
+				<li>Where is urgency replacing structure?</li>
+			</ul>
+			<blockquote>
+				<p>❌ Any analysis that <em>demands</em> action has already left PMS.</p>
+			</blockquote>
+			<hr>
+			<h3>5. Self-Binding Test</h3>
+			<p><strong>Ψ (Self-Binding: formation of identity through commitment to integrated structures over time):</strong></p>
+			<ul>
+				<li>Who is bound by this anticipation?</li>
+				<li>Is binding internal or externalized?</li>
+				<li>Does the anticipator carry consequence?</li>
+			</ul>
+			<blockquote>
+				<p>❌ “Others must act now” = structural betrayal.</p>
+			</blockquote>
+			<h2>C. Red-Flag Patterns (Immediate PMS Invalidity)</h2>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Pattern</th>
+						<th>Structural Diagnosis</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>“We must act because…”</td>
+						<td>Λ collapsed</td>
+					</tr>
+					<tr>
+						<td>“The data clearly shows…”</td>
+						<td>Α → certainty</td>
+					</tr>
+					<tr>
+						<td>“Responsibility demands intervention”</td>
+						<td>Ω instrumentalized</td>
+					</tr>
+					<tr>
+						<td>“Delay is irresponsible”</td>
+						<td>Χ suspended</td>
+					</tr>
+					<tr>
+						<td>“They should have known”</td>
+						<td>retroactive guilt</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2>D. PMS-Compatible Outputs (What You <em>May</em> Produce)</h2>
+			<p>✔ Structural mappings<br>✔ Risk articulation without prescriptions<br>✔ Constraint descriptions<br>✔ Capacity-bounded responsibility attribution<br>✔ Post-confirmation restraint requirements  </p>
+			<p>❌ Action mandates<br>❌ Moral imperatives<br>❌ Optimization advice<br>❌ Agent ranking<br>❌ Certainty claims  </p>
+			<hr>
+			<h2>E. Meta-Rule (Self-Application Clause)</h2>
+			<blockquote>
+				<p><strong>Any use of PMS–ANTICIPATION is itself subject to PMS.</strong></p>
+			</blockquote>
+			<p>If, during application:</p>
+			<ul>
+				<li><strong>Χ (Distance)</strong> is dropped to “be clearer”</li>
+				<li><strong>Ψ (Self-Binding)</strong> is shifted to others</li>
+				<li><strong>D (Dignity-in-Practice)</strong> is relaxed for efficiency</li>
+			</ul>
+			<p>→ the analysis is <strong>not mistaken</strong>, but <strong>formally invalid</strong>.</p>
+			<hr>
+			<h2>Closing Note (Appendix)</h2>
+			<p>PMS–ANTICIPATION is hardest <strong>where it matters most</strong>:<br>under pressure, confirmation, asymmetry, and urgency.</p>
+			<p>Its value lies not in better foresight,<br>but in <strong>making betrayal of restraint structurally visible</strong>.</p>
+		</section>
+	</body>
+</html>
