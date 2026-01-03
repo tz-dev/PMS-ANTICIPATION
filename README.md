@@ -107,6 +107,51 @@ PMS–ANTICIPATION shows what follows when that grammar is applied to:
 
 ---
 
+## Repository Layout
+
+This repository ships the PMS–ANTICIPATION paper in three formats (Markdown / HTML / PDF), plus shared assets (CSS + figures) and five fully worked examples (each as `.md` and `.html`).
+
+```text
+PMS–ANTICIPATION/
+├── README.md
+├── LICENSE
+├── PMS–ANTICIPATION.md
+├── PMS–ANTICIPATION.html
+├── PMS–ANTICIPATION.pdf
+├── css/
+│   └── main.css
+├── img/
+│   ├── diagram01.png
+│   ├── diagram02.png
+│   ├── diagram03.png
+│   └── diagram04.png
+└── examples/
+    ├── Example 1 - AI Safety Regimes That Become Riskier After First Success.md
+    ├── Example 1 - AI Safety Regimes That Become Riskier After First Success.html
+    ├── Example 2 - Preventive Security Policy Without a Clear Adversary.md
+    ├── Example 2 - Preventive Security Policy Without a Clear Adversary.html
+    ├── Example 3 - Organizations That Die from Too Much Prudence.md
+    ├── Example 3 - Organizations That Die from Too Much Prudence.html
+    ├── Example 4 - Morally High Movements That End Up Coercive.md
+    ├── Example 4 - Morally High Movements That End Up Coercive.html
+    ├── Example 5 - Tragic Conflicts Misread as Failure.md
+    └── Example 5 - Tragic Conflicts Misread as Failure.html
+```
+
+The **canonical source** is `PMS–ANTICIPATION.md`.  
+All examples are provided as **paired Markdown + HTML mirrors** for consistent reading and rendering.
+
+### What’s where
+
+* **`PMS–ANTICIPATION.md`** — canonical source (human-readable Markdown)
+* **`PMS–ANTICIPATION.html`** — rendered web version (uses `css/main.css` and `img/*`)
+* **`PMS–ANTICIPATION.pdf`** — print/PDF version
+* **`css/main.css`** — styling for the HTML artefacts
+* **`img/diagram01.png` … `diagram04.png`** — figures referenced by the paper
+* **`examples/`** — five uniform, fully worked example applications (each as `.md` and `.html`)
+
+---
+
 ## Structural Contributions
 
 ### 1. Anticipation Reframed (Non-Prognostic)
