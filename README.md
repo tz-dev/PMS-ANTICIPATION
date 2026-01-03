@@ -2,12 +2,11 @@
 
 **Structural Conditions, Risks, and Viability of Anticipatory Praxis**
 
-**PMS–ANTICIPATION is a formal application of the Praxeological Meta-Structure (PMS)** — a generative operator framework (Δ–Ψ) for modelling praxis, asymmetry, temporality, and self-binding.  
+**PMS–ANTICIPATION is a formal application of the [Praxeological Meta-Structure (PMS)](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)** — a generative operator framework (Δ–Ψ) for modelling praxis, asymmetry, temporality, and self-binding.  
+
 While PMS provides the **canonical operator grammar** for analysing action and non-action, PMS–ANTICIPATION reconstructs a widely misunderstood practical posture: **anticipation**.
 
-Building explicitly on PMS as its structural foundation  
-(see: https://github.com/tz-dev/Praxeological-Meta-Structure-Theory),  
-this project does **not modify or extend the PMS operator set**, but uses it **strictly as specified** to show:
+Building explicitly on the PMS as its structural foundation, this project does **not modify or extend the PMS operator set**, but uses it **strictly as specified** to show:  
 
 * why anticipation is **not** prediction, control, intelligence, or action advantage,
 * how anticipation is a **present structural stance** toward possible events and **non-events (Λ)**,
