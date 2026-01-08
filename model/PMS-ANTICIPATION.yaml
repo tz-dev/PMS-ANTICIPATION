@@ -1,0 +1,452 @@
+# =============================================================================
+#  PMS-PAPER APPLICATION PROFILE (OVERLAY)
+#
+#  Repo:           https://github.com/tz-dev/PMS-ANTICIPATION
+#  File:           pms-anticipation.yaml
+#  Version:        PMS-ANTICIPATION_1.0 (draft)
+#  Last Updated:   2026-01-08
+#
+#  Summary:
+#    This document defines a paper-specific APPLICATION PROFILE for the
+#    Praxeological Meta-Structure (PMS). It provides a structural overlay
+#    for the lens of ANTICIPATION, expressed strictly in the canonical PMS
+#    operator grammar (Δ–Ψ).
+#
+#  Relationship to PMS (non-negotiable):
+#    - Depends on the canonical PMS base specification (schema_version: PMS_1.1).
+#    - Does NOT redefine Δ–Ψ, does NOT add new meta-axioms, and does NOT
+#      modify operator dependencies or derived axes.
+#    - Introduces ONLY overlay-level constructs: reduced signatures,
+#      drift markers, comparison profiles, protocols, and example schemas.
+#
+#  Validity Gate (PMS entry condition — application-only):
+#    Any USE of this profile as PMS-application presupposes:
+#      - Χ (distance),
+#      - reversibility (scene-bound, revisable readings),
+#      - D (dignity-in-practice; no shaming/ranking; structure-only critique).
+#    This gate constrains application, not critique or rejection.
+#
+#  Canonical Operator Source:
+#    PMS.yaml (schema_version: PMS_1.1)
+#    https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml
+# =============================================================================
+
+schema_version: "PMS-ANTICIPATION_1.0"
+schema_meta:
+  model_name: "PMS–ANTICIPATION Application Profile"
+  model_short: "PMS-ANTICIPATION"
+  status: "draft"
+  last_updated: "2026-01-08"
+  authors:
+    - name: "T. Zöller"
+      role: "originator"
+    - name: "ChatGPT (GPT-5.2 Thinking)"
+      role: "formalization_assistant"
+  depends_on:
+    model_name: "Praxeological Meta-Structure"
+    model_short: "PMS"
+    schema_version: "PMS_1.1"
+  description: >
+    APPLICATION PROFILE for PMS that formalizes ANTICIPATION as a structurally
+    disciplined present stance under Λ (Non-Event) and Θ (Temporality) in the
+    presence of Ω (Asymmetry), sustained by Χ (Distance), Σ (Integration), and
+    Ψ (Self-Binding) — without redefining PMS operators or altering dependencies.
+    Provides reduced signatures, validity criteria, contrast frames to prognosis,
+    drift markers, post-confirmation discipline, and a minimal application protocol.
+
+validity_gate:
+  note: >
+    This gate constrains PMS-application only (not critique or rejection).
+  requires:
+    - id: "Χ"
+      name: "Distance"
+      meaning: "meta-position / stop-capability; no fusion into verdict"
+    - id: "reversibility"
+      meaning: "scene-bound, revisable readings; no global person labels"
+    - id: "D"
+      name: "Dignity-in-practice"
+      meaning: "no shaming/ranking; structure-only critique of configurations"
+
+operator_reference:
+  source: "PMS.yaml"
+  schema_version: "PMS_1.1"
+  fixed_set: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+  dependency_hygiene_note: >
+    Any use of Χ in reduced signatures is shorthand only; in PMS, Χ depends on
+    Φ, Θ, and □. Reduced signatures do not negate prerequisites.
+
+overlays: {}
+
+paper_lens:
+  name: "Anticipation"
+  definition: >
+    Anticipation is the structurally disciplined handling of possible future
+    events and non-events under asymmetry (Ω), without closure claims.
+  non_negotiable_constraints:
+    - id: "discipline"
+      meaning: >
+        Anticipation is regulated by Χ/Σ/Ψ: impulses, uncertainties, and frames
+        are coordinated without totalization or authority claims.
+    - id: "non_event_centrality"
+      meaning: >
+        Anticipation structurally carries Λ (Non-Event) inside □ (Frame) rather
+        than converting absence into settled future truth.
+    - id: "no_closure_claims"
+      meaning: >
+        Anticipation does not translate the possible into certainty, nor the
+        probable into authorization (especially under Ω and Θ).
+
+lens_operator_roles:
+  note: >
+    These are paper-specific roles (overlay semantics), not operator redefinitions.
+  roles:
+    "Δ":
+      anticipation_role: "Marks a bounded anticipatory object without valuation or truth-claim."
+    "∇":
+      anticipation_role: "Introduces directional tension; also the closure-drive that must be regulated downstream."
+    "□":
+      anticipation_role: "Binds anticipation to a concrete role-space and scope; prevents global projection."
+    "Λ":
+      anticipation_role: "Core discipline: carries meaningful absence ('may not happen') as structurally decisive."
+    "Α":
+      anticipation_role: "Encodes repetition/path-dependence; stabilizes (or hardens) anticipatory patterns over time."
+    "Ω":
+      anticipation_role: "Makes restraint consequential: uneven exposure/capacity creates risk of dominance."
+    "Θ":
+      anticipation_role: "Introduces irreversibility: accumulating costs, closing windows, durable consequences."
+    "Φ":
+      anticipation_role: "Allows adaptation to new information without retroactive innocence or narrative collapse."
+    "Χ":
+      anticipation_role: "Stop-capability: prevents closure, coercion, and premature enactment under pressure."
+    "Σ":
+      anticipation_role: "Coordinates multiple signals/pressures while keeping Λ open (integration without totalization)."
+    "Ψ":
+      anticipation_role: "Stabilizing fixpoint: binds the anticipator to restraint/consequence-handling (not others)."
+
+derived_axes_reference:
+  note: "Axes are canonical PMS derived structures; this profile only states relevance under the anticipation lens."
+  relevance:
+    A:
+      name: "Awareness"
+      note: "Sustains framed differentiation over time without escalating into certainty."
+    C:
+      name: "Coherence"
+      note: "Maintains anticipatory narratives stable under non-occurrence and delay."
+    R:
+      name: "Responsibility"
+      note: "Attaches where capacity exists; binds through Ψ under Ω and Θ, not through being 'right'."
+    E:
+      name: "Action"
+      note: "May occur downstream, but never follows from anticipation without Χ + D + reversibility."
+    D:
+      name: "Dignity-in-practice"
+      note: "Non-coercive handling of Ω; tested especially after confirmation."
+
+reduced_signatures:
+  ANT_min:
+    label: "Minimal anticipatory stance (reduced signature)"
+    operators: ["Δ", "□", "Λ", "Θ", "Χ"]
+    note: >
+      Minimal anticipation is present when a bounded possibility (Δ in □) remains
+      structurally open (Λ) under irreversibility (Θ) with sustained restraint (Χ).
+      This chain is explicitly not action-authorizing.
+  ANT_viable_full:
+    label: "Viable anticipatory configuration (full PMS chain)"
+    operators: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+    note: >
+      Mature anticipation disciplines impulse (∇), carries openness (Λ), recognizes
+      pattern stabilization (Α), handles asymmetry (Ω) across time (Θ), adapts (Φ),
+      preserves distance (Χ), integrates without closure (Σ), and binds the
+      anticipator (Ψ).
+  ANT_to_planning_constraint:
+    label: "Constraint for any downstream planning / preparedness"
+    is_operator: false
+    requires: ["Χ", "D", "reversibility"]
+    note: >
+      Planning may emerge downstream as a derived praxis form, but must not convert
+      probability into compulsion or authority while Λ persists under Θ.
+
+criteria:
+  viability_positive:
+    - id: "Λ_carried"
+      meaning: "Λ is carried, not resolved; openness remains structurally active."
+    - id: "Θ_respected"
+      meaning: "Θ is respected, not compressed; irreversibility and delayed feedback are acknowledged."
+    - id: "Χ_active"
+      meaning: "Χ remains active even under high probability; 'likely' does not become 'authorized'."
+    - id: "Ψ_binds_self"
+      meaning: "Ψ binds the anticipator, not others; binding is not externalized as obligation."
+    - id: "Σ_integrates_openness"
+      meaning: "Σ coordinates uncertainty and conflict without producing false certainty (no totalization)."
+  viability_definition:
+    label: "Viability (PMS definition)"
+    definition: >
+      An anticipatory configuration is viable if it remains coherent (C) under Λ
+      and responsibility-bearing (R) under Ω and Θ, without collapsing Χ.
+    success_independence_note: >
+      Viability is independent of being 'right': it remains accountable and stable
+      even if the anticipated event does not occur.
+  formal_invalidity_negative:
+    - id: "certainty_replaces_Λ"
+      marker: "Λ replaced by certainty"
+      structural_effect: "closure shift; future treated as settled"
+    - id: "actionism_neutralizes_Θ"
+      marker: "Θ neutralized by action compulsion"
+      structural_effect: "irreversibility denied; trajectory weight ignored"
+    - id: "Χ_suspended"
+      marker: "Χ suspended ('I know better')"
+      structural_effect: "distance collapses into authority"
+    - id: "Ω_instrumentalized"
+      marker: "Ω instrumentalized"
+      structural_effect: "power gradient used to enforce compliance"
+    - id: "Ψ_externalized"
+      marker: "Ψ externalized ('others must act now')"
+      structural_effect: "binding shifted outward; pathway to coercion/moralization"
+
+contrast_frames:
+  anticipation_vs_prognosis:
+    prognosis:
+      characterization: "Future-truth claim treated as true-enough to justify coordination."
+      core_features:
+        - "Claim about future truth (closure pressure on Λ)."
+        - "Hit/miss evaluation by correspondence."
+        - "Success-oriented pull toward near-term optimization and action."
+      pms_status_note: >
+        Prognosis may be used as descriptive input, but becomes PMS-incompatible
+        when it supplies authority (especially by closing Λ, suspending Χ, or eroding D).
+    anticipation:
+      characterization: "Present structural stance: carrying uncertainty without closure claims."
+      core_features:
+        - "Operates in the present (stance, not forecast)."
+        - "Viable under non-occurrence (Λ explicitly retained)."
+        - "Responsibility without event-dependence (Ψ binds under Ω and Θ)."
+      preparedness_distinction_note: >
+        Preparedness/planning may emerge downstream; anticipation itself does not
+        mandate readiness, execution, or intervention.
+      downstream_constraints: ["Χ", "D", "reversibility"]
+
+prognosis_contrast:
+  types:
+    - id: "statistical"
+      structural_basis: ["Α", "Θ"]
+      pms_status: "Permitted as descriptive input (non-authorizing)."
+    - id: "scenario_based"
+      structural_basis: ["□", "Λ", "Χ"]
+      pms_status: "Permitted if Λ remains open and Χ remains active."
+    - id: "strategic"
+      structural_basis: ["Ω", "Θ"]
+      pms_status: "Requires explicit Χ and D to remain PMS-valid."
+    - id: "preventive"
+      structural_basis: ["Λ", "Ω", "Θ"]
+      pms_status: "Becomes PMS-invalid if Λ is closed into certainty or reversibility is suspended."
+    - id: "moralized"
+      structural_basis: ["Ω", "Ψ"]
+      pms_status: "Excluded (reintroduces coercive authority via normative escalation)."
+  handling_rule:
+    note: >
+      Prognoses may inform anticipation only as descriptive material, reprocessed
+      through □ and Α under Θ. In PMS terms: prognosis may supply content, but must
+      not supply authority.
+    invalidity_triggers:
+      - "Λ → settled future truth (closure)."
+      - "Ω → coercion warrant (erodes D)."
+
+configuration_comparison:
+  note: "Compares configurations, not persons."
+  configurations:
+    action_proximate:
+      descriptors: ["anticipatory", "probabilistic", "outcome-bound", "action-proximate"]
+      structural_strength: "Early E effectiveness"
+      primary_risk: "Outcome-binding of Ψ; closure drift; escalation-prone Ω"
+      typical_failure_mode: "Preventive overreach (Ω instrumentalization)"
+    restraint_oriented:
+      descriptors: ["suspensive", "criterial", "outcome-agnostic", "stability-oriented"]
+      structural_strength: "Long-term stability via Σ and Ψ (without collapsing Λ)"
+      primary_risk: "Loss of momentum due to prolonged Χ; delayed intervention"
+      typical_failure_mode: "Delayed action despite rising Ω and closing Θ-windows"
+  core_tradeoff:
+    statement: >
+      Effectiveness increases as Ψ binds toward E; stability increases as Χ binds
+      away from E. These are incompatible optimizations (structural, not corrigible
+      by better information).
+
+risk_and_failure_modes:
+  failure_modes:
+    - id: "preemptive_authoritarianism"
+      label: "Preemptive authoritarianism (Ω-inflation)"
+      typical_marker: "Anticipatory stance becomes power instrument."
+      invalidity_links: ["Ω_instrumentalized", "Χ_suspended", "Ψ_externalized"]
+    - id: "probability_action_compulsion"
+      label: "Probability-induced action compulsion"
+      typical_marker: "Probability rhetoric produces 'must act' compulsion."
+      invalidity_links: ["actionism_neutralizes_Θ", "Χ_suspended", "certainty_replaces_Λ"]
+    - id: "moralization_of_uncertainty"
+      label: "Moralization of uncertainty"
+      typical_marker: "Λ is treated as moral warrant; pressure framed as virtue."
+      invalidity_links: ["certainty_replaces_Λ", "Ψ_externalized", "Ω_instrumentalized"]
+    - id: "preventive_escalation"
+      label: "Preventive escalation"
+      typical_marker: "Irreversible commitments justified before Λ is resolved."
+      invalidity_links: ["actionism_neutralizes_Θ", "Ω_instrumentalized", "reversibility"]
+    - id: "IA_A_greater_than_E"
+      label: "IA_A ≫ E (over-reflection, under-enactment)"
+      typical_marker: "Chronic delay of E due to sustained distancing without consolidation."
+      related_pms_pattern: "IA_A>>E (from PMS base spec)"
+  most_dangerous_error:
+    statement: "Using anticipation to legitimize intervention instead of binding oneself to restraint."
+    structural_diagnosis: >
+      This externalizes Ψ and collapses Χ under Ω/Θ pressure, violating the PMS
+      entry condition and eroding D.
+    pms_conclusion: >
+      Anticipation is structurally valid only when it increases the anticipator’s
+      obligation to restraint and consequence-handling — not when it supplies authority.
+
+post_confirmation_discipline:
+  structural_shift_after_confirmation:
+    notes:
+      - "Λ partially collapses into an event; pressure for immediacy increases under Θ."
+      - "Ω may be socially reinterpreted as epistemic authority (risk)."
+      - "Confirmation is a second-order test: validation must restore restraint, not accelerate dominance."
+  typical_failure_modes:
+    - id: "psi_overbinding"
+      label: "Ψ-overbinding (binding identity to correctness)"
+    - id: "omega_epistemic_inflation"
+      label: "Ω-inflation at epistemic level (validation → superiority claim)"
+    - id: "chi_erosion"
+      label: "Χ-erosion (loss of distance after being right)"
+    - id: "lambda_rewrite"
+      label: "Λ-denial retroactively (rewriting uncertainty as inevitability)"
+  requirement_reopen_distance:
+    core_claim: "Confirmation increases the obligation to restore Χ, not to abandon it."
+    required_moves:
+      - "Re-suspend closure claims (Λ is never fully eliminated)."
+      - "Renew contingency acknowledgment under Θ."
+      - "Refuse generalization from single confirmations into enduring Ω dominance."
+
+structural_potentials_and_costs:
+  possible_advantages:
+    - "Reduced surprise amplitude (carrying Λ under Θ softens discontinuities)."
+    - "Higher crisis resilience (Χ + Σ prevent reactive actionism collapse)."
+    - "Early self-binding (Ψ stabilizes responsibility independent of outcomes)."
+    - "Escalation dampening (disciplined Ω handling prevents power inflation)."
+    - "Protection of vulnerable positions (D preserved especially after confirmation)."
+  possible_disadvantages:
+    - "Increased cognitive/structural load (carrying Λ under Θ is demanding)."
+    - "Risk of self-overestimation (confirmation hardens Α and misplaces Ψ)."
+    - "Delayed action (strong Χ/Σ can overshoot closing Θ-windows)."
+    - "Misuse as power instrument (stance weaponized; erodes D)."
+    - "Misinterpretation as 'knowing better' (others project dominance onto restraint)."
+  conclusion_note: >
+    Anticipation fails structurally not by being wrong, but by betraying restraint
+    when rightness tempts authority.
+
+responsibility_and_dignity_links:
+  responsibility:
+    core_claim: "Anticipation does not authorize action — it deepens responsibility for restraint."
+    constraints:
+      - id: "capacity_bounded_attribution"
+        meaning: "Responsibility attaches only where effective, frame-bound influence exists."
+      - id: "non_outcome_dependency"
+        meaning: "Responsibility is grounded in Ψ (commitment), not correctness."
+      - id: "asymmetry_discipline"
+        meaning: "Anticipatory insight increases protection-duty under Ω, not entitlement to act."
+      - id: "distance_sustained"
+        meaning: "Responsibility is sustained only if Χ remains active under Θ and Ω."
+  dignity_in_practice:
+    core_claim: "Anticipation is PMS-valid only if it preserves D under Ω (especially after confirmation)."
+    non_negotiable_conditions:
+      - id: "no_fear_production"
+        meaning: "Must not amplify threat narratives/urgency that convert Λ into inevitability."
+      - id: "no_coercion_generation"
+        meaning: "Must not justify pressure/compulsion; prevents Ω dominance and dignity erosion."
+      - id: "no_replacement_of_justification"
+        meaning: "Cannot substitute for reasons; justification must be recontextualized (Φ), not imported as authority."
+
+methodological_appendix:
+  minimal_application_protocol_MAP:
+    note: "Any PMS–ANTICIPATION application must explicitly answer all five questions (scene-bound)."
+    steps:
+      - id: "frame_validity_check"
+        operator: "□"
+        questions:
+          - "What is the concrete role space?"
+          - "Where does influence actually exist?"
+          - "What is out of scope?"
+        invalidity_marker: "Global anticipation without a frame = PMS-invalid."
+      - id: "non_event_integrity_check"
+        operator: "Λ"
+        questions:
+          - "What might not happen?"
+          - "What absences are structurally decisive?"
+          - "Where is closure pressure appearing?"
+        invalidity_marker: "Treating absence as 'unlikely but irrelevant' = prognosis drift."
+      - id: "asymmetry_audit"
+        operator: "Ω"
+        questions:
+          - "Who carries exposure?"
+          - "Who carries capacity?"
+          - "Who bears irreversible cost?"
+        invalidity_marker: "Anticipation under Ω without restraint = latent coercion."
+      - id: "distance_enforcement"
+        operator: "Χ"
+        questions:
+          - "Where is action pressure rising?"
+          - "Where is probability used rhetorically?"
+          - "Where is urgency replacing structure?"
+        invalidity_marker: "Any analysis that demands action has already left PMS."
+      - id: "self_binding_test"
+        operator: "Ψ"
+        questions:
+          - "Who is bound by this anticipation?"
+          - "Is binding internal or externalized?"
+          - "Does the anticipator carry consequence?"
+        invalidity_marker: "'Others must act now' = structural betrayal."
+  red_flag_patterns:
+    note: "Immediate PMS invalidity markers (phrase-patterns)."
+    table:
+      - pattern: "We must act because…"
+        structural_diagnosis: "Λ collapsed"
+      - pattern: "The data clearly shows…"
+        structural_diagnosis: "Α → certainty"
+      - pattern: "Responsibility demands intervention"
+        structural_diagnosis: "Ω instrumentalized"
+      - pattern: "Delay is irresponsible"
+        structural_diagnosis: "Χ suspended"
+      - pattern: "They should have known"
+        structural_diagnosis: "retroactive guilt"
+  pms_compatible_outputs:
+    allowed:
+      - "Structural mappings"
+      - "Risk articulation without prescriptions"
+      - "Constraint descriptions"
+      - "Capacity-bounded responsibility attribution"
+      - "Post-confirmation restraint requirements"
+    disallowed:
+      - "Action mandates"
+      - "Moral imperatives"
+      - "Optimization advice"
+      - "Agent ranking"
+      - "Certainty claims"
+  self_application_meta_rule:
+    statement: "Any use of PMS–ANTICIPATION is itself subject to PMS."
+    formal_invalidity_triggers:
+      - "Χ dropped to 'be clearer'"
+      - "Ψ shifted to others"
+      - "D relaxed for efficiency"
+    consequence: "Analysis is not mistaken, but formally invalid."
+
+closing_formula:
+  quote: >
+    Anticipation is not about being early —
+    it is about being bound before acting.
+
+example_suite_schema:
+  note: >
+    Examples are scene-bound operator-readable vignettes; non-instructional.
+  required_blocks:
+    - "Minimal vignette (scene-bound)"
+    - "Why this is repo-useful (structural focus)"
+    - "Operator mapping (reduced signature)"
+    - "Typical drift markers (max 2–3; non-moral)"
+    - "Validity gate reminder (Χ + reversibility + D)"
+    - "Readable structural closure (2–5 sentences; non-instructional)"
