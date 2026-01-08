@@ -1,24 +1,26 @@
 # PMS–ANTICIPATION
 
-**Structural Conditions, Risks, and Viability of Anticipatory Praxis**
+## Structural Conditions, Risks, and Viability of Anticipatory Praxis (Δ–Ψ)
 
-**PMS–ANTICIPATION is a formal application of the [Praxeological Meta-Structure (PMS)](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)** — a generative operator framework (Δ–Ψ) for modelling praxis, asymmetry, temporality, and self-binding.  
+**PMS–ANTICIPATION is a formal application of the [Praxeological Meta-Structure (PMS)](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)** — a generative operator framework (Δ–Ψ) for modelling praxis, asymmetry, temporality, and self-binding.
 
 While PMS provides the **canonical operator grammar** for analysing action and non-action, PMS–ANTICIPATION reconstructs a widely misunderstood practical posture: **anticipation**.
 
-Building explicitly on the PMS as its structural foundation, this project does **not modify or extend the PMS operator set**, but uses it **strictly as specified** to show:  
+Building explicitly on PMS as its structural foundation, this project does **not modify or extend the PMS operator set**, but uses it **strictly as specified** to show:
 
-* why anticipation is **not** prediction, control, intelligence, or action advantage,
+* why anticipation is **not** prediction, intelligence, control, or action advantage,
 * how anticipation is a **present structural stance** toward possible events and **non-events (Λ)**,
-* and why the core test of anticipation is **viability under non-occurrence** and **non-coercion under asymmetry (Ω)**.
+* how **asymmetry (Ω)** and **temporality (Θ)** transform anticipation into a high-risk praxis form,
+* why the decisive test of anticipation is **viability under non-occurrence** and **non-coercion under asymmetry**,
+* and why anticipatory maturity is measured by **restraint, distance (Χ), and self-binding (Ψ)** rather than correctness.
 
-PMS–ANTICIPATION treats “the future” not as a truth-object, but as a structural field where:
+PMS–ANTICIPATION treats “the future” not as a truth-object, but as a structural field in which:
 
 * **Non-event (Λ)** remains active (absence, delay, omission),
-* **Temporality (Θ)** makes consequences irreversible,
-* **Distance (Χ)** must prevent closure and coercive enactment,
+* **Temporality (Θ)** renders consequences irreversible,
+* **Distance (Χ)** prevents premature closure and coercive enactment,
 * **Integration (Σ)** stabilizes coherence without totalization,
-* **Self-binding (Ψ)** binds the anticipator (not others) to restraint and consequence-handling.
+* **Self-binding (Ψ)** binds the anticipator — not others — to restraint and consequence-handling.
 
 In this sense, PMS–ANTICIPATION should be read as:
 
@@ -35,7 +37,7 @@ In this sense, PMS–ANTICIPATION should be read as:
 PMS–ANTICIPATION is:
 
 * A **structural theory of anticipation** (not a forecasting method)
-* A **PMS-conform application** of the operator grammar (Δ–Ψ)
+* A **PMS_1.1–conform application profile** of the operator grammar (Δ–Ψ)
 * A framework for analysing:
   * **non-event handling (Λ)** under irreversibility (Θ)
   * **asymmetry risks (Ω)** and coercion drift
@@ -44,7 +46,7 @@ PMS–ANTICIPATION is:
   * **structural stability**
   * **restraint**
   * **attributable consequence-handling**
-  * rather than predictive “hit/miss”
+  * rather than predictive “hit/miss” success
 
 **Guiding formula:**
 
@@ -70,6 +72,23 @@ not as a competence, virtue, or mental ability.
 
 ---
 
+## Intended Use
+
+PMS–ANTICIPATION is intended for:
+
+* Structural theorists analysing uncertainty, omission, and irreversibility
+* Governance, policy, and institutional analysis under asymmetry
+* AI architecture and AI safety (structural, non-psychological)
+* Comparative analysis of praxeological configurations (not persons)
+
+It is **not** intended for action directives, optimization advice, personal guidance, or moral enforcement.
+
+Any application presupposes the **PMS entry condition**:
+
+**Χ (distance) + reversibility + D (dignity-in-practice)**
+
+---
+
 ## Core Thesis
 
 PMS–ANTICIPATION argues that:
@@ -77,10 +96,10 @@ PMS–ANTICIPATION argues that:
 * **Anticipation is not a truth-claim about the future.**
 * Anticipation is a **present structural stance** that carries **openness (Λ)** under **irreversibility (Θ)** and **asymmetry (Ω)**.
 * Anticipatory maturity is measured not by being right, but by remaining:
-  * **viable under non-occurrence (Λ)**
-  * **non-coercive under asymmetry (Ω)**
-  * **distance-preserving (Χ)**
-  * **self-binding rather than externalizing (Ψ)**
+  * **viable under non-occurrence (Λ)**,
+  * **non-coercive under asymmetry (Ω)**,
+  * **distance-preserving (Χ)**,
+  * **self-binding rather than externalizing (Ψ)**.
 
 > Anticipation does not authorize action —  
 > it deepens responsibility for restraint.
@@ -89,15 +108,17 @@ PMS–ANTICIPATION argues that:
 
 ## Relation to PMS
 
-PMS–ANTICIPATION is built directly on the **canonical PMS operator grammar (Δ–Ψ)** as defined in [`PMS.yaml`](https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml) (schema_version: `PMS_1.1`).  
+PMS–ANTICIPATION is built directly on the **canonical PMS operator grammar (Δ–Ψ)** as defined in  
+[`PMS.yaml`](https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml)  
+(schema_version: `PMS_1.1`).
 
 * No new operators are introduced
 * No operator is redefined
 * All dependency rules are respected
-* Anticipation is analysed strictly as **operator configuration** and **derived-axis viability**
+* All applications remain **scene-bound, reversible, and non-diagnostic**
 
-Where PMS provides the **structural grammar of praxis**,  
-PMS–ANTICIPATION shows what follows when that grammar is applied to:
+Where PMS provides the **grammar of praxis**,  
+PMS–ANTICIPATION specifies how that grammar behaves when applied to:
 
 * uncertainty without closure,
 * non-events and omission,
@@ -107,9 +128,64 @@ PMS–ANTICIPATION shows what follows when that grammar is applied to:
 
 ---
 
-## Repository Layout
+## What PMS.yaml + PMS-ANTICIPATION.yaml Provide (That PMS Alone Does Not)
 
-This repository ships the PMS–ANTICIPATION paper in three formats (Markdown / HTML / PDF), plus shared assets (CSS + figures) and five fully worked examples (each as `.md` and `.html`).
+**PMS.yaml** supplies the canonical operator system (Δ–Ψ), dependency hygiene, layers, and derived axes.
+
+**PMS-ANTICIPATION.yaml** adds a **domain-specific application profile** for anticipation that makes the following **explicitly recordable and comparable**:
+
+### 1) Structural thresholds for anticipation
+
+* **Minimal anticipation** = Δ + □ + Λ + Θ + Χ  
+* **Viable anticipation** = full Δ–Ψ chain (disciplining ∇, integrating Σ, binding Ψ)
+
+These are not proofs or mandates, but **structural viability markers**.
+
+### 2) Viability criteria independent of being right
+
+Anticipation is evaluated by:
+
+* carrying Λ rather than resolving it,
+* sustaining Χ under Θ-pressure,
+* binding Ψ inward (self), not outward (others),
+* preserving D (dignity-in-practice) under Ω.
+
+### 3) Contrast frames: anticipation vs prognosis
+
+PMS–ANTICIPATION explicitly separates:
+
+* **anticipation** (present stance, openness retained)
+* from **prognosis** (future-truth claims that risk authority and closure)
+
+Prognoses may inform anticipation, but must not supply authorization.
+
+### 4) Risk and failure modes (structural, not moral)
+
+Including:
+
+* preemptive authoritarianism (Ω inflation),
+* probability-induced action compulsion,
+* moralization of uncertainty,
+* preventive escalation,
+* post-confirmation dominance drift.
+
+### 5) Post-confirmation discipline
+
+Being right is treated as a **second-order risk**:
+
+* Λ partially collapses,
+* Θ compresses decision windows,
+* Ω inflates as epistemic authority.
+
+Maturity requires restoring **Χ** and renewing **Ψ**, not accelerating **E**.
+
+### 6) Minimal Application Protocol (MAP)
+
+A strict, scene-bound protocol that prevents anticipation from mutating into coercion.
+
+---
+
+## Repository Layout
 
 ```text
 PMS–ANTICIPATION/
@@ -118,6 +194,10 @@ PMS–ANTICIPATION/
 ├── PMS–ANTICIPATION.md
 ├── PMS–ANTICIPATION.html
 ├── PMS–ANTICIPATION.pdf
+├── model/
+│   ├── Model Specification.html
+│   ├── Model Specification.pdf
+│   └── pms-anticipation.yaml
 ├── css/
 │   └── main.css
 ├── img/
@@ -136,94 +216,12 @@ PMS–ANTICIPATION/
     ├── Example 4 - Morally High Movements That End Up Coercive.html
     ├── Example 5 - Tragic Conflicts Misread as Failure.md
     └── Example 5 - Tragic Conflicts Misread as Failure.html
-```
+````
 
-The **canonical source** is `PMS–ANTICIPATION.md`.  
-All examples are provided as **paired Markdown + HTML mirrors** for consistent reading and rendering.
-
-### What’s where
-
-* **`PMS–ANTICIPATION.md`** — canonical source (human-readable Markdown)
-* **`PMS–ANTICIPATION.html`** — rendered web version (uses `css/main.css` and `img/*`)
-* **`PMS–ANTICIPATION.pdf`** — print/PDF version
-* **`css/main.css`** — styling for the HTML artefacts
-* **`img/diagram01.png` … `diagram04.png`** — figures referenced by the paper
-* **`examples/`** — five uniform, fully worked example applications (each as `.md` and `.html`)
-
----
-
-## Structural Contributions
-
-### 1. Anticipation Reframed (Non-Prognostic)
-Anticipation is reconstructed as a structural stance, not as epistemic privilege:
-
-* not “knowing the future”
-* not “controlling outcomes”
-* not “legitimizing early intervention”
-
-### 2. Non-Event Discipline (Λ as Core Object)
-The decisive structural object of anticipation is often not an event but a **non-event**:
-
-* delay
-* absence
-* omission
-* failure-to-occur
-
-Anticipation remains valid only if **Λ stays open**.
-
-### 3. Viability Criteria without Predictive Success
-Anticipatory viability is defined by structural conditions:
-
-* **Coherence (C)** under non-occurrence (Λ)
-* **Responsibility (R)** under asymmetry (Ω)
-* sustained **distance (Χ)** across temporality (Θ)
-
-### 4. The Trade-Off: Effectiveness vs Stability
-PMS–ANTICIPATION formalizes a structural trade-off:
-
-* effectiveness increases as **Ψ approaches E**
-* stability increases as **Χ precedes E**
-
-These are **incompatible optimizations**, not informational deficits.
-
-### 5. Post-Confirmation Discipline
-Confirmation is treated not as success, but as a **transition risk**:
-
-* Λ partially collapses
-* Θ pressure compresses
-* Ω inflates as “epistemic authority”
-
-Maturity is measured by restoring **Χ** and renewing **Ψ**, not accelerating **E**.
-
----
-
-## Repository Purpose
-
-This repository contains:
-
-* The **PMS–ANTICIPATION paper** (Markdown / PDF / HTML, depending on release)
-* Figures and diagrams used in the paper
-* Structural summaries and appendices
-* Materials intended for:
-  * systems theory and institutional analysis
-  * governance and accountability design
-  * AI architecture / AI safety (structural, non-psychological)
-  * praxeological action theory under uncertainty
-
-It complements — but does not replace — the canonical PMS repository.
-
----
-
-## Intended Use
-
-PMS–ANTICIPATION is intended for:
-
-* Structural theorists analysing uncertainty, omission, and irreversibility
-* Governance / policy / institutional designers working under asymmetry
-* AI researchers exploring non-coercive anticipatory constraints
-* Analysts comparing praxeological configurations (not persons)
-
-It is **not** intended for giving action directives, personal advice, or moral instruction.
+* **`PMS–ANTICIPATION.md`** — canonical human-readable paper
+* **`pms-anticipation.yaml`** — canonical machine-readable application profile
+* **Model Specification (HTML/PDF)** — technical exposition of the YAML
+* **`examples/`** — uniform, non-moral, operator-readable stress tests
 
 ---
 
@@ -265,7 +263,7 @@ When referencing PMS–ANTICIPATION, please cite both the paper and PMS:
 
 **PMS Framework**
 
-> T. Zöller (2025): *Towards a Praxeological Meta-Structure Theory.*  
+> T. Zöller (2025): *Towards a Praxeological Meta-Structure Theory.*
 > *PMS.yaml — Axiomatic Operator Schema (PMS_1.1).*
 
 ---
@@ -276,7 +274,7 @@ Unless otherwise stated, all documentation in this repository is licensed under:
 
 **Creative Commons Attribution 4.0 International (CC BY 4.0)**
 
-You are free to share, adapt, and build upon the material,  
+You are free to share, adapt, and build upon the material,
 provided appropriate attribution is given.
 
 ---
@@ -285,7 +283,7 @@ provided appropriate attribution is given.
 
 PMS–ANTICIPATION does not tell you what will happen.
 
-It explains how anticipation becomes structurally valid only when it:
+It explains why anticipation becomes structurally valid only when it:
 
 * carries non-closure (Λ),
 * respects irreversibility (Θ),
@@ -293,5 +291,5 @@ It explains how anticipation becomes structurally valid only when it:
 * preserves distance (Χ),
 * and binds the anticipator (Ψ) — not the world.
 
-> Anticipation is not about being early —  
-> it is about being bound before acting.
+> **Anticipation is not about being early —
+> it is about being bound before acting.**
