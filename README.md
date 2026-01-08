@@ -28,7 +28,7 @@ In this sense, PMS–ANTICIPATION should be read as:
 * **formally consistent with the PMS operator grammar**, and
 * **focused on the structural discipline of anticipation under uncertainty**.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18140213.svg)](https://doi.org/10.5281/zenodo.18140213)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18183938.svg)](https://doi.org/10.5281/zenodo.18183938)
 
 ---
 
