@@ -1,34 +1,126 @@
 # =============================================================================
-#  PMS-PAPER APPLICATION PROFILE (OVERLAY)
+#  PMS-ANTICIPATION — PAPER-SPECIFIC APPLICATION SCHEMA (OVERLAY)
 #
-#  Repo:           https://github.com/tz-dev/PMS-ANTICIPATION
-#  File:           pms-anticipation.yaml
-#  Version:        PMS-ANTICIPATION_1.0 (draft)
-#  Last Updated:   2026-01-08
+#  Repository:
+#    https://github.com/tz-dev/PMS-ANTICIPATION
 #
-#  Summary:
-#    This document defines a paper-specific APPLICATION PROFILE for the
-#    Praxeological Meta-Structure (PMS). It provides a structural overlay
-#    for the lens of ANTICIPATION, expressed strictly in the canonical PMS
-#    operator grammar (Δ–Ψ).
+#  File:
+#    PMS-ANTICIPATION.yaml
 #
-#  Relationship to PMS (non-negotiable):
-#    - Depends on the canonical PMS base specification (schema_version: PMS_1.1).
-#    - Does NOT redefine Δ–Ψ, does NOT add new meta-axioms, and does NOT
-#      modify operator dependencies or derived axes.
-#    - Introduces ONLY overlay-level constructs: reduced signatures,
-#      drift markers, comparison profiles, protocols, and example schemas.
+#  Schema Version:
+#    PMS-ANTICIPATION_1.0
 #
-#  Validity Gate (PMS entry condition — application-only):
-#    Any USE of this profile as PMS-application presupposes:
-#      - Χ (distance),
-#      - reversibility (scene-bound, revisable readings),
-#      - D (dignity-in-practice; no shaming/ranking; structure-only critique).
-#    This gate constrains application, not critique or rejection.
+#  Last Updated:
+#    2026-01-08
 #
-#  Canonical Operator Source:
+# -----------------------------------------------------------------------------
+#  PURPOSE AND STATUS
+# -----------------------------------------------------------------------------
+#  This document defines a paper-specific APPLICATION SCHEMA for the
+#  Praxeological Meta-Structure (PMS). It formalizes the theoretical arguments
+#  of the accompanying paper
+#
+#    “PMS-ANTICIPATION — [paper title placeholder if not fixed]:
+#     A Praxeological Grammar of Anticipation (Δ–Ψ)”
+#
+#  by expressing them in a machine-readable, structurally constrained form.
+#
+#  The schema is an OVERLAY, not a fork or extension of PMS. Its function is to
+#  make the ANTICIPATION lens formally legible while remaining strictly
+#  subordinate to the canonical PMS specification.
+#
+# -----------------------------------------------------------------------------
+#  RELATIONSHIP TO PMS (NON-NEGOTIABLE CONSTRAINTS)
+# -----------------------------------------------------------------------------
+#  - This schema DEPENDS on the canonical PMS base specification
+#    (schema_version: PMS_1.1).
+#
+#  - It does NOT redefine, replace, reinterpret, or extend the eleven PMS
+#    meta-axioms (Δ–Ψ).
+#
+#  - It does NOT introduce new operators, meta-axioms, or dependency relations.
+#
+#  - It does NOT modify canonical operator order, dependency hygiene, or
+#    derived axes (A, C, R, E, D).
+#
+#  - All references to operators (Δ–Ψ) retain their meanings exactly as defined
+#    in PMS.yaml.
+#
+#  - Any apparent deviations (e.g. “reduced signatures”, “protocols”,
+#    “comparison profiles”, “drift markers”) are overlay-level constructs only
+#    and MUST NOT be read as changes to PMS operator logic.
+#
+# -----------------------------------------------------------------------------
+#  SCOPE OF THE OVERLAY
+# -----------------------------------------------------------------------------
+#  This application schema introduces ONLY overlay-level constructs, including:
+#
+#    - reduced operator signatures (shorthand expressions for analysis),
+#    - viability criteria and invalidity markers (structural, not moral),
+#    - contrast frames (anticipation vs prognosis),
+#    - drift markers and misuse corridors (configuration markers),
+#    - post-confirmation discipline (restoring Χ after being right),
+#    - minimal scene-bound application protocols,
+#    - example-suite schemas (scene-bound, non-instructional).
+#
+#  These constructs:
+#    - amplify or organize existing PMS operators,
+#    - never replace generativity with explanation,
+#    - never convert probability into authorization (especially under Ω and Θ),
+#    - never inject norms, duties, or prescriptive action mandates,
+#    - remain descriptive, non-diagnostic, and non-prescriptive.
+#
+# -----------------------------------------------------------------------------
+#  VALIDITY GATE — PMS ENTRY CONDITION (APPLICATION-ONLY)
+# -----------------------------------------------------------------------------
+#  Any USE of this schema as a PMS APPLICATION presupposes acceptance of the
+#  canonical PMS entry condition:
+#
+#    - Χ (Distance):
+#        a maintained meta-position and stop-capability; no fusion into verdict,
+#        urgency, ideology, or role authority.
+#
+#    - Reversibility:
+#        all readings are scene-bound, revisable, and configuration-specific;
+#        no global person labels or irreversible interpretive claims.
+#
+#    - D (Dignity-in-Practice):
+#        no shaming, ranking, humiliation, or ontological person evaluation;
+#        critique is restricted to structural handling of risk, exposure,
+#        capacity, and restraint under Ω and Θ.
+#
+#  This gate constrains APPLICATION only.
+#  PMS itself may be criticized, rejected, or ignored without satisfying it.
+#
+# -----------------------------------------------------------------------------
+#  SELF-BINDING AND MODEL HYGIENE (CLARIFICATION)
+# -----------------------------------------------------------------------------
+#  In line with PMS.yaml, any application that suspends Distance (Χ),
+#  Dignity-in-Practice (D), or Self-Binding discipline (Ψ) in order to enforce
+#  clarity, certainty, authority, or action is formally INVALID as PMS
+#  application—even if PMS terminology is retained.
+#
+#  PMS-ANTICIPATION therefore treats all analyses as:
+#    - scene-bound,
+#    - structurally revisable,
+#    - non-metaphysical,
+#    - non-psychological,
+#    - non-moralizing.
+#
+#  Anticipation is treated as a present stance that carries Λ within □ under Θ,
+#  not as a forecast that closes Λ into future truth.
+#
+# -----------------------------------------------------------------------------
+#  CANONICAL OPERATOR SOURCE
+# -----------------------------------------------------------------------------
+#  PMS base specification:
 #    PMS.yaml (schema_version: PMS_1.1)
+#
+#  Canonical source URL:
 #    https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml
+#
+#  PMS-ANTICIPATION MUST always be read against this source.
+#
 # =============================================================================
 
 schema_version: "PMS-ANTICIPATION_1.0"
@@ -450,3 +542,4 @@ example_suite_schema:
     - "Typical drift markers (max 2–3; non-moral)"
     - "Validity gate reminder (Χ + reversibility + D)"
     - "Readable structural closure (2–5 sentences; non-instructional)"
+
