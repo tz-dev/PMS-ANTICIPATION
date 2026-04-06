@@ -29,7 +29,7 @@ This paper is written as a **PMS application** (not a critique). No modification
 * **Human-readable specifications:**  
   `model/Model Specification.pdf` / `.html` and *Praxeological Meta-Structure Theory* (PDF / MD / HTML)
 
-* **DOI (Zenodo):** `10.5281/zenodo.17904891`
+* **DOI (Zenodo):** `10.5281/zenodo.19438670`
 
 The present paper uses PMS strictly as a **structural grammar**: operator compositions, dependency discipline, and derived-axis projections—without importing psychological, diagnostic, or person-evaluative claims.
 
