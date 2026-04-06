@@ -1,0 +1,435 @@
+example_schema_version: "PMS-ANTICIPATION_EXAMPLE_1.1"
+
+example_meta:
+  example_id: "example_05"
+  title: "Tragic Conflicts Misread as Failure"
+  case_label: "Tragedy → Blame Spiral Miscode"
+  language: "en"
+  format_origin: "converted_from_markdown_case"
+  depends_on:
+    overlay: "PMS-ANTICIPATION"
+    overlay_schema_version: "PMS-ANTICIPATION_1.1"
+    base_model: "PMS"
+    base_schema_version: "PMS_1.3"
+  status: "draft_example"
+  last_updated: "2026-04-06"
+  authors:
+    - name: "T. Zöller"
+      role: "originator"
+    - name: "ChatGPT (GPT-5.4 Thinking)"
+      role: "formalization_assistant"
+
+minimal_vignette:
+  scene_bound_case: >
+    A high-stakes situation emerges in which every available option harms
+    something of value: a hospital triage shortage, a wartime evacuation, a
+    corporate insolvency, a family care crisis, or a public policy conflict in
+    which one protection increases burdens elsewhere. Decisions must be made
+    under constraint, incomplete knowledge, asymmetrical exposure, and
+    irreversible time pressure.
+  immediate_structural_focus: >
+    After the outcome, observers often insist that there must have been a clean
+    solution and that pain proves culpable failure. The case examines how
+    tragic conflict is routinely misread as avoidable error, generating blame
+    spirals, over-attribution, and moral polarization.
+
+why_this_is_repo_useful:
+  structural_focus: >
+    This example is crucial because it shows one of the hardest applications of
+    PMS-ANTICIPATION: anticipation does not only drift through coercive control
+    or premature intervention, but also through the refusal to recognize
+    tragedy as structurally real. The case demonstrates how irreducible
+    non-event, irreversibility, and asymmetry are denied in favor of blame
+    closure.
+  repo_relevance:
+    - "Shows how Λ can be irreducible rather than merely unresolved."
+    - "Clarifies that Θ makes painful remainder structurally expected, not automatically indicting."
+    - "Demonstrates how Ω is often misread as entitlement to omnipotent outcomes."
+    - "Shows why Χ is necessary to separate harm from culpability."
+    - "Traces how Φ becomes hindsight-certainty and Ψ becomes scapegoat-binding."
+  use_value_for_overlay: >
+    The example is repo-useful because it prevents PMS-ANTICIPATION from being
+    read only as a model for control-risk or moral overreach. It also applies
+    where no clean outcome exists and where the main structural corruption lies
+    in miscoding tragedy as avoidable failure.
+
+operator_mapping:
+  reduced_signature:
+    primary_signature:
+      label: "Tragic remainder under anticipatory blame pressure"
+      operators: ["□", "Λ", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+      note: >
+        The case is dominated by competing frames (□), irreducible absence of a
+        clean option (Λ), unavoidable asymmetry of exposure and decision power
+        (Ω), irreversible time and painful trajectories (Θ), post hoc reframing
+        (Φ), threatened distance (Χ), failed or collapsed integration (Σ), and
+        self-binding that is displaced into scapegoating (Ψ).
+    shorthand_relation_to_overlay:
+      ANT_min_presence: ["Δ", "□", "Λ", "Θ", "Χ"]
+      ANT_viable_requirement: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+      case_position: >
+        The scene remains anticipatory because outcomes are carried under
+        non-event, asymmetry, and irreversibility before and during action.
+        Drift begins after the event when Λ is denied, Χ is dropped, Φ turns
+        hindsight into certainty, and Ψ migrates from disciplined consequence-
+        handling into blame allocation.
+
+  operator_roles_in_case:
+    "Δ":
+      case_role: >
+        Distinctions are real and painful: lives, obligations, priorities,
+        losses, and conflicting goods become sharply differentiated.
+    "∇":
+      case_role: >
+        Impulse appears as urgency to decide, to rescue, to minimize harm, and
+        later as urgency to condemn, simplify, and assign guilt.
+    "□":
+      case_role: >
+        Multiple frames coexist: care, legality, fairness, outcomes,
+        accountability, identity, and moral expectation. Tragic miscode begins
+        when one frame is retroactively totalized.
+    "Λ":
+      case_role: >
+        The decisive absence is structural: the harm-free option does not exist,
+        full knowledge never arrives in time, and the clean rescue remains absent.
+    "Α":
+      case_role: >
+        Repeated blame responses can stabilize into a social attractor: tragedy
+        is habitually answered by scapegoat production and certainty narratives.
+    "Ω":
+      case_role: >
+        Capacity, suffering, authority, and exposure are unevenly distributed.
+        Some decide, others endure, and some suffer without agency.
+    "Θ":
+      case_role: >
+        Every exit is painful because time closes windows, accumulates cost, and
+        makes regret unavoidable.
+    "Φ":
+      case_role: >
+        Reframing can either reinterpret success appropriately under constraint
+        or convert hindsight into retroactive certainty and accusation.
+    "Χ":
+      case_role: >
+        Distance is the operator that keeps harm from being automatically
+        translated into culpability and preserves tragic legibility.
+    "Σ":
+      case_role: >
+        Integration must hold conflicting goods, remainder harm, and limits of
+        capacity together without collapsing into a single-axis verdict.
+    "Ψ":
+      case_role: >
+        Mature self-binding means owning consequences without claiming
+        omnipotence. Drift begins when communal coherence is rebuilt through
+        scapegoating.
+
+typical_drift_markers:
+  max_expected: "2_to_3_preferred_in_short_form"
+  selected_markers:
+    - marker: "There must have been a way with no harm."
+      structural_reading: "Λ denial"
+    - marker: "Stop making it complicated."
+      structural_reading: "Χ attacked"
+    - marker: "We need someone accountable right now."
+      structural_reading: "Ψ displaced under Θ pressure"
+  extended_marker_set:
+    - marker: "If you were competent, this wouldn’t have happened."
+      structural_reading: "Θ + Ω moralization"
+    - marker: "Explaining constraints is just excuses."
+      structural_reading: "Χ collapse"
+    - marker: "Knowing this now proves you should have known then."
+      structural_reading: "Φ weaponized"
+    - marker: "If we punish someone, we can move on."
+      structural_reading: "Ψ displaced into scapegoat coherence"
+
+validity_gate_reminder:
+  chi_distance: >
+    PMS-valid application requires sustained Χ precisely where pain and outrage
+    tempt analysts to collapse harm into guilt.
+  reversibility: >
+    Reversibility requires that tragic scenes remain scene-bound and not be
+    overcoded into total person-judgments or irreversible moral identities.
+  dignity_in_practice: >
+    D requires preserving standing and non-humiliation for decision-makers,
+    sufferers, and dissenters even when no clean solution exists.
+  application_warning: >
+    Once the scene is read as “avoidable, therefore guilty,” the analysis no
+    longer handles tragedy as anticipatory structure but as a blame-closure
+    machine.
+
+readable_structural_closure:
+  short_closure: >
+    This case shows that tragic conflict is often structurally betrayed after
+    the fact. Instead of recognizing irreducible absence, painful temporality,
+    and unavoidable asymmetry, observers recode suffering as proof that someone
+    failed. PMS-ANTICIPATION makes visible that the blame spiral begins when Λ
+    is denied, Χ is dropped, Φ turns hindsight into certainty, and Ψ shifts
+    from disciplined responsibility into scapegoat-binding.
+
+extended_scene_analysis:
+  identity_and_purpose:
+    purpose: >
+      Show how structurally tragic conflicts are routinely re-coded as avoidable
+      failure, producing blame hunting, responsibility inflation, and moral
+      polarization.
+    scope: >
+      Praxeological configurations, frames, roles, and escalation dynamics; not
+      judgments of persons, diagnoses, or guilt verdicts.
+    core_pms_strength_used_here: >
+      PMS makes tragedy structurally visible: Λ is irreducible, Θ makes every
+      exit painful, Ω distributes suffering inevitably, and Χ must be held to
+      prevent moralization.
+    pms_entry_condition_reminder: >
+      Valid application presupposes Χ, reversibility, and D. Tragic scenes tempt
+      analysts to suspend these in the name of clarity, a culprit, or decisive closure.
+
+  frame_validity_check:
+    operator: "□"
+    what_is_the_frame:
+      frame_layers:
+        - "care frame"
+        - "rule frame"
+        - "outcome frame"
+        - "accountability frame"
+        - "identity / moral frame"
+      legitimate_objects_in_scope:
+        - "conflicting goods"
+        - "partial responsibilities"
+        - "constraints on capacity"
+        - "remainder harm"
+        - "time-locked decision scenes"
+      out_of_scope:
+        - "retroactively totalizing one frame as the only valid one"
+        - "turning tragedy into person essence"
+        - "equating pain with automatic proof of defect"
+    frame_failure_signal: >
+      Tragedy becomes failure when one frame is treated as total: outcome,
+      compliance, or moral identity is made exhaustive, and all remainder harm
+      is reclassified as proof that the wrong person chose badly.
+
+  non_event_integrity:
+    operator: "Λ"
+    decisive_object:
+      - "the perfect option does not exist"
+      - "the clean rescue does not occur"
+      - "the harm-free resolution remains absent"
+      - "full knowledge never arrives in time"
+    structural_observation: >
+      In tragic scenes, Λ is not a missing detail waiting to be fixed. It is a
+      structural fact of the scene.
+    central_risk: >
+      Observers deny Λ by claiming that better planning, higher morality, or
+      greater competence would have produced a clean path. Structured absence is
+      thereby recoded as ignorance, neglect, or laziness.
+    diagnosis: >
+      The main corruption is Λ-denial: irreducible remainder is reinterpreted as
+      though it were merely a solvable deficit.
+    overlay_constraint: >
+      PMS-ANTICIPATION remains viable only if the absent harm-free solution is
+      treated as structurally absent, not as secretly available and culpably missed.
+
+  temporality_and_trajectory:
+    operator: "Θ"
+    temporal_pressure_patterns:
+      - "decisions lock trajectories"
+      - "windows close"
+      - "regret is structurally guaranteed"
+      - "later pain is taken as proof of earlier error"
+    trajectory_lock_in:
+      - "best-available choices still produce durable suffering"
+      - "regret persists even when no clean alternative existed"
+      - "observers retrospectively moralize durability"
+    structural_point: >
+      Θ makes painful remainder expected. The durability of suffering is not, by
+      itself, proof that the earlier decision was wrongful.
+
+  asymmetry_audit:
+    operator: "Ω"
+    where_asymmetry_concentrates:
+      inevitable_gradients:
+        - "some carry exposure"
+        - "some carry authority"
+        - "some bear consequences without agency"
+        - "some must decide while others can only endure"
+    self_legitimating_gradient: >
+      Capacity gradients are often turned into omnipotence expectations:
+      “because you had some power, you owed a harm-free outcome.”
+    pms_valid_requirement: >
+      Ω must be read as bounded capacity and unequal burden, not as proof that
+      the decision-maker could or should have erased tragedy altogether.
+
+  distance_enforcement:
+    operator: "Χ"
+    why_distance_is_hard_here: >
+      After suffering, communities want immediate clarity and moral order.
+      Tragedy is affectively intolerable because it suggests that good people
+      under real constraint can still produce pain.
+    erosion_pattern:
+      - "we need accountability now"
+      - "stop rationalizing"
+      - "naming trade-offs is immoral"
+      - "explaining constraints is just excuses"
+    pms_valid_requirements:
+      - "keep harm distinct from culpability"
+      - "keep decision under constraint distinct from negligence"
+      - "allow remainder-harm description without immediate accusation"
+      - "preserve tragic legibility under outrage"
+    diagnosis: >
+      Χ is the operator that blocks the automatic slide from pain into blame. Its
+      collapse is the start of the moralization spiral.
+
+  recontextualization_dynamics:
+    operator: "Φ"
+    key_shift: >
+      After the outcome, hindsight is used to reinterpret the earlier scene as
+      though certainty had always been available.
+    moralization_vector:
+      - "now that we know the outcome, the earlier choice was clearly wrong"
+      - "if you truly cared, you would have foreseen this"
+      - "this suffering proves failure"
+    phi_failure_signal: >
+      Φ becomes a certainty machine when post-event knowledge is used to erase
+      the original openness and constraint structure of the scene.
+
+  integration_quality:
+    operator: "Σ"
+    what_must_be_integrated:
+      - "conflicting goods"
+      - "partial responsibilities"
+      - "limits of capacity"
+      - "emotional reality of suffering"
+      - "irreducible remainder harm"
+      - "dignity constraints under asymmetry"
+    sigma_failure_modes:
+      - "single-axis verdict production"
+      - "coherence by blaming"
+      - "retrospective simplification"
+    structural_effect: >
+      Instead of integrating incompatible claims under tragedy, the system often
+      produces one stabilizing story: someone failed, someone is guilty,
+      someone should carry the moral load.
+
+  self_binding_test:
+    operator: "Ψ"
+    decisive_question: "Who is bound after tragedy: the system to learning and restraint, or the community to scapegoating?"
+    pms_requirement: >
+      Mature self-binding means owning consequences, preserving dignity, and
+      learning under limit conditions without claiming omnipotence.
+    core_drift:
+      from: "We bind ourselves to learning, restraint, and capacity-bounded responsibility."
+      to: "Someone must carry the shame so moral order can be restored."
+    verdict_condition: >
+      Once blame becomes the binding center of the response, Ψ is no longer
+      internal discipline but displaced social cohesion through accusation.
+
+  derived_axes_projection:
+    note: "Structural reading only; not person evaluation."
+    axes:
+      A:
+        movement: "high"
+        reason: "many harms, stakeholders, and signals are visible"
+      C:
+        movement: "often too high after the event"
+        reason: "a single blame narrative stabilizes the scene"
+      R:
+        movement: "inflated"
+        reason: "capacity is turned into omnipotence expectation"
+      E:
+        movement: "pressured or compulsive"
+        reason: "punishment, policy overcorrection, or symbolic action accelerates"
+      D:
+        movement: "core casualty"
+        reason: >
+          dignity is sacrificed when decision-makers, sufferers, or dissenters
+          are dehumanized to restore moral certainty
+    hazard_signature: >
+      High A, high C, escalating R, and pressured E under collapsed Χ indicate a
+      tragic scene that has been converted into a blame spiral.
+
+  core_mechanism:
+    label: "Why people prefer failure over tragedy"
+    operator_chain:
+      - "Λ is irreducible: no harm-free option exists."
+      - "Θ makes every exit painful and regret structurally unavoidable."
+      - "Ω distributes suffering unevenly and cannot be equalized cleanly."
+      - "Communities find this morally intolerable and seek closure."
+      - "Λ is denied and replaced by a certainty of avoidability."
+      - "Θ is reframed as proof that the earlier choice was wrong."
+      - "Ω is moralized into omnipotence expectations."
+      - "Χ is dropped because distance blocks rapid certainty."
+      - "Φ weaponizes hindsight."
+      - "Ψ is displaced into scapegoat production."
+      - "Α stabilizes the whole pattern into recurring blame spirals."
+    paradox_statement: >
+      The urge to restore moral order can destroy the very structural clarity
+      needed to handle tragic conflict responsibly.
+    interpretation: >
+      The community does not prefer blame because blame is true, but because
+      tragedy threatens the belief that goodness, competence, and care should
+      always yield a clean outcome.
+
+  viability_criteria:
+    note: "Non-prognostic viability criteria for tragedy handling."
+    criteria:
+      - id: "lambda_integrity"
+        meaning: "Acknowledge irreducible remainder harm and absent clean solutions."
+      - id: "theta_realism"
+        meaning: "Accept that time creates unavoidable loss, closure, and regret."
+      - id: "omega_clarity"
+        meaning: "Distinguish capacity gradients from omnipotence expectations."
+      - id: "chi_continuity"
+        meaning: "Keep distance active especially under outrage and grief."
+      - id: "phi_discipline"
+        meaning: "Prevent hindsight from becoming retroactive certainty."
+      - id: "psi_proper_location"
+        meaning: "Bind agents and institutions to learning and restraint, not to scapegoating."
+      - id: "d_protection"
+        meaning: "Preserve standing and respect precisely where no solution exists."
+    failure_interpretation: >
+      These criteria do not solve tragedy. They prevent moral betrayal of roles,
+      persons, and scenes by blocking the conversion of painful remainder into
+      immediate guilt closure.
+
+  output_boundary:
+    pms_compatible_outputs:
+      - "structural mapping of tragic constraints without prescribing the right choice"
+      - "separation of harm from culpability under Χ"
+      - "capacity-bounded attribution: who could influence what, when"
+      - "remainder-harm articulation: what could not be prevented"
+      - "post-event reframing discipline: how to stop Φ becoming certainty"
+      - "dignity audit: where D is threatened by blame narratives"
+    pms_invalid_outputs:
+      - "who is guilty determinations"
+      - "moral ranking of actors under tragic remainder"
+      - "prescriptions framed as moral imperatives"
+      - "scapegoat optimization"
+      - "retroactive responsibility inflation beyond capacity and frame"
+
+  minimal_map_walkthrough:
+    step_1_frame: "Which competing frames were active, and which one became totalized after the fact?"
+    step_2_non_event: "What clean outcome never existed structurally?"
+    step_3_asymmetry: "Where were real capacity gradients, and where were omnipotence expectations projected?"
+    step_4_distance: "Where did outrage attempt to collapse distance into certainty and blame?"
+    step_5_self_binding: "Is the system binding itself to learning and restraint, or to scapegoating?"
+    closure_rule: >
+      If the answers drift toward “it was avoidable, therefore guilt,” the blame
+      spiral is active and tragic legibility has been lost.
+
+assistant_test_vectors:
+  promptable_probes:
+    - "Model a tragic scene where Λ is irreducible and Θ makes all exits painful. Show the miscode into avoidable failure."
+    - "Identify where Χ collapses in post-event discourse and how Φ becomes hindsight certainty."
+    - "Differentiate capacity-bounded responsibility (R) from omnipotence expectations under Ω."
+    - "Project the configuration onto A/C/R/E/D and locate where D is first threatened."
+    - "Describe how Α stabilizes scapegoating as the default response to tragedy."
+
+schema_conformity_check:
+  required_blocks_present:
+    - "Minimal vignette (scene-bound)"
+    - "Why this is repo-useful (structural focus)"
+    - "Operator mapping (reduced signature)"
+    - "Typical drift markers (max 2–3; non-moral)"
+    - "Validity gate reminder (Χ + reversibility + D)"
+    - "Readable structural closure (2–5 sentences; non-instructional)"
+  conformity_note: >
+    This example is scene-bound, operator-readable, non-diagnostic,
+    non-instructional, and fully aligned with PMS-ANTICIPATION application constraints.

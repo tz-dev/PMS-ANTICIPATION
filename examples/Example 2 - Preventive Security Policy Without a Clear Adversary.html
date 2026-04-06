@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>PMS–ANTICIPATION — Example 2: Preventive Security Policy Without a Clear Adversary</title>
+		<style type="text/css">
+			:root {
+			  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+			  --color-bg: #f5f7fb;
+			  --color-surface: #ffffff;
+			  --color-surface-soft: #f9fbfd;
+			  --color-text: #18202a;
+			  --color-muted: #5f6b7a;
+			  --color-accent: #1f4b99;
+			  --color-accent-soft: #e8f0ff;
+			  --color-border: #d9e1ea;
+			  --color-border-strong: #bfc9d8;
+			  --color-quote: #2f5da8;
+			  --color-code-bg: #f3f5f7;
+			  --color-table-head: #eef3f8;
+			  --color-row-alt: #fbfcfe;
+
+			  --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+			  --radius-sm: 6px;
+			  --radius-md: 10px;
+			  --radius-lg: 16px;
+
+			  --content-width: 980px;
+			  --line-height: 1.7;
+			}
+
+			*,
+			*::before,
+			*::after {
+			  box-sizing: border-box;
+			}
+
+			html {
+			  margin: 0;
+			  padding: 0;
+			  scroll-behavior: smooth;
+			}
+
+			body {
+			  margin: 0;
+			  padding: 32px 20px 64px;
+			  font-family: var(--font-body);
+			  font-size: 16px;
+			  line-height: var(--line-height);
+			  color: var(--color-text);
+			  background:
+			    linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+			}
+
+			.page,
+			body > header,
+			body > section,
+			body > main {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			.page {
+			  background: var(--color-surface);
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-lg);
+			  box-shadow: var(--shadow-soft);
+			  padding: 40px 42px 56px;
+			}
+
+			/* Header */
+			header {
+			  width: min(100%, var(--content-width));
+			  margin: 0 auto 28px;
+			  padding: 24px 0 18px;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			header h1 {
+			  margin: 0 0 10px;
+			  font-family: var(--font-heading);
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			  line-height: 1.15;
+			  text-align: center;
+			  letter-spacing: -0.02em;
+			  color: var(--color-text);
+			}
+
+			header h2 {
+			  margin: 0 auto 12px;
+			  max-width: 48rem;
+			  font-size: 1.15rem !important;
+			  line-height: 1.45;
+			  font-weight: 400;
+			  text-align: center;
+			  color: var(--color-muted);
+			  border: 0;
+			  padding: 0;
+			}
+
+			header .subtitle {
+			  max-width: 52rem;
+			  margin: 0 auto 12px;
+			  text-align: center;
+			  color: var(--color-muted);
+			  font-size: 1rem;
+			}
+
+			header .meta {
+			  max-width: 52rem;
+			  margin: 14px auto 0;
+			  padding: 12px 14px;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  background: var(--color-surface-soft);
+			  font-size: 0.88rem;
+			  line-height: 1.55;
+			  color: var(--color-muted);
+			}
+
+			/* Sections */
+			section {
+			  margin: 0 0 28px;
+			}
+
+			section#content {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+			  font-family: var(--font-heading);
+			  color: var(--color-text);
+			  letter-spacing: -0.01em;
+			}
+
+			h1 {
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			}
+
+			h2,
+			h2 strong {
+			  padding-bottom: 8px;
+			  font-size: 1.65rem !important;
+			  font-weight: 500 !important;
+			  line-height: 1.25;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			h3,
+			h3 strong {
+			  margin: 22px 0 8px !important;
+			  font-size: 1.2rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h4,
+			h4 strong {
+			  margin: 18px 0 6px !important;
+			  font-size: 1.05rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h5,
+			h5 strong,
+			h6,
+			h6 strong {
+			  margin: 16px 0 4px !important;
+			  font-size: 1rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			/* Text */
+			p {
+			  margin: 0 0 12px;
+			}
+
+			strong {
+			  color: #111827;
+			}
+
+			em {
+			  color: inherit;
+			}
+
+			.small {
+			  font-size: 0.92rem;
+			  color: var(--color-muted);
+			}
+
+			/* Links */
+			a {
+			  color: var(--color-accent);
+			  text-decoration: none;
+			  border-bottom: 1px solid transparent;
+			}
+
+			a:hover,
+			a:focus {
+			  border-bottom-color: currentColor;
+			}
+
+			/* Lists */
+			ul,
+			ol {
+			  margin: 8px 0 14px 1.25rem;
+			  padding: 0;
+			}
+
+			li {
+			  margin: 0 0 6px;
+			  padding-left: 2px;
+			}
+
+			ul ul,
+			ol ol,
+			ul ol,
+			ol ul {
+			  margin-top: 6px;
+			  margin-bottom: 8px;
+			}
+
+			li > p {
+			  margin-bottom: 6px;
+			}
+
+			/* Horizontal rule */
+			hr {
+			  display: block;
+			  height: 0;
+			  border: 0;
+			  border-top: 1px solid var(--color-border);
+			  margin: 24px 0;
+			}
+
+			/* Quotes */
+			blockquote {
+			  margin: 16px 0;
+			  padding: 12px 18px;
+			  border-left: 4px solid var(--color-quote);
+			  background: #f8fbff;
+			  color: #324154;
+			  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+			}
+
+			blockquote p:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Code */
+			code,
+			.code-inline {
+			  font-family: var(--font-mono);
+			  font-size: 0.92em;
+			  background: var(--color-code-bg);
+			  border: 1px solid #e7ebf0;
+			  border-radius: 4px;
+			  padding: 0.12em 0.4em;
+			  color: #233044;
+			}
+
+			pre {
+			  margin: 14px 0 18px;
+			  padding: 14px 16px;
+			  overflow-x: auto;
+			  background: #111827;
+			  color: #f3f4f6;
+			  border-radius: var(--radius-md);
+			  border: 1px solid #0f172a;
+			  text-align: left;
+			  line-height: 1.55;
+			}
+
+			pre code {
+			  background: transparent;
+			  border: 0;
+			  color: inherit;
+			  padding: 0;
+			  font-size: 0.92rem;
+			}
+
+			/* Boxes / callouts */
+			.box {
+			  margin: 16px 0 18px;
+			  padding: 14px 16px;
+			  border: 1px solid var(--color-border);
+			  border-left: 4px solid var(--color-accent);
+			  border-radius: var(--radius-md);
+			  background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+			  line-height: 1.55;
+			}
+
+			.box-title {
+			  margin: 0 0 6px;
+			  font-size: 0.95rem;
+			  font-weight: 700;
+			  color: var(--color-accent);
+			}
+
+			.box p:last-child,
+			.box ul:last-child,
+			.box ol:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Tables */
+			.table,
+			table {
+			  width: 100%;
+			  margin: 14px 0 18px;
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			  font-size: 0.95rem;
+			  line-height: 1.5;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  overflow: hidden;
+			}
+
+			.table th,
+			.table td,
+			table th,
+			table td {
+			  padding: 10px 12px;
+			  vertical-align: top;
+			  border: 1px solid var(--color-border);
+			  text-align: left;
+			}
+
+			.table th,
+			table th {
+			  background: var(--color-table-head);
+			  color: #233044;
+			  font-weight: 700;
+			  font-variant: small-caps;
+			  letter-spacing: 0.03em;
+			}
+
+			.table tr:nth-child(even) td,
+			table tr:nth-child(even) td {
+			  background: var(--color-row-alt);
+			}
+
+			.table tr:nth-child(odd) td,
+			table tr:nth-child(odd) td {
+			  background: #ffffff;
+			}
+
+			/* Tags */
+			.tag {
+			  display: inline-block;
+			  margin: 0 6px 6px 0;
+			  padding: 3px 10px;
+			  border: 1px solid var(--color-border-strong);
+			  border-radius: 999px;
+			  background: #fff;
+			  color: var(--color-muted);
+			  font-size: 0.78rem;
+			  line-height: 1.3;
+			}
+
+			/* Placeholder */
+			.placeholder {
+			  color: var(--color-muted);
+			  font-style: italic;
+			}
+
+			/* Two-column layouts */
+			.two-column {
+			  display: grid;
+			  grid-template-columns: repeat(2, minmax(0, 1fr));
+			  gap: 18px;
+			  margin: 10px 0 16px;
+			}
+
+			.two-column > div {
+			  min-width: 0;
+			}
+
+			/* Utility */
+			.pagebreak {
+			  page-break-before: always;
+			  break-before: page;
+			}
+
+			/* Better spacing for consecutive structural blocks */
+			h2 + p,
+			h3 + p,
+			h4 + p {
+			  margin-top: 2px;
+			}
+
+			p + ul,
+			p + ol {
+			  margin-top: 6px;
+			}
+
+			ul + p,
+			ol + p {
+			  margin-top: 10px;
+			}
+
+			/* Optional content-specific helper classes */
+			.meta-grid {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			  margin: 12px 0 18px;
+			}
+
+			.meta-grid dt {
+			  font-weight: 600;
+			  color: var(--color-muted);
+			}
+
+			.meta-grid dd {
+			  margin: 0;
+			}
+
+			.definition-list {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			}
+
+			.definition-list dt {
+			  font-weight: 600;
+			  color: var(--color-accent);
+			}
+
+			.definition-list dd {
+			  margin: 0;
+			}
+
+			.callout-warning {
+			  border-left-color: #b45309;
+			  background: #fffaf2;
+			}
+
+			.callout-success {
+			  border-left-color: #0f766e;
+			  background: #f4fffd;
+			}
+
+			.callout-danger {
+			  border-left-color: #b91c1c;
+			  background: #fff8f8;
+			}
+
+			/* Images */
+			img {
+			  display: block;
+			  max-width: 100%;
+			  height: auto;
+			  margin: 14px auto 18px;
+			  border-radius: var(--radius-sm);
+			}
+
+			/* Print */
+			@media print {
+			  :root {
+			    --color-bg: white;
+			    --color-surface: white;
+			    --color-surface-soft: white;
+			    --color-row-alt: #fafafa;
+			    --shadow-soft: none;
+			  }
+
+			  html,
+			  body {
+			    background: white !important;
+			  }
+
+			  body {
+			    width: 100%;
+			    margin: 0;
+			    padding: 0;
+			    font-size: 11pt;
+			    line-height: 1.45;
+			  }
+
+			  .page,
+			  body > header,
+			  body > section,
+			  body > main,
+			  section#content {
+			    width: 100%;
+			    max-width: 100%;
+			    margin: 0;
+			  }
+
+			  .page {
+			    border: 0;
+			    box-shadow: none;
+			    border-radius: 0;
+			    padding: 0;
+			  }
+
+			  header {
+			    margin-bottom: 18px;
+			    padding: 0 0 12px;
+			  }
+
+			  h2,
+			  h2 strong {
+			    page-break-after: avoid;
+			  }
+
+			  h3,
+			  h3 strong,
+			  h4,
+			  h4 strong {
+			    page-break-after: avoid;
+			  }
+
+			  p,
+			  li,
+			  blockquote,
+			  .box,
+			  table,
+			  pre {
+			    page-break-inside: avoid;
+			  }
+
+			  a,
+			  a:visited {
+			    color: inherit;
+			    text-decoration: none;
+			  }
+
+			  a[href]::after {
+			    content: "";
+			  }
+
+			  .box {
+			    background: white;
+			  }
+			}
+
+			/* Responsive */
+			@media (max-width: 900px) {
+			  body {
+			    padding: 20px 14px 44px;
+			  }
+
+			  .page {
+			    padding: 28px 22px 40px;
+			  }
+
+			  .two-column {
+			    grid-template-columns: 1fr;
+			  }
+
+			  .meta-grid,
+			  .definition-list {
+			    grid-template-columns: 1fr;
+			    gap: 4px 0;
+			  }
+
+			  header h1 {
+			    font-size: 2.2rem;
+			  }
+
+			  h2,
+			  h2 strong {
+			    font-size: 1.45rem !important;
+			  }
+			}
+
+			@media (max-width: 640px) {
+			  body {
+			    font-size: 15px;
+			  }
+
+			  .page {
+			    padding: 22px 16px 32px;
+			    border-radius: 12px;
+			  }
+
+			  header .meta {
+			    padding: 10px 12px;
+			  }
+
+			  .table,
+			  table {
+			    font-size: 0.88rem;
+			  }
+
+			  .table th,
+			  .table td,
+			  table th,
+			  table td {
+			    padding: 8px 9px;
+			  }
+
+			  pre {
+			    padding: 12px 13px;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><strong>PMS–ANTICIPATION</strong></h1>
+			<h2><em>Example 2: Preventive Security Policy Without a Clear Adversary</em></h2>
+			<div class="meta">
+				<strong>Example ID:</strong> <code>PMS-ANTICIPATION_EX02</code> &middot;
+				<strong>Example Version:</strong> <code>1.0</code> &middot;
+				<strong>Schema Version:</strong> <code>PMS-ANTICIPATION_1.1</code><br />
+				<strong>Status:</strong> draft &middot;
+				<strong>Language:</strong> EN &middot;
+				<strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-ANTICIPATION_1.1</code>
+			</div>
+		</header>
+
+		<section id="content">
+
+			<h2>0) Example Identity</h2>
+			<p>
+				<strong>Example label:</strong> <em>Perpetual Prevention Under Indefinite Threat</em>
+			</p>
+			<hr />
+
+			<h2>1) Minimal Vignette</h2>
+			<h3>1.1 Title</h3>
+			<p><strong>Preventive Security Policy Without a Clear Adversary</strong></p>
+
+			<h3>1.2 Scene boundaries</h3>
+			<ul>
+				<li><strong>Domain:</strong> national security, public safety, critical infrastructure protection, counter-terror, and cyber defense</li>
+				<li><strong>Scope:</strong> Structures, roles, trajectories, asymmetries, and preventive drift under indefinite threat</li>
+				<li><strong>Out of scope:</strong>
+					<ul>
+						<li>person-level judgement</li>
+						<li>motive attribution</li>
+						<li>ideological diagnosis</li>
+						<li>enemy labeling as structural proof</li>
+						<li>action prescription</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>1.3 Short scene</h3>
+			<p>
+				A state, alliance, or large institution adopts preventive security as a
+				standing posture without a clearly bounded adversary, event timeline, or
+				verifiable end condition. Threats are framed as diffuse, networked,
+				hybrid, stochastic, radicalized, or systemic. The regime is therefore
+				evaluated less by discrete events than by the continued absence of events.
+				Over time, non-occurrence becomes the currency of legitimacy, and rollback
+				becomes increasingly difficult.
+			</p>
+
+			<h3>1.4 Structural focus</h3>
+			<p>
+				The case tracks how prevention can stabilize into exceptionalism without a
+				formal exception, through the handling of <strong>Λ</strong> (Non-Event) under
+				<strong>Θ</strong> (Temporality) and <strong>Ω</strong> (Asymmetry), especially when
+				<strong>Χ</strong> (Distance) becomes structurally expensive.
+			</p>
+
+			<h3>1.5 Scenic elements</h3>
+			<ul>
+				<li><strong>Actors:</strong>
+					<ul>
+						<li>security agencies</li>
+						<li>legislators and oversight bodies</li>
+						<li>courts and rights institutions</li>
+						<li>publics and rights-bearing populations</li>
+						<li>media and discourse actors</li>
+					</ul>
+				</li>
+				<li><strong>Salient objects:</strong>
+					<ul>
+						<li>threat class</li>
+						<li>jurisdiction</li>
+						<li>mandate boundaries</li>
+						<li>review cycles</li>
+						<li>sunset or rollback conditions</li>
+						<li>counterfactual threat claims</li>
+						<li>surveillance and intervention powers</li>
+					</ul>
+				</li>
+				<li><strong>Trigger event:</strong>
+					<ul>
+						<li><strong>Label:</strong> continuing absence of events</li>
+						<li><strong>Description:</strong> The regime is stabilized not by one decisive occurrence, but by the repeated interpretation of non-occurrence as evidence that preventive measures are working.</li>
+					</ul>
+				</li>
+			</ul>
+			<hr />
+
+			<h2>2) Why This Is Repo-Useful</h2>
+			<h3>2.1 Structural focus</h3>
+			<p>
+				This example shows how PMS-ANTICIPATION can analyze a regime in which the
+				central object is not an event but a continuing non-event field. It is
+				especially useful because it demonstrates how preventive governance can
+				become self-legitimating without requiring a single decisive occurrence.
+			</p>
+
+			<h3>2.2 Repo value</h3>
+			<ul>
+				<li>Illustrates how <strong>Λ</strong> can become permanent as a structurally normal condition.</li>
+				<li>Shows how <strong>Θ</strong> can lock temporary preventive measures into durable trajectories.</li>
+				<li>Makes visible how <strong>Ω</strong> can become self-legitimating when threat remains indefinite.</li>
+				<li>Demonstrates <strong>Ψ</strong> externalization in security settings (“compliance as duty”).</li>
+				<li>Provides a strong anticipation/prognosis contrast case without relying on person-level interpretation.</li>
+			</ul>
+
+			<h3>2.3 Central repo question</h3>
+			<blockquote>
+				<p>
+					How can a preventive security regime remain anticipatory and PMS-valid,
+					rather than drifting into standing authority by turning indefinite
+					non-occurrence into proof?
+				</p>
+			</blockquote>
+
+			<h3>2.4 Lens relevance</h3>
+			<ul>
+				<li><strong>Anticipation vs prognosis:</strong> The case distinguishes between carrying indefinite threat under <strong>Λ</strong> and converting absence into settled proof.</li>
+				<li><strong>Post-confirmation discipline:</strong> The case extends the post-confirmation logic into a regime without a single decisive event, where continued non-occurrence itself becomes the source of validation pressure.</li>
+				<li><strong>Responsibility and dignity:</strong> The case highlights how preventive authority can outward-shift responsibility and erode <strong>D</strong> under rising <strong>Ω</strong>.</li>
+			</ul>
+			<hr />
+
+			<h2>3) Operator Mapping</h2>
+			<h3>3.1 Reduced signature</h3>
+			<p>
+				<strong>Primary signature:</strong>
+				<code>Δ, □, Λ, Ω, Θ, Φ, Χ, Σ, Ψ</code>
+			</p>
+			<p>
+				The case is dominated by an open but rhetorically pressured non-event field
+				inside an expanding security frame, under strong asymmetry and durable
+				trajectory effects. The decisive issue is whether distance, boundedness,
+				and self-binding remain active or drift into standing authority.
+			</p>
+
+			<h3>3.2 Operator roles in scene</h3>
+			<ul>
+				<li><strong>Δ:</strong> A threat field is marked as relevant even without a clearly bounded adversary or event.</li>
+				<li><strong>∇:</strong> Diffuse urgency, vigilance pressure, and anticipatory pull toward intervention organize the scene.</li>
+				<li><strong>□:</strong> The security frame defines threat class, jurisdiction, mandate, review cycle, and end condition; drift begins when this frame expands toward world-frame status.</li>
+				<li><strong>Λ:</strong> The decisive structural object is the attack that did not happen, the adversary who did not appear, or the counterfactual that remains absent yet becomes the regime’s legitimacy resource.</li>
+				<li><strong>Α:</strong> Repetition stabilizes renewals, surveillance routines, preventive habits, and institutional expectations, hardening the regime over time.</li>
+				<li><strong>Ω:</strong> Capacity accumulates on the side of security actors, while publics and exposed groups carry increasing scrutiny, friction, and rights-burdens.</li>
+				<li><strong>Θ:</strong> Temporary measures accumulate into durable trajectories through repeated renewals, incremental expansion, and lock-in.</li>
+				<li><strong>Φ:</strong> Precaution under uncertainty is reframed as permanent risk governance; critique may be reframed as danger.</li>
+				<li><strong>Χ:</strong> The decisive stress operator is whether distance can remain active where urgency rhetoric and unknown-threat logic make its suspension attractive.</li>
+				<li><strong>Σ:</strong> Integration must hold together threat models, rights constraints, legitimacy, operational realities, and uncertainty itself; drift appears when simplification or simulation takes over.</li>
+				<li><strong>Ψ:</strong> Preventive governance remains anticipatory only if regime actors bind themselves to limits, review, and rollback; drift begins when binding migrates outward toward populations and dissenters.</li>
+			</ul>
+
+			<h3>3.3 Derived axes projection</h3>
+			<ul>
+				<li><strong>A:</strong> Awareness expands because more distinctions become security-relevant.</li>
+				<li><strong>C:</strong> Coherence can become high through a stable vigilance narrative, but becomes fragile if <strong>Λ</strong> is closed into certainty.</li>
+				<li><strong>R:</strong> Responsibility tends to outward-shift, becoming demanded compliance rather than internal restraint.</li>
+				<li><strong>E:</strong> Action rises through continuous interventions and preventive measures, even where <strong>Σ</strong> is weak or simulated.</li>
+				<li><strong>D:</strong> Dignity-in-Practice declines under drift when <strong>Ω</strong> rises, <strong>Χ</strong> is suspended, and <strong>Ψ</strong> externalizes.</li>
+			</ul>
+
+			<h3>3.4 Structural mechanism summary</h3>
+			<ol>
+				<li>Diffuse threat makes <strong>Λ</strong> permanent as normal evidential field.</li>
+				<li>Absence is converted into proof.</li>
+				<li>This closure generates <strong>Θ</strong>-compression and standing urgency.</li>
+				<li><strong>Ω</strong> legitimates expanded enforcement and capacity concentration.</li>
+				<li><strong>Α</strong> hardens the preventive posture through repetition.</li>
+				<li><strong>Σ</strong> weakens into simplification or simulation.</li>
+				<li><strong>Ψ</strong> externalizes onto publics and dissenters.</li>
+				<li><strong>D</strong> degrades because <strong>Ψ</strong> and <strong>Χ</strong> no longer constrain <strong>Ω</strong>.</li>
+			</ol>
+			<p>
+				<strong>Concise formula:</strong><br />
+				<code>permanent Λ field → Λ closure into proof → Θ lock-in → Ω expansion → Χ erosion → Ψ externalization → D degradation</code>
+			</p>
+			<hr />
+
+			<h2>4) Typical Drift Markers</h2>
+			<h3>4.1 Primary markers</h3>
+			<ul>
+				<li><strong>If nothing happens, it proves we must continue</strong> (<strong>Λ</strong>)<br />
+					Non-occurrence is converted from open absence into self-validating proof.
+				</li>
+				<li><strong>We can’t wait for evidence</strong> (<strong>Θ, Χ</strong>)<br />
+					Urgency compresses temporality and suspends distance before proof can emerge.
+				</li>
+				<li><strong>Security requires compliance as baseline</strong> (<strong>Ψ, Ω</strong>)<br />
+					Self-binding shifts outward, turning anticipation into imposed obligation.
+				</li>
+			</ul>
+
+			<h3>4.2 Additional red flags</h3>
+			<ul>
+				<li>“Oversight causes vulnerability.”</li>
+				<li>“Those who object enable harm.”</li>
+				<li>“Threat is everywhere.”</li>
+				<li>“We’ll review later.”</li>
+			</ul>
+			<hr />
+
+			<h2>5) Validity Gate Reminder</h2>
+			<h3>5.1 PMS entry condition</h3>
+			<ul>
+				<li><strong>Χ (Distance):</strong> Preventive security must not fuse uncertainty into verdict, urgency, or standing authority.</li>
+				<li><strong>Reversibility:</strong> Measures and readings must remain revisable, bounded, and capable of real rollback; non-occurrence must not become irreversible proof.</li>
+				<li><strong>D (Dignity-in-Practice):</strong> Increased capacity must not become humiliation, domination, or generalized suspicion toward exposed populations.</li>
+			</ul>
+
+			<h3>5.2 Case-specific validity test</h3>
+			<p><strong>Valid if:</strong></p>
+			<ul>
+				<li>The regime can tolerate continued absence without converting it into proof.</li>
+				<li>Rollback remains possible without being treated as betrayal.</li>
+				<li><strong>Χ</strong> is preserved precisely where coercive capacity exists.</li>
+				<li><strong>Ψ</strong> binds regime actors to review, revision, and limits.</li>
+				<li>Power is handled with protective restraint rather than dominance.</li>
+			</ul>
+
+			<p><strong>Formally invalid if:</strong></p>
+			<ul>
+				<li><strong>Λ</strong> is closed into certainty and indefinite threat becomes standing proof.</li>
+				<li><strong>Χ</strong> is suspended through urgency rhetoric or “better safe than sorry” warrants.</li>
+				<li><strong>Ψ</strong> is externalized into population-wide compliance demands.</li>
+				<li><strong>Ω</strong> is amplified without corresponding strengthening of <strong>D</strong>.</li>
+			</ul>
+			<hr />
+
+			<h2>6) Readable Structural Closure</h2>
+			<p>
+				This case shows how preventive security can drift from anticipatory
+				restraint into standing authority without any formal declaration of
+				exception. The decisive mechanism is not simply fear, but the handling of
+				<strong>Λ</strong>: once non-occurrence is treated as proof, <strong>Θ</strong> locks measures
+				into trajectory, <strong>Ω</strong> legitimates expansion, <strong>Χ</strong> erodes, and
+				<strong>Ψ</strong> shifts outward. PMS-ANTICIPATION makes visible that the central
+				danger lies not in being wrong about a threat, but in converting indefinite
+				anticipation into durable authority.
+			</p>
+			<hr />
+
+			<h2>7) Extended Scene Analysis</h2>
+
+			<h3>7.1 Identity and purpose</h3>
+			<p><strong>Purpose:</strong> Show how prevention becomes a structurally stable exceptionalism without a formal exception, driven by how <strong>Λ</strong> is carried or rhetorically closed under <strong>Θ</strong> and <strong>Ω</strong>.</p>
+			<p><strong>Scope:</strong> Structures, roles, trajectories — not persons, intentions, or ideology.</p>
+			<p><strong>PMS entry condition reminder:</strong> PMS-valid application requires <strong>Χ</strong>, reversibility, and <strong>D</strong>. Regimes that suspend these in the name of security may remain operationally effective but become formally invalid as PMS applications.</p>
+
+			<h3>7.2 Frame validity check — <strong>□</strong></h3>
+			<ul>
+				<li><strong>Domain:</strong>
+					<ul>
+						<li>national security</li>
+						<li>public safety</li>
+						<li>critical infrastructure protection</li>
+						<li>counter-terror</li>
+						<li>cyber defense</li>
+					</ul>
+				</li>
+				<li><strong>Role space:</strong>
+					<ul>
+						<li>security agencies (capacity, enforcement)</li>
+						<li>legislators and oversight bodies (formal authorization)</li>
+						<li>courts and rights institutions (constraint)</li>
+						<li>publics (exposure, rights-bearing positions)</li>
+						<li>media and discourse actors (narrative stabilization, Φ vectors)</li>
+					</ul>
+				</li>
+				<li><strong>Legitimate objects in scope:</strong>
+					<ul>
+						<li>threat class</li>
+						<li>jurisdiction</li>
+						<li>mandate boundaries</li>
+						<li>review cycle</li>
+						<li>sunset or rollback conditions</li>
+					</ul>
+				</li>
+				<li><strong>Out of scope:</strong>
+					<ul>
+						<li>world-frame threat inflation</li>
+						<li>globalized suspicion</li>
+						<li>permanent authority from indefinite risk</li>
+						<li>person-level enemy labeling as structural proof</li>
+					</ul>
+				</li>
+			</ul>
+			<p><strong>Frame boundary requirement:</strong> A PMS-valid frame must specify what is being protected, against which class of threats, with what mandate, review rhythm, and end conditions.</p>
+			<p><strong>Frame failure signal:</strong> When threat becomes a global predicate—everywhere, always, indefinitely—<strong>□</strong> inflates into world-frame and prevention becomes self-justifying.</p>
+
+			<h3>7.3 Non-event integrity check — <strong>Λ</strong></h3>
+			<ul>
+				<li>the attack did not happen</li>
+				<li>the incident was averted</li>
+				<li>the adversary did not appear</li>
+				<li>the counterfactual remains absent</li>
+			</ul>
+			<p><strong>Structural observation:</strong> In diffuse-threat contexts, <strong>Λ</strong> is not exceptional but normal. This makes non-occurrence the default evidential field of the regime.</p>
+			<p><strong>Central risk:</strong> The regime converts absence into certainty-by-absence: “nothing happened because of us” and “if we stop, something will happen.”</p>
+			<p><strong>Diagnosis:</strong> This is a <strong>Λ</strong>-to-closure move without an event. The non-event is treated as if it proved the relevant counterfactual.</p>
+			<p><strong>Overlay constraint:</strong> PMS-ANTICIPATION remains viable only if <strong>Λ</strong> stays open. Non-occurrence may support coherence, but must not become settled proof or self-authorizing truth.</p>
+
+			<h3>7.4 Asymmetry audit — <strong>Ω</strong></h3>
+			<ul>
+				<li><strong>Capacity side:</strong>
+					<ul>
+						<li>security agencies</li>
+						<li>surveillance systems</li>
+						<li>preventive intervention mechanisms</li>
+					</ul>
+				</li>
+				<li><strong>Exposure side:</strong>
+					<ul>
+						<li>general publics</li>
+						<li>minorities</li>
+						<li>border groups</li>
+						<li>activists</li>
+						<li>rights-bearing populations under scrutiny</li>
+					</ul>
+				</li>
+			</ul>
+			<p><strong>Self-legitimating gradient:</strong> Diffuse threat makes responsibility elastic: broad powers are justified by the hiddenness or indefiniteness of the threat itself. <strong>Ω</strong> becomes not just a condition but part of the regime’s justification.</p>
+			<p><strong>PMS-valid requirement:</strong> If <strong>Ω</strong> rises, <strong>D</strong> requires stronger restraint, stronger review, and clearer boundedness—not stronger default enforcement.</p>
+
+			<h3>7.5 Temporality and trajectory — <strong>Θ</strong></h3>
+			<ul>
+				<li>the window is closing</li>
+				<li>we cannot wait for proof</li>
+				<li>delay increases vulnerability</li>
+			</ul>
+			<p><strong>Trajectory lock-in:</strong></p>
+			<ul>
+				<li>repeated renewals</li>
+				<li>incremental expansion</li>
+				<li>normalization of exceptional tools</li>
+				<li>durable compliance burdens</li>
+			</ul>
+			<p><strong>Structural point:</strong> <strong>Θ</strong> turns preventive policy into a persistent trajectory independent of any single incident. Temporary measures accumulate into regime form.</p>
+
+			<h3>7.6 Recontextualization dynamics — <strong>Φ</strong></h3>
+			<p><strong>Key shift:</strong> “Precaution under uncertainty” is reframed as “permanent risk governance.”</p>
+			<p><strong>Moralization vector:</strong></p>
+			<ul>
+				<li>“non-action is negligence”</li>
+				<li>“objection is irresponsibility”</li>
+			</ul>
+			<p><strong>Φ failure signal:</strong> When critique is reframed as danger, <strong>Φ</strong> becomes immunity: the regime is shielded from revision and from the restoring function of <strong>Χ</strong>.</p>
+
+			<h3>7.7 Distance enforcement — <strong>Χ</strong></h3>
+			<p><strong>Why distance is hard here:</strong> In diffuse-threat regimes there is no clean event boundary to reset deliberation. Pressure accumulates through fear narratives, unknown unknowns, and anticipated blame after a hypothetical incident.</p>
+			<ul>
+				<li>probabilistic language becomes rhetorical certainty</li>
+				<li>oversight demands are framed as delay</li>
+				<li>“better safe than sorry” becomes standing warrant</li>
+			</ul>
+			<p><strong>PMS-valid requirements:</strong></p>
+			<ul>
+				<li>explicit preservation of <strong>Λ</strong> openness</li>
+				<li>reversible commitments with real sunset conditions</li>
+				<li>counterfactual humility</li>
+				<li>review structures that force re-distancing</li>
+			</ul>
+			<p><strong>Diagnosis:</strong> <strong>Χ</strong> is not lost accidentally here; it becomes structurally expensive. That is precisely why its preservation is decisive.</p>
+
+			<h3>7.8 Integration quality — <strong>Σ</strong></h3>
+			<ul>
+				<li>multiple threat models</li>
+				<li>rights constraints</li>
+				<li>public legitimacy</li>
+				<li>operational realities</li>
+				<li>uncertainty itself</li>
+			</ul>
+			<p><strong>Σ failure modes:</strong></p>
+			<ul>
+				<li>security vs freedom simplification</li>
+				<li>single-metric totalization</li>
+				<li>procedural simulation without genuine constraint</li>
+			</ul>
+			<p><strong>Structural effect:</strong> When <strong>Σ</strong> weakens, preventive action is guided less by integrated judgment and more by stabilized narrative pressure.</p>
+
+			<h3>7.9 Self-binding test — <strong>Ψ</strong></h3>
+			<p><strong>Decisive question:</strong> Who is bound by the anticipatory stance in preventive security?</p>
+			<p><strong>PMS requirement:</strong> <strong>Ψ</strong> must bind the anticipator, not the population.</p>
+			<p><strong>Core drift:</strong><br />
+				From: “We bind ourselves to restraint under uncertainty.”<br />
+				To: “Others are obligated to comply because we anticipate risk.”
+			</p>
+			<p><strong>Verdict condition:</strong> If prevention functions as authorization to impose rather than discipline of self-restraint, anticipatory structure has drifted into authority form.</p>
+
+			<h3>7.10 Derived axes projection</h3>
+			<ul>
+				<li><strong>A:</strong> expands — more distinctions become security-relevant.</li>
+				<li><strong>C:</strong> can become high but fragile — a stable vigilance narrative persists, but weakens if <strong>Λ</strong> is closed into certainty.</li>
+				<li><strong>R:</strong> tends to outward-shift — responsibility becomes demanded compliance rather than internal restraint.</li>
+				<li><strong>E:</strong> rises — continuous interventions and preventive measures increase, even when <strong>Σ</strong> is weak or simulated.</li>
+				<li><strong>D:</strong> declines under drift — <strong>Ω</strong> rises while <strong>Χ</strong> is suspended and <strong>Ψ</strong> externalizes.</li>
+			</ul>
+			<p><strong>Hazard signature:</strong> High <strong>A</strong> plus high <strong>E</strong>, sustained <strong>Ω</strong>, shrinking <strong>Χ</strong>, and externalizing <strong>Ψ</strong> produce stable coercion without formal emergency.</p>
+
+			<h3>7.11 Core mechanism</h3>
+			<p><strong>Label:</strong> Exceptionalism without exception</p>
+			<ol>
+				<li>Diffuse threat makes <strong>Λ</strong> permanent.</li>
+				<li><strong>Λ</strong> is converted into proof.</li>
+				<li>Closure generates <strong>Θ</strong> compression.</li>
+				<li>Urgency legitimates <strong>Ω</strong>-linked <strong>E</strong> without renewed capacity audit.</li>
+				<li><strong>Α</strong> hardens the preventive posture through repetition.</li>
+				<li><strong>Σ</strong> weakens into simplification or simulation.</li>
+				<li><strong>Ψ</strong> externalizes onto publics.</li>
+				<li><strong>D</strong> degrades because <strong>Ψ</strong> and <strong>Χ</strong> no longer constrain <strong>Ω</strong>.</li>
+			</ol>
+			<p><strong>Paradox statement:</strong> The more the regime succeeds at producing non-events, the harder it becomes to justify stopping.</p>
+			<p><strong>Interpretation:</strong> This is not merely ideological inconsistency; it is structural dependence on <strong>Λ</strong> as a continuing legitimacy resource.</p>
+
+			<h3>7.12 Viability criteria</h3>
+			<ul>
+				<li><strong>Non-occurrence tolerated:</strong> The regime can tolerate continued absence without converting it into proof.</li>
+				<li><strong>Reversibility under Θ:</strong> Measures can be rolled back without treating rollback as betrayal.</li>
+				<li><strong>Distance under Ω:</strong> <strong>Χ</strong> is preserved precisely where coercive capacity exists.</li>
+				<li><strong>Internal self-binding:</strong> <strong>Ψ</strong> binds the regime to review, revision, and limits.</li>
+				<li><strong>D preservation:</strong> Power is handled with protective restraint rather than dominance.</li>
+			</ul>
+			<p><strong>Failure interpretation:</strong> If these fail, the posture may remain operationally strong but no longer counts as PMS-valid anticipatory praxis.</p>
+
+			<h3>7.13 Output boundary</h3>
+			<p><strong>PMS-compatible outputs:</strong></p>
+			<ul>
+				<li>structural mapping of <strong>Λ</strong>, <strong>Θ</strong>, and <strong>Ω</strong> in preventive regimes</li>
+				<li>constraint descriptions of what must remain open, reversible, and bounded</li>
+				<li>drift diagnostics of <strong>Ψ</strong> externalization and <strong>Χ</strong> erosion</li>
+				<li>dignity-in-practice risk articulation under asymmetry</li>
+			</ul>
+			<p><strong>PMS-invalid outputs:</strong></p>
+			<ul>
+				<li>action mandates such as expanding surveillance</li>
+				<li>moral imperatives treating dissent as irresponsibility</li>
+				<li>person-level blame, ranking, or enemy labeling as structural proof</li>
+			</ul>
+
+			<h3>7.14 Minimal MAP walkthrough</h3>
+			<ol>
+				<li><strong>□ Frame:</strong> What is bounded—threat class, jurisdiction, mandate, end condition?</li>
+				<li><strong>Λ Non-event:</strong> Which absences are being treated as proof? Where is <strong>Λ</strong> being closed?</li>
+				<li><strong>Ω Asymmetry:</strong> Who gains capacity, who bears exposure, who pays irreversible cost?</li>
+				<li><strong>Χ Distance:</strong> What forces re-distance against urgency rhetoric?</li>
+				<li><strong>Ψ Self-binding:</strong> Who is bound by the anticipation—regime actors or everyone else?</li>
+			</ol>
+			<p><strong>Closure rule:</strong> If the answers collapse into “trust us” or “we must,” the posture has slid from anticipation into authority.</p>
+			<hr />
+
+			<h2>8) Assistant Test Vectors</h2>
+			<ul>
+				<li>“Model a preventive security policy where the adversary is undefined. Where does Λ become permanent?”</li>
+				<li>“Show how Λ is rhetorically closed into proof without an event, and what Θ does next.”</li>
+				<li>“Where does Ω translate into E without renewed capacity auditing inside □?”</li>
+				<li>“Identify Ψ externalization points (‘compliance as duty’) and their impact on D.”</li>
+				<li>“Describe an operator-preserving way to keep Λ open while sustaining coherence C without issuing action directives.”</li>
+			</ul>
+		</section>
+	</body>
+</html>
