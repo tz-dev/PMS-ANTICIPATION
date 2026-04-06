@@ -190,328 +190,497 @@
       }
     </style>
   </head>
-  <body>
-    <div class="page">
 	<body>
-	  <div class="page">
-	    <header>
-	      <h1>PMS-ANTICIPATION – Model Specification</h1>
-	      <div class="subtitle">
-	        A PMS-conform application layer for anticipation: non-event discipline, restraint, and responsibility without closure
-	      </div>
-	      <div class="meta">
-	        Version: PMS-ANTICIPATION_1.0 &middot;
-	        Spec basis: <span class="code-inline">pms-anticipation.yaml</span><br />
-	        Author: T. Zöller &middot; Formalisation assistance: ChatGPT (GPT-5.2 Thinking)<br />
-	        Language: EN &middot; Status: Model spec (aligned with <span class="code-inline">schema_meta.status = "draft"</span>)<br />
-	        Depends on: <span class="code-inline">PMS.yaml</span> (<span class="code-inline">schema_version = "PMS_1.1"</span>)
-	      </div>
-	    </header>
+		<div class="page">
+		  <header>
+		    <h1>PMS-ANTICIPATION – Model Specification</h1>
+		    <div class="subtitle">
+		      A PMS-conform application layer for anticipation: non-event discipline, restraint, responsibility, and non-capture openness without closure
+		    </div>
+		    <div class="meta">
+		      Version: PMS-ANTICIPATION_1.1 &middot;
+		      Spec basis: <span class="code-inline">PMS-ANTICIPATION.yaml</span><br />
+		      Author: T. Zöller &middot; Formalisation assistance: ChatGPT (GPT-5.4 Thinking)<br />
+		      Language: EN &middot; Status: Model spec (aligned with <span class="code-inline">schema_meta.status = "draft"</span>)<br />
+		      Depends on: <span class="code-inline">PMS.yaml</span> (<span class="code-inline">schema_version = "PMS_1.3"</span>)
+		    </div>
+		  </header>
 
-	    <!-- 1. Purpose & scope -->
-	    <section id="purpose-scope">
-	      <h2>1. Purpose and scope of this specification</h2>
+		  <!-- 1. Purpose & scope -->
+		  <section id="purpose-scope">
+		    <h2>1. Purpose and scope of this specification</h2>
 
-	      <p>
-	        This document specifies the <em>PMS-ANTICIPATION</em> layer in a concise,
-	        technical form. It is based on the YAML file
-	        <span class="code-inline">pms-anticipation.yaml</span>
-	        (with <span class="code-inline">schema_version = "PMS-ANTICIPATION_1.0"</span>)
-	        and renders its structure, constraints, and semantics explicit for
-	        human readers and computational systems.
-	      </p>
+		    <p>
+		      This document specifies the <em>PMS-ANTICIPATION</em> layer in a concise,
+		      technical form. It is based on the YAML file
+		      <span class="code-inline">PMS-ANTICIPATION.yaml</span>
+		      (with <span class="code-inline">schema_version = "PMS-ANTICIPATION_1.1"</span>)
+		      and renders its structure, constraints, and semantics explicit for
+		      human readers and computational systems.
+		    </p>
 
-	      <p>
-	        PMS-ANTICIPATION is an <strong>application profile</strong> (overlay) of the
-	        Praxeological Meta-Structure (PMS; Δ–Ψ). It does <strong>not</strong> redefine
-	        PMS operators, dependencies, layers, or derived axes. Instead, it formalizes
-	        <strong>anticipation as a present structural stance</strong>: a disciplined
-	        handling of possible futures and non-events under asymmetry (Ω) and
-	        irreversibility (Θ), without closure claims or action authorization.
-	      </p>
+		    <p>
+		      PMS-ANTICIPATION is an <strong>application profile</strong> (overlay) of the
+		      Praxeological Meta-Structure (PMS; Δ–Ψ). It does <strong>not</strong> redefine
+		      PMS operators, dependencies, layers, or derived axes. Instead, it formalizes
+		      <strong>anticipation as a present structural stance</strong>: a disciplined
+		      handling of possible futures and non-events under asymmetry (Ω) and
+		      irreversibility (Θ), without closure claims or action authorization.
+		    </p>
 
-	      <p>The specification covers, in particular:</p>
-	      <ul>
-	        <li>
-	          the <strong>schema_meta</strong> block (identity, status, authorship,
-	          dependency on PMS_1.1);
-	        </li>
-	        <li>
-	          the <strong>validity gate</strong> enforcing Χ (Distance), reversibility,
-	          and D (dignity-in-practice);
-	        </li>
-	        <li>
-	          the <strong>anticipation lens definition</strong> and operator role
-	          mappings (Δ–Ψ → anticipation functions);
-	        </li>
-	        <li>
-	          <strong>reduced signatures</strong> defining minimal and viable
-	          anticipatory configurations;
-	        </li>
-	        <li>
-	          <strong>viability criteria</strong> and formal invalidity markers;
-	        </li>
-	        <li>
-	          <strong>contrast frames</strong> (anticipation vs prognosis);
-	        </li>
-	        <li>
-	          <strong>risk, failure modes, and post-confirmation discipline</strong>;
-	        </li>
-	        <li>
-	          a <strong>minimal application protocol (MAP)</strong> and example schema.
-	        </li>
-	      </ul>
+		    <p>
+		      The specification also makes explicit that this overlay does
+		      <strong>not claim monopoly over anticipation analysis</strong>. Rival framings
+		      may address other dimensions, and not all anticipatory configurations
+		      must translate cleanly into PMS operator chains.
+		    </p>
 
-	      <div class="box">
-	        <div class="box-title">Core idea</div>
-	        <p class="small">
-	          PMS-ANTICIPATION models anticipation not as future knowledge,
-	          prediction, or justification for intervention, but as a
-	          <strong>self-binding discipline of restraint</strong> that remains
-	          structurally valid even when anticipated events do not occur — and
-	          especially when they do.
-	        </p>
-	      </div>
-	    </section>
+		    <p>The specification covers, in particular:</p>
+		    <ul>
+		      <li>
+		        the <strong>schema_meta</strong> block (identity, status, authorship,
+		        explicit dependency on PMS_1.3, and methodological restraint);
+		      </li>
+		      <li>
+		        the <strong>validity gate</strong> enforcing Χ (Distance), reversibility,
+		        and D (Dignity-in-Practice);
+		      </li>
+		      <li>
+		        the <strong>anticipation lens definition</strong> and operator role
+		        mappings (Δ–Ψ → anticipation functions);
+		      </li>
+		      <li>
+		        <strong>reduced signatures</strong> defining minimal and viable
+		        anticipatory configurations;
+		      </li>
+		      <li>
+		        <strong>viability criteria</strong> and formal invalidity markers;
+		      </li>
+		      <li>
+		        <strong>contrast frames</strong> (anticipation vs prognosis);
+		      </li>
+		      <li>
+		        <strong>configuration comparison</strong> and structural trade-offs;
+		      </li>
+		      <li>
+		        <strong>structural drift patterns</strong> and post-confirmation discipline;
+		      </li>
+		      <li>
+		        <strong>scope limitations, rival framings, and non-capture openness</strong>;
+		      </li>
+		      <li>
+		        a <strong>minimal application protocol (MAP)</strong> and example schema.
+		      </li>
+		    </ul>
 
-	    <div class="pagebreak"></div>
+		    <div class="box">
+		      <div class="box-title">Core idea</div>
+		      <p class="small">
+		        PMS-ANTICIPATION models anticipation not as future knowledge,
+		        prediction, or justification for intervention, but as a
+		        <strong>self-binding discipline of restraint</strong> that remains
+		        structurally viable even when anticipated events do not occur — and
+		        is tested most sharply when they do.
+		      </p>
+		    </div>
+		  </section>
 
-	    <!-- 2. High-level YAML structure -->
-	    <section id="structure">
-	      <h2>2. High-level structure of the YAML model</h2>
+		  <div class="pagebreak"></div>
 
-	      <h3>2.1 Top-level keys</h3>
-	      <table class="table">
-	        <thead>
-	          <tr>
-	            <th>Key</th>
-	            <th>Description</th>
-	            <th>Role in the model</th>
-	          </tr>
-	        </thead>
-	        <tbody>
-	          <tr>
-	            <td><span class="code-inline">schema_version</span></td>
-	            <td>Version identifier (<span class="code-inline">"PMS-ANTICIPATION_1.0"</span>).</td>
-	            <td>Compatibility and citation</td>
-	          </tr>
-	          <tr>
-	            <td><span class="code-inline">schema_meta</span></td>
-	            <td>Model identity, authors, status, and explicit dependency on PMS_1.1.</td>
-	            <td>Meta-information / inheritance statement</td>
-	          </tr>
-	          <tr>
-	            <td><span class="code-inline">validity_gate</span></td>
-	            <td>Entry conditions for PMS-application: Χ, reversibility, D.</td>
-	            <td>Application firewall</td>
-	          </tr>
-	          <tr>
-	            <td><span class="code-inline">operator_reference</span></td>
-	            <td>Fixed operator set Δ–Ψ and dependency hygiene notes.</td>
-	            <td>Non-redefinition guarantee</td>
-	          </tr>
-	          <tr>
-	            <td><span class="code-inline">paper_lens</span></td>
-	            <td>Definition and non-negotiable constraints of anticipation.</td>
-	            <td>Semantic lens declaration</td>
-	          </tr>
-	          <tr>
-	            <td><span class="code-inline">lens_operator_roles</span></td>
-	            <td>Operator-to-anticipation role mappings.</td>
-	            <td>Interpretive bridge</td>
-	          </tr>
-	          <tr>
-	            <td><span class="code-inline">reduced_signatures</span></td>
-	            <td>Minimal and viable anticipation configurations.</td>
-	            <td>Threshold definitions</td>
-	          </tr>
-	          <tr>
-	            <td><span class="code-inline">criteria</span></td>
-	            <td>Viability conditions and formal invalidity markers.</td>
-	            <td>Structural evaluation</td>
-	          </tr>
-	          <tr>
-	            <td><span class="code-inline">contrast_frames</span></td>
-	            <td>Anticipation vs prognosis distinction.</td>
-	            <td>Conceptual boundary control</td>
-	          </tr>
-	          <tr>
-	            <td><span class="code-inline">risk_and_failure_modes</span></td>
-	            <td>Predictable misuse and collapse patterns.</td>
-	            <td>Drift awareness</td>
-	          </tr>
-	          <tr>
-	            <td><span class="code-inline">methodological_appendix</span></td>
-	            <td>Minimal Application Protocol (MAP) and red flags.</td>
-	            <td>Operational discipline</td>
-	          </tr>
-	        </tbody>
-	      </table>
+		  <!-- 2. High-level YAML structure -->
+		  <section id="structure">
+		    <h2>2. High-level structure of the YAML model</h2>
 
-	      <div class="box">
-	        <div class="box-title">Conceptual separation</div>
-	        <p class="small">
-	          PMS defines the operator grammar. PMS-ANTICIPATION defines how that
-	          grammar is used to keep the future open without turning probability
-	          into authority.
-	        </p>
-	      </div>
-	    </section>
+		    <h3>2.1 Top-level keys</h3>
+		    <table class="table">
+		      <thead>
+		        <tr>
+		          <th>Key</th>
+		          <th>Description</th>
+		          <th>Role in the model</th>
+		        </tr>
+		      </thead>
+		      <tbody>
+		        <tr>
+		          <td><span class="code-inline">schema_version</span></td>
+		          <td>Version identifier (<span class="code-inline">"PMS-ANTICIPATION_1.1"</span>).</td>
+		          <td>Compatibility and citation</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">schema_meta</span></td>
+		          <td>Model identity, authors, overlay role, dependency on PMS_1.3, and methodological restraint.</td>
+		          <td>Meta-information / inheritance statement</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">validity_gate</span></td>
+		          <td>Entry conditions for PMS-application: Χ, reversibility, D.</td>
+		          <td>Application firewall</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">operator_reference</span></td>
+		          <td>Fixed operator set Δ–Ψ and dependency hygiene notes.</td>
+		          <td>Non-redefinition guarantee</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">paper_lens</span></td>
+		          <td>Definition and non-negotiable constraints of anticipation.</td>
+		          <td>Semantic lens declaration</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">lens_operator_roles</span></td>
+		          <td>Operator-to-anticipation role mappings.</td>
+		          <td>Interpretive bridge</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">derived_axes_reference</span></td>
+		          <td>Canonical PMS axes with anticipation-specific relevance notes.</td>
+		          <td>Axis relevance mapping</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">reduced_signatures</span></td>
+		          <td>Minimal and viable anticipation configurations.</td>
+		          <td>Threshold definitions</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">criteria</span></td>
+		          <td>Viability conditions and formal invalidity markers.</td>
+		          <td>Structural evaluation</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">contrast_frames</span></td>
+		          <td>Anticipation vs prognosis distinction.</td>
+		          <td>Conceptual boundary control</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">prognosis_contrast</span></td>
+		          <td>Types of prognosis and their PMS status.</td>
+		          <td>Status differentiation</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">configuration_comparison</span></td>
+		          <td>Action-proximate vs restraint-oriented anticipatory configurations.</td>
+		          <td>Trade-off mapping</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">risk_and_drift_patterns</span></td>
+		          <td>Predictable structural drift and misuse patterns.</td>
+		          <td>Drift awareness</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">post_confirmation_discipline</span></td>
+		          <td>Second-order discipline after confirmation.</td>
+		          <td>Validation-risk control</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">responsibility_and_dignity_links</span></td>
+		          <td>Links between anticipation, responsibility, and D.</td>
+		          <td>Normative firewall within PMS criteria</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">scope_limitations_and_rival_framings</span></td>
+		          <td>Boundary of analysis, non-capture, complementarity.</td>
+		          <td>Methodological restraint</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">methodological_appendix</span></td>
+		          <td>Minimal Application Protocol (MAP), red flags, and self-application rule.</td>
+		          <td>Operational discipline</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">closing_formula</span></td>
+		          <td>Compact closure statement of the lens.</td>
+		          <td>Interpretive summary</td>
+		        </tr>
+		        <tr>
+		          <td><span class="code-inline">example_suite_schema</span></td>
+		          <td>Required structure for scene-bound non-instructional examples.</td>
+		          <td>Example-format discipline</td>
+		        </tr>
+		      </tbody>
+		    </table>
 
-	    <div class="pagebreak"></div>
+		    <div class="box">
+		      <div class="box-title">Conceptual separation</div>
+		      <p class="small">
+		        PMS defines the operator grammar. PMS-ANTICIPATION defines how that
+		        grammar is used to keep the future open without turning probability
+		        into authority or restraint into covert dominance.
+		      </p>
+		    </div>
+		  </section>
 
-	    <!-- 3. Validity gate -->
-	    <section id="validity">
-	      <h2>3. Validity gate and scope constraints</h2>
+		  <div class="pagebreak"></div>
 
-	      <h3>3.1 Application gate</h3>
-	      <ul>
-	        <li><strong>Χ (Distance):</strong> stop-capability must remain active even under high probability.</li>
-	        <li><strong>Reversibility:</strong> all anticipatory readings are scene-bound and revisable.</li>
-	        <li><strong>D (Dignity-in-practice):</strong> anticipation must not coerce, shame, or rank.</li>
-	      </ul>
+		  <!-- 3. Validity gate -->
+		  <section id="validity">
+		    <h2>3. Validity gate and scope constraints</h2>
 
-	      <h3>3.2 Explicit non-goals</h3>
-	      <ul>
-	        <li>prediction or future truth claims;</li>
-	        <li>action mandates or preparedness imperatives;</li>
-	        <li>moralization of uncertainty;</li>
-	        <li>externalization of self-binding (Ψ → others).</li>
-	      </ul>
+		    <h3>3.1 Application gate</h3>
+		    <ul>
+		      <li><strong>Χ (Distance):</strong> stop-capability must remain active even under high probability.</li>
+		      <li><strong>Reversibility:</strong> all anticipatory readings are scene-bound and revisable.</li>
+		      <li><strong>D (Dignity-in-Practice):</strong> anticipation must not coerce, shame, rank, or authorize dominance.</li>
+		    </ul>
 
-	      <div class="box">
-	        <div class="box-title">Key firewall</div>
-	        <p class="small">
-	          If anticipation is used to justify intervention, it has already
-	          left PMS.
-	        </p>
-	      </div>
-	    </section>
+		    <h3>3.2 Explicit non-goals</h3>
+		    <ul>
+		      <li>prediction or future truth claims;</li>
+		      <li>action mandates or preparedness imperatives;</li>
+		      <li>moralization of uncertainty;</li>
+		      <li>externalization of self-binding (Ψ → others);</li>
+		      <li>treating anticipation as exhaustive of all future-oriented analysis.</li>
+		    </ul>
 
-	    <div class="pagebreak"></div>
+		    <div class="box">
+		      <div class="box-title">Key firewall</div>
+		      <p class="small">
+		        If anticipation is used to justify intervention, closure, or coercive
+		        authority, it has become formally invalid within PMS application criteria.
+		      </p>
+		    </div>
+		  </section>
 
-	    <!-- 4. Anticipation as structure -->
-	    <section id="anticipation-core">
-	      <h2>4. Anticipation as a structural configuration</h2>
+		  <div class="pagebreak"></div>
 
-	      <table class="table">
-	        <thead>
-	          <tr>
-	            <th>Configuration</th>
-	            <th>Signature</th>
-	            <th>Meaning</th>
-	          </tr>
-	        </thead>
-	        <tbody>
-	          <tr>
-	            <td><strong>Minimal anticipation</strong></td>
-	            <td><span class="code-inline">Δ + □ + Λ + Θ + Χ</span></td>
-	            <td>
-	              A bounded possibility remains open as a non-event under
-	              irreversibility, with sustained restraint.
-	            </td>
-	          </tr>
-	          <tr>
-	            <td><strong>Viable anticipation</strong></td>
-	            <td><span class="code-inline">Δ–Ψ (full chain)</span></td>
-	            <td>
-	              Impulse is regulated, patterns recognized, asymmetry handled,
-	              openness integrated, and restraint self-bound over time.
-	            </td>
-	          </tr>
-	        </tbody>
-	      </table>
+		  <!-- 4. Anticipation as structure -->
+		  <section id="anticipation-core">
+		    <h2>4. Anticipation as a structural configuration</h2>
 
-	      <div class="box">
-	        <div class="box-title">Non-equivalence</div>
-	        <p class="small">
-	          Anticipation is not prognosis, not planning, and not readiness.
-	          These may occur downstream, but anticipation itself authorizes none
-	          of them.
-	        </p>
-	      </div>
-	    </section>
+		    <table class="table">
+		      <thead>
+		        <tr>
+		          <th>Configuration</th>
+		          <th>Signature</th>
+		          <th>Meaning</th>
+		        </tr>
+		      </thead>
+		      <tbody>
+		        <tr>
+		          <td><strong>Minimal anticipation</strong></td>
+		          <td><span class="code-inline">Δ + □ + Λ + Θ + Χ</span></td>
+		          <td>
+		            A bounded possibility remains open as a non-event under
+		            irreversibility, with sustained restraint.
+		          </td>
+		        </tr>
+		        <tr>
+		          <td><strong>Viable anticipation</strong></td>
+		          <td><span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</span></td>
+		          <td>
+		            Impulse is regulated, patterns recognized, asymmetry handled,
+		            openness integrated, and restraint self-bound over time.
+		          </td>
+		        </tr>
+		        <tr>
+		          <td><strong>Downstream planning constraint</strong></td>
+		          <td><span class="code-inline">Χ + D + reversibility</span></td>
+		          <td>
+		            Any planning that follows anticipation remains constrained by
+		            restraint, dignity-in-practice, and non-premature closure.
+		          </td>
+		        </tr>
+		      </tbody>
+		    </table>
 
-	    <div class="pagebreak"></div>
+		    <div class="box">
+		      <div class="box-title">Non-equivalence</div>
+		      <p class="small">
+		        Anticipation is not prognosis, not planning, and not readiness.
+		        These may occur downstream, but anticipation itself authorizes none
+		        of them.
+		      </p>
+		    </div>
+		  </section>
 
-	    <!-- 5. Drift, risk, confirmation -->
-	    <section id="risk">
-	      <h2>5. Risk, drift, and post-confirmation discipline</h2>
+		  <div class="pagebreak"></div>
 
-	      <p>
-	        PMS-ANTICIPATION treats confirmation as a second-order stress test.
-	        Being right increases the obligation to restore Χ, not to abandon it.
-	      </p>
+		  <!-- 5. Criteria, prognosis, and trade-off -->
+		  <section id="criteria-prognosis">
+		    <h2>5. Viability criteria, prognosis contrast, and structural trade-off</h2>
 
-	      <ul>
-	        <li><strong>Preemptive authoritarianism:</strong> Ω inflation under anticipation.</li>
-	        <li><strong>Probability compulsion:</strong> likelihood → must-act logic.</li>
-	        <li><strong>Ψ overbinding:</strong> identity bound to correctness.</li>
-	        <li><strong>Λ rewrite:</strong> uncertainty retroactively denied.</li>
-	      </ul>
+		    <h3>5.1 Positive viability criteria</h3>
+		    <ul>
+		      <li><strong>Λ carried:</strong> openness remains active rather than resolved.</li>
+		      <li><strong>Θ respected:</strong> irreversibility and delayed feedback are acknowledged.</li>
+		      <li><strong>Χ active:</strong> high probability does not become authority.</li>
+		      <li><strong>Ψ binds self:</strong> obligation is not externalized onto others.</li>
+		      <li><strong>Σ integrates openness:</strong> uncertainty is coordinated without false certainty.</li>
+		    </ul>
 
-	      <div class="box">
-	        <div class="box-title">Structural warning</div>
-	        <p class="small">
-	          The most dangerous error is using anticipation to legitimize
-	          intervention rather than to bind oneself to restraint.
-	        </p>
-	      </div>
-	    </section>
+		    <h3>5.2 Formal invalidity markers</h3>
+		    <ul>
+		      <li><strong>Λ replaced by certainty</strong></li>
+		      <li><strong>Θ neutralized by action compulsion</strong></li>
+		      <li><strong>Χ suspended</strong></li>
+		      <li><strong>Ω instrumentalized</strong></li>
+		      <li><strong>Ψ externalized</strong></li>
+		    </ul>
 
-	    <div class="pagebreak"></div>
+		    <h3>5.3 Anticipation vs prognosis</h3>
+		    <p>
+		      Prognosis may provide descriptive material, but within PMS criteria it
+		      becomes formally invalid when it supplies authority by closing Λ,
+		      suspending Χ, or eroding D. Anticipation, by contrast, is a present
+		      structural stance that remains viable under non-occurrence.
+		    </p>
 
-	    <!-- 6. Minimal Application Protocol -->
-	    <section id="map">
-	      <h2>6. Minimal Application Protocol (MAP)</h2>
+		    <h3>5.4 Structural trade-off</h3>
+		    <p>
+		      The overlay distinguishes two recurrent configuration tendencies:
+		      an <strong>action-proximate</strong> pattern and a
+		      <strong>restraint-oriented</strong> pattern.
+		      Effectiveness tends to increase as Ψ binds toward E, whereas stability
+		      tends to increase as Χ precedes E. PMS-ANTICIPATION treats these as
+		      structurally incompatible optimizations, not as defects corrigible
+		      simply by better information.
+		    </p>
+		  </section>
 
-	      <ol>
-	        <li><strong>□ Frame check:</strong> Where does influence actually exist?</li>
-	        <li><strong>Λ Non-event integrity:</strong> What might not happen?</li>
-	        <li><strong>Ω Asymmetry audit:</strong> Who bears irreversible cost?</li>
-	        <li><strong>Χ Distance enforcement:</strong> Where is urgency replacing structure?</li>
-	        <li><strong>Ψ Self-binding test:</strong> Who is actually bound?</li>
-	      </ol>
+		  <div class="pagebreak"></div>
 
-	      <div class="box">
-	        <div class="box-title">Invalidity marker</div>
-	        <p class="small">
-	          “Others must act now” is a sufficient condition for PMS-invalidity.
-	        </p>
-	      </div>
-	    </section>
+		  <!-- 6. Drift, risk, and confirmation -->
+		  <section id="risk">
+		    <h2>6. Structural drift, misuse corridors, and post-confirmation discipline</h2>
 
-	    <div class="pagebreak"></div>
+		    <p>
+		      PMS-ANTICIPATION treats confirmation as a second-order stress test.
+		      Being right increases the obligation to restore Χ, not to abandon it.
+		    </p>
 
-	    <!-- 7. Implementation & citation -->
-	    <section id="implementation">
-	      <h2>7. Implementation notes and citation</h2>
+		    <ul>
+		      <li><strong>Preemptive authoritarian drift:</strong> Ω inflation under anticipation.</li>
+		      <li><strong>Probability-induced action compulsion:</strong> likelihood → must-act logic.</li>
+		      <li><strong>Moralization of uncertainty:</strong> Λ becomes normative warrant.</li>
+		      <li><strong>Preventive escalation:</strong> irreversible commitments before Λ is resolved.</li>
+		      <li><strong>AD_A≫E:</strong> evaluative expansion with chronically delayed enactment.</li>
+		      <li><strong>Ψ overbinding:</strong> identity bound to correctness after confirmation.</li>
+		      <li><strong>Λ rewrite:</strong> prior uncertainty retroactively denied.</li>
+		    </ul>
 
-	      <p>
-	        The authoritative specification is
-	        <span class="code-inline">pms-anticipation.yaml</span>, intended to be
-	        loaded after <span class="code-inline">PMS.yaml</span>.
-	      </p>
+		    <div class="box">
+		      <div class="box-title">Structural warning</div>
+		      <p class="small">
+		        The most dangerous error is using anticipation to legitimate
+		        intervention rather than to bind oneself to restraint.
+		      </p>
+		    </div>
+		  </section>
 
-	      <div class="box small">
-	        <span class="code-inline">PMS.yaml</span> → <span class="code-inline">pms-anticipation.yaml</span>
-	      </div>
+		  <div class="pagebreak"></div>
 
-	      <p class="small">
-	        <strong>Technical reference:</strong><br />
-	        <em>PMS-ANTICIPATION.yaml – Anticipation Layer Specification</em>
-	      </p>
+		  <!-- 7. Responsibility, dignity, and limits -->
+		  <section id="limits">
+		    <h2>7. Responsibility, dignity, scope limits, and rival framings</h2>
 
-	      <p class="small">
-	        <strong>Base dependency:</strong><br />
-	        <em>PMS.yaml – Praxeological Meta-Structure (PMS_1.1)</em>
-	      </p>
+		    <h3>7.1 Responsibility and dignity</h3>
+		    <p>
+		      Within this overlay, anticipation does not authorize action; it deepens
+		      responsibility for restraint. Responsibility attaches only where
+		      effective, frame-bound influence exists, and remains viable only if Χ
+		      stays active under Θ and Ω.
+		    </p>
 
-	      <p>
-	        <strong>License:</strong><br />
-	        Governed by the license declared in the distribution repository.
-	      </p>
-	    </section>
-	  </div>
+		    <p>
+		      Dignity-in-Practice is preserved only where anticipation does not amplify
+		      threat narratives into inevitability, does not justify coercion, and does
+		      not replace present justification with imported prior expectations.
+		    </p>
+
+		    <h3>7.2 Scope limitations</h3>
+		    <ul>
+		      <li>Epistemic anticipation addresses future-state estimation.</li>
+		      <li>Phenomenological anticipation lies outside PMS by design.</li>
+		      <li>Strategic anticipation may overlap in cases, but strategic success is not a PMS criterion.</li>
+		    </ul>
+
+		    <h3>7.3 Genuine non-capture</h3>
+		    <p>
+		      The overlay explicitly preserves the possibility that some anticipatory
+		      configurations resist clean translation into PMS operator chains.
+		      Coherent translation alone does not prove exhaustive capture.
+		    </p>
+
+		    <h3>7.4 Complementarity</h3>
+		    <p>
+		      PMS-ANTICIPATION is not presented as the only legitimate analysis of
+		      anticipation. It is strongest where it makes a specific structural
+		      dimension visible that predictive, strategic, or precautionary framings
+		      may not foreground.
+		    </p>
+		  </section>
+
+		  <div class="pagebreak"></div>
+
+		  <!-- 8. Minimal Application Protocol -->
+		  <section id="map">
+		    <h2>8. Minimal Application Protocol (MAP)</h2>
+
+		    <ol>
+		      <li><strong>□ Frame check:</strong> Where does influence actually exist?</li>
+		      <li><strong>Λ Non-event integrity:</strong> What might not happen?</li>
+		      <li><strong>Ω Asymmetry audit:</strong> Who bears irreversible cost?</li>
+		      <li><strong>Χ Distance enforcement:</strong> Where is urgency replacing structure?</li>
+		      <li><strong>Ψ Self-binding test:</strong> Who is actually bound?</li>
+		    </ol>
+
+		    <div class="box">
+		      <div class="box-title">Invalidity marker</div>
+		      <p class="small">
+		        “Others must act now” = Ψ-externalization and therefore formal
+		        invalidity within PMS application criteria.
+		      </p>
+		    </div>
+
+		    <h3>8.1 Red-flag patterns</h3>
+		    <ul>
+		      <li><em>We must act because…</em> → Λ collapsed</li>
+		      <li><em>The data clearly shows…</em> → Α → certainty</li>
+		      <li><em>Responsibility demands intervention</em> → Ω instrumentalized</li>
+		      <li><em>Delay is irresponsible</em> → Χ suspended</li>
+		      <li><em>They should have known</em> → retroactive guilt</li>
+		    </ul>
+
+		    <h3>8.2 What this overlay can and cannot do</h3>
+		    <p><strong>Can:</strong> make structural drift visible, track Λ/Ω/Θ/Χ interactions, distinguish self-binding from other-binding, and show when anticipation becomes coercive or prematurely closed.</p>
+		    <p><strong>Cannot:</strong> supply action mandates, evaluate success by predictive accuracy alone, replace other anticipatory frameworks, or decide when action must occur in non-PMS terms.</p>
+		  </section>
+
+		  <div class="pagebreak"></div>
+
+		  <!-- 9. Implementation & citation -->
+		  <section id="implementation">
+		    <h2>9. Implementation notes and citation</h2>
+
+		    <p>
+		      The authoritative specification is
+		      <span class="code-inline">PMS-ANTICIPATION.yaml</span>, intended to be
+		      loaded after <span class="code-inline">PMS.yaml</span>.
+		    </p>
+
+		    <div class="box small">
+		      <span class="code-inline">PMS.yaml</span> → <span class="code-inline">PMS-ANTICIPATION.yaml</span>
+		    </div>
+
+		    <p class="small">
+		      <strong>Technical reference:</strong><br />
+		      <em>PMS-ANTICIPATION.yaml – Paper-Specific Application Schema (PMS-ANTICIPATION_1.1)</em>
+		    </p>
+
+		    <p class="small">
+		      <strong>Base dependency:</strong><br />
+		      <em>PMS.yaml – Praxeological Meta-Structure (PMS_1.3)</em>
+		    </p>
+
+		    <p class="small">
+		      <strong>Closing formula:</strong><br />
+		      <em>Anticipation is not about being early — it is about being bound before acting.</em>
+		    </p>
+
+		    <p>
+		      <strong>License:</strong><br />
+		      Governed by the license declared in the distribution repository.
+		    </p>
+		  </section>
+		</div>
 	</body>
 </html>

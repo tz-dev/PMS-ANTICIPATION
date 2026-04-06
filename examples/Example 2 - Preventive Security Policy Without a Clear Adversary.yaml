@@ -1,0 +1,422 @@
+example_schema_version: "PMS-ANTICIPATION_EXAMPLE_1.1"
+
+example_meta:
+  example_id: "example_02"
+  title: "Preventive Security Policy Without a Clear Adversary"
+  case_label: "Perpetual Prevention Under Indefinite Threat"
+  language: "en"
+  format_origin: "converted_from_markdown_case"
+  depends_on:
+    overlay: "PMS-ANTICIPATION"
+    overlay_schema_version: "PMS-ANTICIPATION_1.1"
+    base_model: "PMS"
+    base_schema_version: "PMS_1.3"
+  status: "draft_example"
+  last_updated: "2026-04-06"
+  authors:
+    - name: "T. Zöller"
+      role: "originator"
+    - name: "ChatGPT (GPT-5.4 Thinking)"
+      role: "formalization_assistant"
+
+minimal_vignette:
+  scene_bound_case: >
+    A state, alliance, or large institution adopts preventive security as a
+    standing posture without a clearly bounded adversary, event timeline, or
+    verifiable end condition. Threats are framed as diffuse, networked,
+    hybrid, stochastic, radicalized, or systemic. The regime is therefore
+    evaluated less by discrete events than by the continued absence of events.
+    Over time, non-occurrence becomes the currency of legitimacy, and rollback
+    becomes increasingly difficult.
+  immediate_structural_focus: >
+    The case tracks how prevention can stabilize into exceptionalism without a
+    formal exception, through the handling of Λ (Non-Event) under Θ
+    (Temporality) and Ω (Asymmetry), especially when Χ (Distance) becomes
+    structurally expensive.
+
+why_this_is_repo_useful:
+  structural_focus: >
+    This example shows how PMS-ANTICIPATION can analyze a regime in which the
+    central object is not an event but a continuing non-event field. It is
+    especially useful because it demonstrates how preventive governance can
+    become self-legitimating without requiring a single decisive occurrence.
+  repo_relevance:
+    - "Illustrates how Λ can become permanent as a structurally normal condition."
+    - "Shows how Θ can lock temporary preventive measures into durable trajectories."
+    - "Makes visible how Ω can become self-legitimating when threat remains indefinite."
+    - "Demonstrates Ψ externalization in security settings ('compliance as duty')."
+    - "Provides a strong anticipation/prognosis contrast case without relying on person-level interpretation."
+  use_value_for_overlay: >
+    The case is a good reference example for diffuse-risk governance, security
+    exceptionalism, and institutional anticipatory drift, while remaining
+    scene-bound, non-diagnostic, and non-instructional.
+
+operator_mapping:
+  reduced_signature:
+    primary_signature:
+      label: "Preventive anticipation under indefinite threat"
+      operators: ["Δ", "□", "Λ", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+      note: >
+        The case is dominated by an open but rhetorically pressured non-event
+        field (Λ) inside an expanding security frame (□), under strong
+        asymmetry (Ω) and durable trajectory effects (Θ). Recontextualization
+        (Φ), distance erosion (Χ), weak or simulated integration (Σ), and
+        outward-shifting self-binding (Ψ) determine whether the regime remains
+        anticipatory or drifts into authority.
+    shorthand_relation_to_overlay:
+      ANT_min_presence: ["Δ", "□", "Λ", "Θ", "Χ"]
+      ANT_viable_requirement: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+      case_position: >
+        The case begins as a candidate anticipatory configuration, but tends
+        toward instability where Λ is rhetorically closed, Χ becomes costly,
+        Σ weakens into simulation, and Ψ externalizes.
+
+  operator_roles_in_case:
+    "Δ":
+      case_role: >
+        Distinguishes a threat field as relevant even without a clearly bounded
+        adversary or event.
+    "∇":
+      case_role: >
+        Appears as diffuse urgency, vigilance pressure, and anticipatory pull
+        toward preventive intervention.
+    "□":
+      case_role: >
+        Defines the security frame, including threat class, jurisdiction,
+        mandate, review cycle, and end condition; drift begins when this frame
+        expands toward world-frame status.
+    "Λ":
+      case_role: >
+        Core operator of the case: the attack that does not happen, the
+        incident that remains absent, the adversary who may never appear, and
+        the counterfactual that becomes the regime’s main legitimacy resource.
+    "Α":
+      case_role: >
+        Repetition stabilizes preventive routines, renewals, surveillance
+        habits, and institutional expectations, hardening the regime over time.
+    "Ω":
+      case_role: >
+        Capacity accumulates on the side of security actors, while publics and
+        exposed groups carry increasing scrutiny, friction, and rights-burdens.
+    "Θ":
+      case_role: >
+        Temporary measures accumulate into durable trajectories; repeated
+        renewals and incremental expansions create lock-in.
+    "Φ":
+      case_role: >
+        Reframes precaution under uncertainty into permanent risk governance;
+        can also reframe critique as danger.
+    "Χ":
+      case_role: >
+        The key stress operator: distance must remain active precisely where
+        urgency rhetoric and unknown-threat logic make suspension attractive.
+    "Σ":
+      case_role: >
+        Must integrate threat models, rights constraints, legitimacy demands,
+        and uncertainty; often weakens into simplification, totalization, or
+        simulation.
+    "Ψ":
+      case_role: >
+        Must bind regime actors to review, limits, rollback, and restraint; in
+        drift, binding migrates outward toward populations and dissenters.
+
+typical_drift_markers:
+  max_expected: "2_to_3_preferred_in_short_form"
+  selected_markers:
+    - marker: "If nothing happens, it proves we must continue."
+      structural_reading: "Λ closure"
+    - marker: "We can’t wait for evidence."
+      structural_reading: "Θ compression plus Χ suspension"
+    - marker: "Security requires compliance as baseline."
+      structural_reading: "Ψ externalization under Ω"
+  extended_marker_set:
+    - marker: "Oversight causes vulnerability."
+      structural_reading: "Χ suspension"
+    - marker: "Those who object enable harm."
+      structural_reading: "Φ immunity plus moralization"
+    - marker: "Threat is everywhere."
+      structural_reading: "□ world-frame inflation"
+    - marker: "We’ll review later."
+      structural_reading: "Σ simulation under trajectory lock-in"
+
+validity_gate_reminder:
+  chi_distance: >
+    PMS-valid application requires maintained Χ: preventive security must not
+    fuse uncertainty into verdict, urgency, or standing authority.
+  reversibility: >
+    Readings and measures must remain revisable, bounded, and capable of real
+    rollback; non-occurrence must not become irreversible proof.
+  dignity_in_practice: >
+    D requires non-coercive handling of asymmetry: increased capacity must not
+    become humiliation, domination, or generalized suspicion toward exposed
+    populations.
+  application_warning: >
+    If prevention is used to suspend Χ, replace reversibility with indefinite
+    continuation, or erode D under the banner of protection, the configuration
+    becomes formally invalid as a PMS application.
+
+readable_structural_closure:
+  short_closure: >
+    This case shows how preventive security can drift from anticipatory
+    restraint into standing authority without any formal declaration of
+    exception. The decisive mechanism is not simply fear, but the handling of Λ:
+    once non-occurrence is treated as proof, Θ locks measures into trajectory,
+    Ω legitimates expansion, Χ erodes, and Ψ shifts outward. PMS-ANTICIPATION
+    makes visible that the central danger lies not in being wrong about a
+    threat, but in converting indefinite anticipation into durable authority.
+
+extended_scene_analysis:
+  identity_and_purpose:
+    purpose: >
+      Show how prevention becomes a structurally stable exceptionalism without a
+      formal exception, driven by how Λ is carried or rhetorically closed under
+      Θ and Ω.
+    scope: "Structures, roles, trajectories; not persons, intentions, or ideology."
+    pms_entry_condition_reminder: >
+      PMS-valid application requires Χ, reversibility, and D. Regimes that
+      suspend these in the name of security may remain operationally effective
+      but become formally invalid as PMS applications.
+
+  frame_validity_check:
+    operator: "□"
+    what_is_the_frame:
+      domain:
+        - "national security"
+        - "public safety"
+        - "critical infrastructure protection"
+        - "counter-terror"
+        - "cyber defense"
+      role_space:
+        - "security agencies (capacity, enforcement)"
+        - "legislators and oversight bodies (formal authorization)"
+        - "courts and rights institutions (constraint)"
+        - "publics (exposure, rights-bearing positions)"
+        - "media and discourse actors (narrative stabilization, Φ vectors)"
+      legitimate_objects_in_scope:
+        - "threat class"
+        - "jurisdiction"
+        - "mandate boundaries"
+        - "review cycle"
+        - "sunset or rollback conditions"
+      out_of_scope:
+        - "world-frame threat inflation"
+        - "globalized suspicion"
+        - "permanent authority from indefinite risk"
+        - "person-level enemy labeling as structural proof"
+    frame_boundary_requirement: >
+      A PMS-valid frame must specify what is being protected, against which
+      class of threats, with what mandate, review rhythm, and end conditions.
+    frame_failure_signal: >
+      When threat becomes a global predicate—everywhere, always, indefinitely—
+      □ inflates into world-frame and prevention becomes self-justifying.
+
+  non_event_integrity:
+    operator: "Λ"
+    decisive_object:
+      - "the attack did not happen"
+      - "the incident was averted"
+      - "the adversary did not appear"
+      - "the counterfactual remains absent"
+    structural_observation: >
+      In diffuse-threat contexts, Λ is not exceptional but normal. This makes
+      non-occurrence the default evidential field of the regime.
+    central_risk: >
+      The regime converts absence into certainty-by-absence: 'nothing happened
+      because of us' and 'if we stop, something will happen.'
+    diagnosis: >
+      This is a Λ-to-closure move without an event. The non-event is treated as
+      if it proved the relevant counterfactual.
+    overlay_constraint: >
+      PMS-ANTICIPATION remains viable only if Λ stays open. Non-occurrence may
+      support coherence, but must not become settled proof or self-authorizing truth.
+
+  asymmetry_audit:
+    operator: "Ω"
+    where_asymmetry_concentrates:
+      capacity_side:
+        - "security agencies"
+        - "surveillance systems"
+        - "preventive intervention mechanisms"
+      exposure_side:
+        - "general publics"
+        - "minorities"
+        - "border groups"
+        - "activists"
+        - "rights-bearing populations under scrutiny"
+    self_legitimating_gradient: >
+      Diffuse threat makes responsibility elastic: broad powers are justified by
+      the hiddenness or indefiniteness of the threat itself. Ω becomes not just
+      a condition but part of the regime’s justification.
+    pms_valid_requirement: >
+      If Ω rises, D requires stronger restraint, stronger review, and clearer
+      boundedness—not stronger default enforcement.
+
+  temporality_and_trajectory:
+    operator: "Θ"
+    temporal_pressure_patterns:
+      - "the window is closing"
+      - "we cannot wait for proof"
+      - "delay increases vulnerability"
+    trajectory_lock_in:
+      - "repeated renewals"
+      - "incremental expansion"
+      - "normalization of exceptional tools"
+      - "durable compliance burdens"
+    structural_point: >
+      Θ turns preventive policy into a persistent trajectory independent of any
+      single incident. Temporary measures accumulate into regime form.
+
+  recontextualization_dynamics:
+    operator: "Φ"
+    key_shift: >
+      'Precaution under uncertainty' is reframed as 'permanent risk governance.'
+    moralization_vector:
+      - "non-action is negligence"
+      - "objection is irresponsibility"
+    phi_failure_signal: >
+      When critique is reframed as danger, Φ becomes immunity: the regime is
+      shielded from revision and from the restoring function of Χ.
+
+  distance_enforcement:
+    operator: "Χ"
+    why_distance_is_hard_here: >
+      In diffuse-threat regimes there is no clean event boundary to reset
+      deliberation. Pressure accumulates through fear narratives, unknown
+      unknowns, and anticipated blame after a hypothetical incident.
+    erosion_pattern:
+      - "probabilistic language becomes rhetorical certainty"
+      - "oversight demands are framed as delay"
+      - "'better safe than sorry' becomes standing warrant"
+    pms_valid_requirements:
+      - "explicit preservation of Λ openness"
+      - "reversible commitments with real sunset conditions"
+      - "counterfactual humility"
+      - "review structures that force re-distancing"
+    diagnosis: >
+      Χ is not lost accidentally here; it becomes structurally expensive. That
+      is precisely why its preservation is decisive.
+
+  integration_quality:
+    operator: "Σ"
+    what_must_be_integrated:
+      - "multiple threat models"
+      - "rights constraints"
+      - "public legitimacy"
+      - "operational realities"
+      - "uncertainty itself"
+    sigma_failure_modes:
+      - "security vs freedom simplification"
+      - "single-metric totalization"
+      - "procedural simulation without genuine constraint"
+    structural_effect: >
+      When Σ weakens, preventive action is guided less by integrated judgment
+      and more by stabilized narrative pressure.
+
+  self_binding_test:
+    operator: "Ψ"
+    decisive_question: "Who is bound by the anticipatory stance in preventive security?"
+    pms_requirement: "Ψ must bind the anticipator, not the population."
+    core_drift:
+      from: "We bind ourselves to restraint under uncertainty."
+      to: "Others are obligated to comply because we anticipate risk."
+    verdict_condition: >
+      If prevention functions as authorization to impose rather than discipline
+      of self-restraint, anticipatory structure has drifted into authority form.
+
+  derived_axes_projection:
+    note: "Structural reading only; not person evaluation."
+    axes:
+      A:
+        movement: "expands"
+        reason: "more distinctions become security-relevant"
+      C:
+        movement: "can become high but fragile"
+        reason: "stable vigilance narrative persists, but weakens if Λ is closed into certainty"
+      R:
+        movement: "tends to outward-shift"
+        reason: "responsibility becomes demanded compliance rather than internal restraint"
+      E:
+        movement: "rises"
+        reason: "continuous interventions and preventive measures increase, even when Σ is weak or simulated"
+      D:
+        movement: "declines under drift"
+        reason: "Ω rises while Χ is suspended and Ψ externalizes"
+    hazard_signature: >
+      High A plus high E, sustained Ω, shrinking Χ, and externalizing Ψ produce
+      stable coercion without formal emergency.
+
+  core_mechanism:
+    label: "Exceptionalism without exception"
+    operator_chain:
+      - "Diffuse threat makes Λ permanent."
+      - "Λ is converted into proof."
+      - "Closure generates Θ compression."
+      - "Urgency legitimates Ω-linked E without renewed capacity audit."
+      - "Α hardens the preventive posture through repetition."
+      - "Σ weakens into simplification or simulation."
+      - "Ψ externalizes onto publics."
+      - "D degrades because Ψ and Χ no longer constrain Ω."
+    paradox_statement: >
+      The more the regime succeeds at producing non-events, the harder it
+      becomes to justify stopping.
+    interpretation: >
+      This is not merely ideological inconsistency; it is structural dependence
+      on Λ as a continuing legitimacy resource.
+
+  viability_criteria:
+    note: "Non-prognostic viability criteria for the case."
+    criteria:
+      - id: "non_occurrence_tolerated"
+        meaning: "The regime can tolerate continued absence without converting it into proof."
+      - id: "reversibility_under_theta"
+        meaning: "Measures can be rolled back without treating rollback as betrayal."
+      - id: "distance_under_omega"
+        meaning: "Χ is preserved precisely where coercive capacity exists."
+      - id: "internal_self_binding"
+        meaning: "Ψ binds the regime to review, revision, and limits."
+      - id: "d_preservation"
+        meaning: "Power is handled with protective restraint rather than dominance."
+    failure_interpretation: >
+      If these fail, the posture may remain operationally strong but no longer
+      counts as PMS-valid anticipatory praxis.
+
+  output_boundary:
+    pms_compatible_outputs:
+      - "structural mapping of Λ, Θ, and Ω in preventive regimes"
+      - "constraint descriptions of what must remain open, reversible, and bounded"
+      - "drift diagnostics of Ψ externalization and Χ erosion"
+      - "dignity-in-practice risk articulation under asymmetry"
+    pms_invalid_outputs:
+      - "action mandates such as expanding surveillance"
+      - "moral imperatives treating dissent as irresponsibility"
+      - "person-level blame, ranking, or enemy labeling as structural proof"
+
+  minimal_map_walkthrough:
+    step_1_frame: "What is bounded—threat class, jurisdiction, mandate, end condition?"
+    step_2_non_event: "Which absences are being treated as proof? Where is Λ being closed?"
+    step_3_asymmetry: "Who gains capacity, who bears exposure, who pays irreversible cost?"
+    step_4_distance: "What forces re-distance against urgency rhetoric?"
+    step_5_self_binding: "Who is bound by the anticipation—regime actors or everyone else?"
+    closure_rule: >
+      If the answers collapse into 'trust us' or 'we must,' the posture has slid
+      from anticipation into authority.
+
+assistant_test_vectors:
+  promptable_probes:
+    - "Model a preventive security policy where the adversary is undefined. Where does Λ become permanent?"
+    - "Show how Λ is rhetorically closed into proof without an event, and what Θ does next."
+    - "Where does Ω translate into E without renewed capacity auditing inside □?"
+    - "Identify Ψ externalization points ('compliance as duty') and their impact on D."
+    - "Describe an operator-preserving way to keep Λ open while sustaining coherence C without issuing action directives."
+
+schema_conformity_check:
+  required_blocks_present:
+    - "Minimal vignette (scene-bound)"
+    - "Why this is repo-useful (structural focus)"
+    - "Operator mapping (reduced signature)"
+    - "Typical drift markers (max 2–3; non-moral)"
+    - "Validity gate reminder (Χ + reversibility + D)"
+    - "Readable structural closure (2–5 sentences; non-instructional)"
+  conformity_note: >
+    This example is scene-bound, non-instructional, operator-readable, and
+    remains within PMS-ANTICIPATION application constraints.
